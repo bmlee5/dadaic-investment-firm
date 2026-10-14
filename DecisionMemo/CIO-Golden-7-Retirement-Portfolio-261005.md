@@ -9,8 +9,8 @@
 ![평생 은퇴 ETF 골든 포트폴리오 인포그래픽](Media/CIO-Universal-Retirement-ETF-Infographic.png)
 
 > **파일 생성 위치**:
-> - 🖼️ 고해상도 인포그래픽 (PNG): [`Media/CIO-Universal-Retirement-ETF-Infographic.png`](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/Media/CIO-Universal-Retirement-ETF-Infographic.png)
-> - 🌐 인터랙티브 브라우저 뷰 (HTML): [`Media/CIO-Universal-Retirement-ETF-Infographic.html`](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/Media/CIO-Universal-Retirement-ETF-Infographic.html)
+> - 🖼️ 고해상도 인포그래픽 (PNG): [`Media/CIO-Universal-Retirement-ETF-Infographic.png`](./Media/CIO-Universal-Retirement-ETF-Infographic.png)
+> - 🌐 인터랙티브 브라우저 뷰 (HTML): [`Media/CIO-Universal-Retirement-ETF-Infographic.html`](./Media/CIO-Universal-Retirement-ETF-Infographic.html)
 
 ---
 

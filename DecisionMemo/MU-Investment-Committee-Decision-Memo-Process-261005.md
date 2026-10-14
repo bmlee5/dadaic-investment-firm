@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-MU-261005  
-> **Companion Document**: [MU-Investment-Committee-Decision-Memo-261005.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/MU-Investment-Committee-Decision-Memo-261005.md)  
+> **Companion Document**: [MU-Investment-Committee-Decision-Memo-261005.md](./MU-Investment-Committee-Decision-Memo-261005.md)  
 > **Target Asset**: MU | Micron Technology, Inc.  
 > **Date of Deliberation**: October 5, 2026 (261005)  
 > *Bilingual Edition: [English Dossier](#-english-deliberation-process) | [한국어 심의 원장](#-한국어-투자위원회-상세-심의-원장)*

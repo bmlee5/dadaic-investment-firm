@@ -38,7 +38,7 @@ Model portfolio and single-asset survival under 3 extreme tail-risk shocks:
   * High-yield corporate spread blowout, private credit distress, customer capex cancellations.
 
 ### 2. Portfolio Fragility & Leverage Drag Audit
-- Examine BM사장님's actual portfolio holdings in [`my-portfolio.yaml`](file:///g:/Finance/DADAIC%20Investment%20Firm/my-portfolio.yaml).
+- Examine BM사장님's actual portfolio holdings in [`my-portfolio.yaml`](../../../my-portfolio.yaml).
 - Audit whether the addition of the target asset expands the **Weighted Portfolio Beta** beyond tolerable risk limits (Target Beta ceiling: $\le 1.20$).
 - Inspect for **Leveraged ETF Contagion**: If BM사장님 holds leveraged vehicles (e.g. KORU, TQQQ, SOXL), quantify how the new allocation impacts total notional exposure and downside vulnerability.
 

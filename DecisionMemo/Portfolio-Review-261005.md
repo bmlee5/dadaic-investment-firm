@@ -1,7 +1,7 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: PORTFOLIO HEALTH CHECK & DIAGNOSTIC
 > *Bilingual Edition: [English Executive Portfolio Review](#-part-1-english-executive-portfolio-review) | [한국어 포트폴리오 진단 및 위험 평가 보고서](#-part-2-한국어-포트폴리오-종합-진단-및-위험-평가-보고서)*  
 > **Document Control Number**: DADAIC-PORT-REVIEW-261005  
-> **Target Configuration Source**: [`my-portfolio.yaml`](file:///g:/Finance/DADAIC%20Investment%20Firm/my-portfolio.yaml)  
+> **Target Configuration Source**: [`my-portfolio.yaml`](../my-portfolio.yaml)  
 > **Diagnostic Date**: October 5, 2026  
 > **Presided By**: Chief Investment Officer (CIO) & Senior Risk Officer, DADAIC Investment Firm  
 

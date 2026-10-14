@@ -15,7 +15,7 @@ It combines the rigorous multi-disciplinary underwriting principles of Wall Stre
 ## 🚀 Quick Start Guide
 
 ### Step 1. Configure Portfolio & Profile
-Open [`my-portfolio.yaml`](file:///g:/Finance/DADAIC%20Investment%20Firm/my-portfolio.yaml) in the workspace root. Define your investment horizon, risk tolerance, target allocation ceiling, current holdings, and cash allocation. (Pre-filled with default sample assets: AAPL, MSFT, VOO, Cash).
+Open [`my-portfolio.yaml`](./my-portfolio.yaml) in the workspace root. Define your investment horizon, risk tolerance, target allocation ceiling, current holdings, and cash allocation. (Pre-filled with default sample assets: AAPL, MSFT, VOO, Cash).
 
 ### Step 2. Trigger Autonomous Protocols via Shorthand Commands
 In the Antigravity chat, interact directly with the CIO using high-efficiency shorthand commands or natural language:
@@ -148,27 +148,27 @@ flowchart TD
 
 ## 👥 17 Specialized Agents & Skills Matrix
 
-All skills are packaged according to official Antigravity standards in [`.agent/skills/`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills):
+All skills are packaged according to official Antigravity standards in [`.agent/skills/`](./.agent/skills):
 
 | Skill Name | Role & Wall Street Persona | Core Evaluation & Deliverables |
 | :--- | :--- | :--- |
-| **[`macro-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/macro-analyst/SKILL.md)** | Chief Global Macro Strategist | Fed policy trajectory, Net Liquidity, yield curves, tri-scenario probabilities |
-| **[`equity-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/equity-analyst/SKILL.md)** | Senior Wall Street Equity Analyst | Revenue architecture, peer benchmarking, 3-scenario 12M price targets |
-| **[`financial-auditor`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/financial-auditor/SKILL.md)** | PE Institutional Forensic Auditor | Multi-year 10-K audit, DuPont ROE, True FCF (net of SBC), solvency testing |
-| **[`earnings-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/earnings-analyst/SKILL.md)** | Earnings & Call Post-Mortem Specialist | Beat/Miss scorecard, forward guidance shifts, management call tone |
-| **[`competitor-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/competitor-analyst/SKILL.md)** | Lead Competitive Intelligence Specialist | Top 3 rival market share, relative moat durability, margin spreads, bundling risks |
-| **[`flow-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/flow-analyst/SKILL.md)** | Senior Smart Money & Flow Specialist | Form 4 insider cluster buys/sales, 13F hedge fund crowding, short squeeze, options GEX/skew |
-| **[`regulatory-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/regulatory-analyst/SKILL.md)** | Antitrust & Sovereign Policy Strategist | DOJ/FTC/DMA antitrust cases, BIS national security export bans, patent cliffs, subsidy durability |
-| **[`sentiment-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/sentiment-analyst/SKILL.md)** | Contrarian Sentiment & Catalyst Strategist | Crowd psychology, fear/greed extremes, narrative vs reality divergence, 3-6M catalyst calendar |
-| **[`fact-checker`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/fact-checker/SKILL.md)** | Forensic Fact-Checker & Verifier | Gatekeeper: independent 2-source cross-verification of industry narratives, competitor status, and filings |
-| **[`buffett-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/buffett-evaluator/SKILL.md)** | Warren Buffett Quality Evaluator | Business simplicity, durable moat, management candor, **20-30% Margin of Safety** |
-| **[`munger-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/munger-evaluator/SKILL.md)** | Charlie Munger Inversion Evaluator | Lollapalooza moats, ROIC runway, **Inversion (fatal vulnerabilities to destroy thesis)** |
-| **[`lynch-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/lynch-evaluator/SKILL.md)** | Peter Lynch Growth Evaluator | 6 categories classification, 2-minute drill, **PEG ratio ($\le 1.0$)**, inventory flags |
-| **[`druckenmiller-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/druckenmiller-evaluator/SKILL.md)** | Stanley Druckenmiller Asymmetric Alpha Lens | 18-24M inflection catalysts, **$\ge 3:1$ Asymmetry**, macro liquidity tailwinds, aggressive sizing |
-| **[`oneil-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/oneil-evaluator/SKILL.md)** | William J. O'Neil CAN SLIM Momentum Lens | EPS surges ($\ge 25-50\%$), RS $\ge 80$, breakout volume, **strict 7-8% hard stop-loss** |
-| **[`technical-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/technical-analyst/SKILL.md)** | Chief Market Technician | 20/50/200 MA alignment, volume profiles, support/resistance, **$\ge 1:2$ R:R entry** |
-| **[`portfolio-manager`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/portfolio-manager/SKILL.md)** | Senior Portfolio Manager | **False Diversification audit**, 3 macro stress simulations (MDD), **Target Sizing %** |
-| **[`risk-officer`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/risk-officer/SKILL.md)** | Chief Risk Officer (CRO) & Tail-Risk Guardian | Systemic black-swan shocks, leverage drag, liquidity runway, **Independent CRO Sizing Cap & Veto** |
+| **[`macro-analyst`](./.agent/skills/macro-analyst/SKILL.md)** | Chief Global Macro Strategist | Fed policy trajectory, Net Liquidity, yield curves, tri-scenario probabilities |
+| **[`equity-analyst`](./.agent/skills/equity-analyst/SKILL.md)** | Senior Wall Street Equity Analyst | Revenue architecture, peer benchmarking, 3-scenario 12M price targets |
+| **[`financial-auditor`](./.agent/skills/financial-auditor/SKILL.md)** | PE Institutional Forensic Auditor | Multi-year 10-K audit, DuPont ROE, True FCF (net of SBC), solvency testing |
+| **[`earnings-analyst`](./.agent/skills/earnings-analyst/SKILL.md)** | Earnings & Call Post-Mortem Specialist | Beat/Miss scorecard, forward guidance shifts, management call tone |
+| **[`competitor-analyst`](./.agent/skills/competitor-analyst/SKILL.md)** | Lead Competitive Intelligence Specialist | Top 3 rival market share, relative moat durability, margin spreads, bundling risks |
+| **[`flow-analyst`](./.agent/skills/flow-analyst/SKILL.md)** | Senior Smart Money & Flow Specialist | Form 4 insider cluster buys/sales, 13F hedge fund crowding, short squeeze, options GEX/skew |
+| **[`regulatory-analyst`](./.agent/skills/regulatory-analyst/SKILL.md)** | Antitrust & Sovereign Policy Strategist | DOJ/FTC/DMA antitrust cases, BIS national security export bans, patent cliffs, subsidy durability |
+| **[`sentiment-analyst`](./.agent/skills/sentiment-analyst/SKILL.md)** | Contrarian Sentiment & Catalyst Strategist | Crowd psychology, fear/greed extremes, narrative vs reality divergence, 3-6M catalyst calendar |
+| **[`fact-checker`](./.agent/skills/fact-checker/SKILL.md)** | Forensic Fact-Checker & Verifier | Gatekeeper: independent 2-source cross-verification of industry narratives, competitor status, and filings |
+| **[`buffett-evaluator`](./.agent/skills/buffett-evaluator/SKILL.md)** | Warren Buffett Quality Evaluator | Business simplicity, durable moat, management candor, **20-30% Margin of Safety** |
+| **[`munger-evaluator`](./.agent/skills/munger-evaluator/SKILL.md)** | Charlie Munger Inversion Evaluator | Lollapalooza moats, ROIC runway, **Inversion (fatal vulnerabilities to destroy thesis)** |
+| **[`lynch-evaluator`](./.agent/skills/lynch-evaluator/SKILL.md)** | Peter Lynch Growth Evaluator | 6 categories classification, 2-minute drill, **PEG ratio ($\le 1.0$)**, inventory flags |
+| **[`druckenmiller-evaluator`](./.agent/skills/druckenmiller-evaluator/SKILL.md)** | Stanley Druckenmiller Asymmetric Alpha Lens | 18-24M inflection catalysts, **$\ge 3:1$ Asymmetry**, macro liquidity tailwinds, aggressive sizing |
+| **[`oneil-evaluator`](./.agent/skills/oneil-evaluator/SKILL.md)** | William J. O'Neil CAN SLIM Momentum Lens | EPS surges ($\ge 25-50\%$), RS $\ge 80$, breakout volume, **strict 7-8% hard stop-loss** |
+| **[`technical-analyst`](./.agent/skills/technical-analyst/SKILL.md)** | Chief Market Technician | 20/50/200 MA alignment, volume profiles, support/resistance, **$\ge 1:2$ R:R entry** |
+| **[`portfolio-manager`](./.agent/skills/portfolio-manager/SKILL.md)** | Senior Portfolio Manager | **False Diversification audit**, 3 macro stress simulations (MDD), **Target Sizing %** |
+| **[`risk-officer`](./.agent/skills/risk-officer/SKILL.md)** | Chief Risk Officer (CRO) & Tail-Risk Guardian | Systemic black-swan shocks, leverage drag, liquidity runway, **Independent CRO Sizing Cap & Veto** |
 
 ---
 
@@ -183,7 +183,7 @@ The CIO dynamically categorizes the target asset into one of three operational f
 ## 📁 Directory Structure
 
 ```text
-g:/Finance/DADAIC Investment Firm/
+DADAIC Investment Firm/
 ├── .agent/
 │   ├── workflows.yaml              # 5-Stage Institutional Pipeline Definition
 │   └── skills/                     # Antigravity Official Standard Skills (17 Specialists)
@@ -227,7 +227,7 @@ g:/Finance/DADAIC Investment Firm/
 ## 🚀 빠른 시작 가이드 (Quick Start)
 
 ### Step 1. 포트폴리오 및 투자 성향 설정
-루트 폴더의 [`my-portfolio.yaml`](file:///g:/Finance/DADAIC%20Investment%20Firm/my-portfolio.yaml) 파일을 열어 투자 기간, 위험 성향, 단일 종목 한도, 보유 종목, 현금 비중을 설정합니다. (기본 샘플 데이터: AAPL, MSFT, VOO, 현금).
+루트 폴더의 [`my-portfolio.yaml`](./my-portfolio.yaml) 파일을 열어 투자 기간, 위험 성향, 단일 종목 한도, 보유 종목, 현금 비중을 설정합니다. (기본 샘플 데이터: AAPL, MSFT, VOO, 현금).
 
 ### Step 2. 채팅창에서 전용 단축 명령어 또는 자연어로 간편 실행
 Antigravity 채팅창에 고효율 단축 명령어 하나만 입력하면 CIO와 투자의원회가 즉시 전문 분석을 수행합니다:
@@ -333,27 +333,27 @@ AI 채팅 외에도 사장님께서 Windows PowerShell이나 터미널에서 직
 
 ## 👥 17대 전문 에이전트 & 스킬 일람표
 
-모든 스킬은 [`.agent/skills/`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills) 디렉토리에 Antigravity 공식 표준 패키지 규격으로 탑재되어 있습니다:
+모든 스킬은 [`.agent/skills/`](./.agent/skills) 디렉토리에 Antigravity 공식 표준 패키지 규격으로 탑재되어 있습니다:
 
 | 스킬 이름 | 역할 및 페르소나 | 핵심 산출물 및 평가 기준 |
 | :--- | :--- | :--- |
-| **[`macro-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/macro-analyst/SKILL.md)** | 글로벌 수석 매크로 전략가 | 연준 금리 경로, 순유동성(Net Liquidity), 장단기 금리차, 3대 매크로 시나리오 확률 |
-| **[`equity-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/equity-analyst/SKILL.md)** | 월가 시니어 주식 애널리스트 | 비즈니스 아키텍처, 3대 시나리오 12개월 목표주가(Bull / Base / Bear), 촉매제 |
-| **[`financial-auditor`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/financial-auditor/SKILL.md)** | 기관 사모펀드 포렌식 감사관 | 3~5개년 10-K 감사, 듀퐁 ROE 분해, 주식기준보상(SBC) 차감 True FCF, 운전자본 주기 |
-| **[`earnings-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/earnings-analyst/SKILL.md)** | 어닝스 & 컨퍼런스콜 전담 분석가 | 최신 분기 실적 Beat/Miss 대조표, 가이던스 상향/하향, 경영진 어닝콜 톤앤매너 |
-| **[`competitor-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/competitor-analyst/SKILL.md)** | 경쟁 인텔리전스 & 섹터 스페셜리스트 | 상위 3~4개사 시장점유율 지형도, 상대적 해자 격차, 마진 스프레드, 빅테크 번들링 위협 |
-| **[`flow-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/flow-analyst/SKILL.md)** | 수석 스마트머니 & 수급 포렌식 분석가 | SEC Form 4 내부자 클러스터 매수/매도, 13F 기관 쏠림, 숏스퀴즈, 옵션 감마(GEX)/스큐 |
-| **[`regulatory-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/regulatory-analyst/SKILL.md)** | 최고 법률, 반독점 & 정책 전략가 | DOJ/FTC/EU 반독점 소송, BIS 국가안보 수출통제, 특허 절벽, Item 3 소송, 보조금 지속성 |
-| **[`sentiment-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/sentiment-analyst/SKILL.md)** | 수석 역발상 센티먼트 & 카탈리스트 전략가 | 대중 심리/탐욕·공포 극단값, 내러티브 vs 펀더멘털 괴리, 3~6개월 주가 촉매(Catalyst) 일정 |
-| **[`fact-checker`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/fact-checker/SKILL.md)** | 포렌식 팩트체크 & 교차 검증관 | 게이트키퍼: 독립 2-Source 실시간 교차 검증, 경쟁사 상용화 실태 및 인허가 실사 |
-| **[`buffett-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/buffett-evaluator/SKILL.md)** | 워런 버핏 가치평가 심사역 | 사업 이해도, 경제적 해자, 경영진 정직성/자본배치, **최소 20~30% 안전마진 진입선** |
-| **[`munger-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/munger-evaluator/SKILL.md)** | 찰리 멍거 다학제적 역발상 심사역 | 롤라팔루자 독점 해자, 지속 가능한 ROIC 런웨이, **Inversion(회사를 파멸시킬 킬러 요인)** |
-| **[`lynch-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/lynch-evaluator/SKILL.md)** | 피터 린치 성장주 심사역 | 6대 카테고리 분류, 2분 스피치, **PEG 비율(1.0 이하 적정/0.5 바겐세일)**, 재고 경고등 |
-| **[`druckenmiller-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/druckenmiller-evaluator/SKILL.md)** | 스탠리 드러켄밀러 비대칭 알파 심사역 | **18~24개월 선행 변곡점, $\ge 3:1$ 비대칭 보상 비율**, 거시 유동성 정합성, 공격적 승부처 사이징 |
-| **[`oneil-evaluator`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/oneil-evaluator/SKILL.md)** | 윌리엄 오닐 CAN SLIM 모멘텀 심사역 | **폭발적 EPS 급증($\ge 25\sim 50\%$), RS 점수 $\ge 80$, 신고가 돌파**, **엄격한 7~8% 칼손절** |
-| **[`technical-analyst`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/technical-analyst/SKILL.md)** | 프랍 트레이딩 수석 마켓 테크니션 | 주봉/일봉 추세, 20/50/200 이평선 배열, 수평 매물대, **최소 1:2 손익비(R:R) 매매 타점** |
-| **[`portfolio-manager`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/portfolio-manager/SKILL.md)** | 수석 포트폴리오 매니저 | **거짓 분산투자(False Diversification) 검증**, 3대 매크로 스트레스 테스트(MDD), **목표 편입 비중(%)** |
-| **[`risk-officer`](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/skills/risk-officer/SKILL.md)** | 최고리스크책임자 (CRO) | 극단적 블랙스완 충격 시뮬레이션, 레버리지 전이 위험, **독립 거부권(Veto) & 비중 상한 통제** |
+| **[`macro-analyst`](./.agent/skills/macro-analyst/SKILL.md)** | 글로벌 수석 매크로 전략가 | 연준 금리 경로, 순유동성(Net Liquidity), 장단기 금리차, 3대 매크로 시나리오 확률 |
+| **[`equity-analyst`](./.agent/skills/equity-analyst/SKILL.md)** | 월가 시니어 주식 애널리스트 | 비즈니스 아키텍처, 3대 시나리오 12개월 목표주가(Bull / Base / Bear), 촉매제 |
+| **[`financial-auditor`](./.agent/skills/financial-auditor/SKILL.md)** | 기관 사모펀드 포렌식 감사관 | 3~5개년 10-K 감사, 듀퐁 ROE 분해, 주식기준보상(SBC) 차감 True FCF, 운전자본 주기 |
+| **[`earnings-analyst`](./.agent/skills/earnings-analyst/SKILL.md)** | 어닝스 & 컨퍼런스콜 전담 분석가 | 최신 분기 실적 Beat/Miss 대조표, 가이던스 상향/하향, 경영진 어닝콜 톤앤매너 |
+| **[`competitor-analyst`](./.agent/skills/competitor-analyst/SKILL.md)** | 경쟁 인텔리전스 & 섹터 스페셜리스트 | 상위 3~4개사 시장점유율 지형도, 상대적 해자 격차, 마진 스프레드, 빅테크 번들링 위협 |
+| **[`flow-analyst`](./.agent/skills/flow-analyst/SKILL.md)** | 수석 스마트머니 & 수급 포렌식 분석가 | SEC Form 4 내부자 클러스터 매수/매도, 13F 기관 쏠림, 숏스퀴즈, 옵션 감마(GEX)/스큐 |
+| **[`regulatory-analyst`](./.agent/skills/regulatory-analyst/SKILL.md)** | 최고 법률, 반독점 & 정책 전략가 | DOJ/FTC/EU 반독점 소송, BIS 국가안보 수출통제, 특허 절벽, Item 3 소송, 보조금 지속성 |
+| **[`sentiment-analyst`](./.agent/skills/sentiment-analyst/SKILL.md)** | 수석 역발상 센티먼트 & 카탈리스트 전략가 | 대중 심리/탐욕·공포 극단값, 내러티브 vs 펀더멘털 괴리, 3~6개월 주가 촉매(Catalyst) 일정 |
+| **[`fact-checker`](./.agent/skills/fact-checker/SKILL.md)** | 포렌식 팩트체크 & 교차 검증관 | 게이트키퍼: 독립 2-Source 실시간 교차 검증, 경쟁사 상용화 실태 및 인허가 실사 |
+| **[`buffett-evaluator`](./.agent/skills/buffett-evaluator/SKILL.md)** | 워런 버핏 가치평가 심사역 | 사업 이해도, 경제적 해자, 경영진 정직성/자본배치, **최소 20~30% 안전마진 진입선** |
+| **[`munger-evaluator`](./.agent/skills/munger-evaluator/SKILL.md)** | 찰리 멍거 다학제적 역발상 심사역 | 롤라팔루자 독점 해자, 지속 가능한 ROIC 런웨이, **Inversion(회사를 파멸시킬 킬러 요인)** |
+| **[`lynch-evaluator`](./.agent/skills/lynch-evaluator/SKILL.md)** | 피터 린치 성장주 심사역 | 6대 카테고리 분류, 2분 스피치, **PEG 비율(1.0 이하 적정/0.5 바겐세일)**, 재고 경고등 |
+| **[`druckenmiller-evaluator`](./.agent/skills/druckenmiller-evaluator/SKILL.md)** | 스탠리 드러켄밀러 비대칭 알파 심사역 | **18~24개월 선행 변곡점, $\ge 3:1$ 비대칭 보상 비율**, 거시 유동성 정합성, 공격적 승부처 사이징 |
+| **[`oneil-evaluator`](./.agent/skills/oneil-evaluator/SKILL.md)** | 윌리엄 오닐 CAN SLIM 모멘텀 심사역 | **폭발적 EPS 급증($\ge 25\sim 50\%$), RS 점수 $\ge 80$, 신고가 돌파**, **엄격한 7~8% 칼손절** |
+| **[`technical-analyst`](./.agent/skills/technical-analyst/SKILL.md)** | 프랍 트레이딩 수석 마켓 테크니션 | 주봉/일봉 추세, 20/50/200 이평선 배열, 수평 매물대, **최소 1:2 손익비(R:R) 매매 타점** |
+| **[`portfolio-manager`](./.agent/skills/portfolio-manager/SKILL.md)** | 수석 포트폴리오 매니저 | **거짓 분산투자(False Diversification) 검증**, 3대 매크로 스트레스 테스트(MDD), **목표 편입 비중(%)** |
+| **[`risk-officer`](./.agent/skills/risk-officer/SKILL.md)** | 최고리스크책임자 (CRO) | 극단적 블랙스완 충격 시뮬레이션, 레버리지 전이 위험, **독립 거부권(Veto) & 비중 상한 통제** |
 
 ---
 
@@ -368,7 +368,7 @@ CIO는 분석 대상 기업의 매출 엔진을 다음 3대 프레임워크 중 
 ## 📁 디렉토리 구조 안내 (Directory Structure)
 
 ```text
-g:/Finance/DADAIC Investment Firm/
+DADAIC Investment Firm/
 ├── .agent/
 │   ├── workflows.yaml              # 5-Stage Institutional Pipeline Definition
 │   └── skills/                     # Antigravity Official Standard Skills (17개 전문 스킬)

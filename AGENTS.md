@@ -129,7 +129,7 @@ Execute immediate 1:1 specialist consultations and deep-dive audits without runn
 
 1. **Autonomous Protocol**:
    - Do NOT ask the user to confirm or retype the command. Proceed directly with the analysis.
-   - Read [`my-portfolio.yaml`](file:///g:/Finance/DADAIC%20Investment%20Firm/my-portfolio.yaml) at the start of any command execution.
+   - Read [`my-portfolio.yaml`](./my-portfolio.yaml) at the start of any command execution.
 
 2. **Primary Shell & Tools**:
    - **Primary Analytical Engine**: Python 3.12 (`yfinance`, `pandas`, `numpy`, `requests`) for all live market pricing, fundamental metrics, valuation modeling, and portfolio risk calculations.

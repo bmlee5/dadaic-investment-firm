@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-TSM-261005  
-> **Companion Document**: [TSM-Investment-Committee-Decision-Memo-261005.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/TSM-Investment-Committee-Decision-Memo-261005.md)  
+> **Companion Document**: [TSM-Investment-Committee-Decision-Memo-261005.md](./TSM-Investment-Committee-Decision-Memo-261005.md)  
 > **Target Asset**: TSM | Taiwan Semiconductor Manufacturing Company Limited (TSMC / 台積電)  
 > **Date of Deliberation**: October 5, 2026 (261005)  
 > *Bilingual Edition: [English Dossier](#-english-deliberation-process) | [한국어 심의 원장](#-한국어-투자의원회-상세-심의-원장)*

@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-AMD-261006  
-> **Companion Document**: [AMD-Investment-Committee-Decision-Memo-261006.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/AMD-Investment-Committee-Decision-Memo-261006.md)  
+> **Companion Document**: [AMD-Investment-Committee-Decision-Memo-261006.md](./AMD-Investment-Committee-Decision-Memo-261006.md)  
 > **Target Asset**: AMD | Advanced Micro Devices, Inc.  
 > **Date of Deliberation**: October 6, 2026 (261006)  
 > **Mandatory Protocol**: BM사장님 30-Year Empirical Validation Protocol Fully Executed  

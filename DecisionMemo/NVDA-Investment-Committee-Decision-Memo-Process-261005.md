@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-NVDA-261005  
-> **Companion Document**: [NVDA-Investment-Committee-Decision-Memo-261005.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/NVDA-Investment-Committee-Decision-Memo-261005.md)  
+> **Companion Document**: [NVDA-Investment-Committee-Decision-Memo-261005.md](./NVDA-Investment-Committee-Decision-Memo-261005.md)  
 > **Target Asset**: NVDA | NVIDIA Corporation  
 > **Date of Deliberation**: October 5, 2026 (261005)  
 > *Bilingual Edition: [English Dossier](#-english-deliberation-process) | [한국어 심의 원장](#-한국어-투자의원회-상세-심의-원장)*
@@ -136,7 +136,7 @@ flowchart TD
 
 ### 1. Investor Profile & Existing Exposure Audit
 - **Profile**: Long-Term Horizon (10+ yrs), Growth/High Risk Tolerance, Max Single Stock Weight 15.0%.
-- **Existing Holdings ([my-portfolio.yaml](file:///g:/Finance/DADAIC%20Investment%20Firm/my-portfolio.yaml))**:
+- **Existing Holdings ([my-portfolio.yaml](../my-portfolio.yaml))**:
   - AAPL: 25.0% | MSFT: 25.0% | VOO: 30.0% | Cash: 20.0%
 - **False Diversification Diagnostic**:
   - Both AAPL and MSFT represent large-cap tech. MSFT is a primary buyer of NVIDIA chips; VOO holds ~7% NVDA weighting.
@@ -162,7 +162,7 @@ flowchart TD
 
 ## 📍 Stage 5: Final Synthesis & CIO Arbitration
 - **Resolution of Debate**: The Committee adopts Lynch’s growth conviction (PEG 0.70) while honoring Buffett and Munger's margin-of-safety principles through **staged tranche execution** rather than a lump-sum market order.
-- **Definitive Decision Memo Produced**: [DecisionMemo/NVDA-Investment-Committee-Decision-Memo-261005.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/NVDA-Investment-Committee-Decision-Memo-261005.md)
+- **Definitive Decision Memo Produced**: [DecisionMemo/NVDA-Investment-Committee-Decision-Memo-261005.md](./NVDA-Investment-Committee-Decision-Memo-261005.md)
 
 ---
 
@@ -263,7 +263,7 @@ flowchart TD
 
 ## 📍 Stage 4: 포트폴리오 리스크 배분 및 사이징 (`portfolio-manager`)
 
-### 1. 사용자 포트폴리오 진단 ([my-portfolio.yaml](file:///g:/Finance/DADAIC%20Investment%20Firm/my-portfolio.yaml))
+### 1. 사용자 포트폴리오 진단 ([my-portfolio.yaml](../my-portfolio.yaml))
 - 기존 구성: AAPL 25% | MSFT 25% | VOO 30% | 현금 20%
 - **거짓 분산투자(False Diversification) 경고**: 이미 MSFT(엔비디아 최대 고객) 25%와 VOO(엔비디아 7% 내재)를 보유하여 테크 팩터 쏠림(80%)이 높은 상태.
 - **베타 변동**: 포트폴리오 가중 베타가 1.08에서 엔비디아 8% 편입 시 **1.14**로 소폭 상승하나 적극투자형 프로필 범위 내임.
@@ -282,7 +282,7 @@ flowchart TD
 
 ## 📍 Stage 5: CIO 최종 중재 및 의사결정 결재
 - **대가 간 격론 조율**: 피터 린치의 성장성 확신(PEG 0.70)을 채택하되, 워런 버핏과 찰리 멍거의 안전마진 결핍 지적을 수용하여 **전액 일시 매수가 아닌 2단계 분할 진입(Tranche-Based Staged Entry)**으로 최종 결론을 도출함.
-- **최종 공식 의결서 발행**: [DecisionMemo/NVDA-Investment-Committee-Decision-Memo-261005.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/NVDA-Investment-Committee-Decision-Memo-261005.md)
+- **최종 공식 의결서 발행**: [DecisionMemo/NVDA-Investment-Committee-Decision-Memo-261005.md](./NVDA-Investment-Committee-Decision-Memo-261005.md)
 
 ---
 **기록 보관**: DADAIC Investment Firm Archive  

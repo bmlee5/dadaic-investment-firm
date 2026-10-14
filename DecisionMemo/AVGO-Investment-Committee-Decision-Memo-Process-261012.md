@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-AVGO-261012  
-> **Companion Document**: [AVGO-Investment-Committee-Decision-Memo-261012.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/AVGO-Investment-Committee-Decision-Memo-261012.md)  
+> **Companion Document**: [AVGO-Investment-Committee-Decision-Memo-261012.md](./AVGO-Investment-Committee-Decision-Memo-261012.md)  
 > **Target Asset**: AVGO | Broadcom Inc. (NASDAQ: AVGO)  
 > **Date of Deliberation**: October 12, 2026 (261012)  
 > **Principal Investor**: BM사장님  
@@ -221,7 +221,7 @@ Under the firm's mandatory **Adversarial Blind Audit Protocol**, the Chief Risk 
 
 # 🇰🇷 한국어 투자위원회 상세 심의 원장
 > **문서 관리 번호**: DADAIC-IC-PROCESS-AVGO-261012-KR  
-> **동반 문서**: [AVGO-Investment-Committee-Decision-Memo-261012.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/AVGO-Investment-Committee-Decision-Memo-261012.md)  
+> **동반 문서**: [AVGO-Investment-Committee-Decision-Memo-261012.md](./AVGO-Investment-Committee-Decision-Memo-261012.md)  
 > **분석 대상 종목**: AVGO | 브로드컴 (Broadcom Inc., 나스닥: AVGO)  
 > **심의 일자**: 2026년 10월 12일 (261012)  
 > **최고 의사결정권자**: BM사장님  

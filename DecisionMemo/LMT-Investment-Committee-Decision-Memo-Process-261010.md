@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-LMT-261010  
-> **Companion Document**: [LMT-Investment-Committee-Decision-Memo-261010.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/LMT-Investment-Committee-Decision-Memo-261010.md)  
+> **Companion Document**: [LMT-Investment-Committee-Decision-Memo-261010.md](./LMT-Investment-Committee-Decision-Memo-261010.md)  
 > **Target Asset**: LMT | Lockheed Martin Corporation (NYSE: LMT)  
 > **Date of Deliberation**: October 10, 2026 (261010)  
 > **Principal Investor**: BM사장님  

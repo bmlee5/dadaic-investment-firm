@@ -9,9 +9,9 @@
 ![전천후 은퇴 ETF 9대 기둥 인포그래픽](Media/CIO-Ultimate9-Retirement-ETF-Infographic.png)
 
 > **공식 산출물 파일 경로**:
-> - 🖼️ 고해상도 인포그래픽 (PNG): [`Media/CIO-Ultimate9-Retirement-ETF-Infographic.png`](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/Media/CIO-Ultimate9-Retirement-ETF-Infographic.png)
-> - 🌐 인터랙티브 브라우저 뷰 (HTML): [`Media/CIO-Ultimate9-Retirement-ETF-Infographic.html`](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/Media/CIO-Ultimate9-Retirement-ETF-Infographic.html)
-> - 📄 공식 최고 의결서 (Markdown): [`CIO-Ultimate-9-Retirement-Portfolio-261005.md`](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/CIO-Ultimate-9-Retirement-Portfolio-261005.md)
+> - 🖼️ 고해상도 인포그래픽 (PNG): [`Media/CIO-Ultimate9-Retirement-ETF-Infographic.png`](./Media/CIO-Ultimate9-Retirement-ETF-Infographic.png)
+> - 🌐 인터랙티브 브라우저 뷰 (HTML): [`Media/CIO-Ultimate9-Retirement-ETF-Infographic.html`](./Media/CIO-Ultimate9-Retirement-ETF-Infographic.html)
+> - 📄 공식 최고 의결서 (Markdown): [`CIO-Ultimate-9-Retirement-Portfolio-261005.md`](./CIO-Ultimate-9-Retirement-Portfolio-261005.md)
 
 ---
 

@@ -1,7 +1,7 @@
 # Chief Investment Officer (CIO) & Investment Committee Orchestrator
 **Firm**: DADAIC Investment Firm  
 **Mandate**: Institutional Capital Compounding & Multi-Disciplinary Risk Management  
-**Pipeline**: `Investment_Committee_Pipeline` ([.agent/workflows.yaml](file:///g:/Finance/DADAIC%20Investment%20Firm/.agent/workflows.yaml))  
+**Pipeline**: `Investment_Committee_Pipeline` ([.agent/workflows.yaml](./.agent/workflows.yaml))  
 **Output Requirement**: **Mandatory Bilingual Output (English & Korean in a Single Memo)**
 
 ---
@@ -79,7 +79,7 @@ The CIO subjects the target company to six distinct philosophical and tactical t
 ### Stage 4: Portfolio Allocation & Risk Sizing (PM & CRO Defense)
 Before issuing the final verdict, the CIO calls upon the **`portfolio-manager`** and **`risk-officer`**:
 - **`portfolio-manager`**:
-  * Review [`my-portfolio.yaml`](file:///g:/Finance/DADAIC%20Investment%20Firm/my-portfolio.yaml) (investor profile, existing holdings, cash buffer).
+  * Review [`my-portfolio.yaml`](./my-portfolio.yaml) (investor profile, existing holdings, cash buffer).
   * Audit for **False Diversification** (hidden correlation with existing tech or AI capex exposure).
   * Simulate portfolio Max Drawdown (MDD) under 3 macro stress scenarios.
   * Formulate initial Target Position Sizing (% of total portfolio) and tactical rebalancing tranches.
@@ -325,7 +325,7 @@ The CIO synthesizes all findings into the official **Investment Committee Decisi
 
 ## 🛠️ Operational Instructions for CIO Execution
 0. **Shorthand Trigger Suite**:  
-   The CIO recognizes and executes the full shorthand command suite defined in [`AGENTS.md`](file:///g:/Finance/DADAIC%20Investment%20Firm/AGENTS.md):
+   The CIO recognizes and executes the full shorthand command suite defined in [`AGENTS.md`](./AGENTS.md):
    - `CIO <TICKER>` / `ICP <TICKER>`: Full 5-stage Investment Committee Pipeline (streamlined 6-part deliverable suite).
    - `CIO REVIEW` / `PORT REVIEW`: Complete portfolio diagnostic, live valuation, beta & false diversification audit (`DecisionMemo/Portfolio-Review-YYMMDD.md`).
    - `CIO REBALANCE`: Rebalancing trade execution matrix adhering to limits (`DecisionMemo/Portfolio-Rebalance-YYMMDD.md`).

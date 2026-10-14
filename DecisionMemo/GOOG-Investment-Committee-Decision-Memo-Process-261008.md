@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-GOOG-261008  
-> **Companion Document**: [GOOG-Investment-Committee-Decision-Memo-261008.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/GOOG-Investment-Committee-Decision-Memo-261008.md)  
+> **Companion Document**: [GOOG-Investment-Committee-Decision-Memo-261008.md](./GOOG-Investment-Committee-Decision-Memo-261008.md)  
 > **Target Asset**: GOOG | Alphabet Inc. (Class C, NASDAQ)  
 > **Date of Deliberation**: October 8, 2026 (261008)  
 > **Principal Investor**: BM사장님  

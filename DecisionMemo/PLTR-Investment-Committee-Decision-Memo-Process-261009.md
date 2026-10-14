@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-PLTR-261009  
-> **Companion Document**: [PLTR-Investment-Committee-Decision-Memo-261009.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/PLTR-Investment-Committee-Decision-Memo-261009.md)  
+> **Companion Document**: [PLTR-Investment-Committee-Decision-Memo-261009.md](./PLTR-Investment-Committee-Decision-Memo-261009.md)  
 > **Target Asset**: PLTR | Palantir Technologies Inc. (NYSE)  
 > **Date of Deliberation**: October 9, 2026 (261009)  
 > **Principal Investor**: BM사장님  

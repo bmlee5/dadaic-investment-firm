@@ -10,9 +10,9 @@
 ![총수익 실질 성장형 영구 인컴 포트폴리오 인포그래픽](Media/Total-Return-Perpetual-Income-Infographic.png)
 
 > **공식 산출물 파일 경로**:
-> - 🖼️ 고해상도 인포그래픽 (PNG): [`Media/Total-Return-Perpetual-Income-Infographic.png`](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/Media/Total-Return-Perpetual-Income-Infographic.png)
-> - 🌐 인터랙티브 브라우저 뷰 (HTML): [`Media/Total-Return-Perpetual-Income-Infographic.html`](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/Media/Total-Return-Perpetual-Income-Infographic.html)
-> - 📄 공식 최고 의결서 (Markdown): [`Total-Return-Perpetual-Income-Portfolio-261006.md`](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/Total-Return-Perpetual-Income-Portfolio-261006.md)
+> - 🖼️ 고해상도 인포그래픽 (PNG): [`Media/Total-Return-Perpetual-Income-Infographic.png`](./Media/Total-Return-Perpetual-Income-Infographic.png)
+> - 🌐 인터랙티브 브라우저 뷰 (HTML): [`Media/Total-Return-Perpetual-Income-Infographic.html`](./Media/Total-Return-Perpetual-Income-Infographic.html)
+> - 📄 공식 최고 의결서 (Markdown): [`Total-Return-Perpetual-Income-Portfolio-261006.md`](./Total-Return-Perpetual-Income-Portfolio-261006.md)
 
 ---
 

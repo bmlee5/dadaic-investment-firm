@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-UBER-261007  
-> **Companion Document**: [UBER-Investment-Committee-Decision-Memo-261007.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/UBER-Investment-Committee-Decision-Memo-261007.md)  
+> **Companion Document**: [UBER-Investment-Committee-Decision-Memo-261007.md](./UBER-Investment-Committee-Decision-Memo-261007.md)  
 > **Target Asset**: UBER | Uber Technologies, Inc. (NYSE)  
 > **Date of Deliberation**: October 7, 2026 (261007)  
 > **Mandatory Protocol**: BM사장님 30-Year Empirical Validation Protocol Fully Executed  

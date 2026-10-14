@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-SCHD-261005  
-> **Companion Document**: [SCHD-Investment-Committee-Decision-Memo-261005.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/SCHD-Investment-Committee-Decision-Memo-261005.md)  
+> **Companion Document**: [SCHD-Investment-Committee-Decision-Memo-261005.md](./SCHD-Investment-Committee-Decision-Memo-261005.md)  
 > **Target Asset**: SCHD | Schwab U.S. Dividend Equity ETF  
 > **Date of Deliberation**: October 5, 2026 (261005)  
 > *Bilingual Edition: [English Dossier](#-english-deliberation-process) | [한국어 심의 원장](#-한국어-투자위원회-상세-심의-원장)*

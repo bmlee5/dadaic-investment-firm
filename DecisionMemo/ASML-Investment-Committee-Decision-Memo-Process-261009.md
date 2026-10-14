@@ -1,6 +1,6 @@
 # 🏛️ DADAIC INVESTMENT COMMITTEE: DELIBERATION PROCESS & RESEARCH DOSSIER
 > **Document Control Number**: DADAIC-IC-PROCESS-ASML-261009  
-> **Companion Document**: [ASML-Investment-Committee-Decision-Memo-261009.md](file:///g:/Finance/DADAIC%20Investment%20Firm/DecisionMemo/ASML-Investment-Committee-Decision-Memo-261009.md)  
+> **Companion Document**: [ASML-Investment-Committee-Decision-Memo-261009.md](./ASML-Investment-Committee-Decision-Memo-261009.md)  
 > **Target Asset**: ASML | ASML Holding N.V. (NASDAQ: ASML / Euronext: ASML)  
 > **Date of Deliberation**: October 9, 2026 (261009)  
 > **Principal Investor**: BM사장님  
