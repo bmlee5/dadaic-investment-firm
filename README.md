@@ -187,6 +187,23 @@ DADAIC Investment Firm/
 ├── .agent/
 │   ├── workflows.yaml              # 5-Stage Institutional Pipeline Definition
 │   └── skills/                     # Antigravity Official Standard Skills (17 Specialists)
+│       ├── buffett-evaluator/SKILL.md
+│       ├── competitor-analyst/SKILL.md
+│       ├── druckenmiller-evaluator/SKILL.md
+│       ├── earnings-analyst/SKILL.md
+│       ├── equity-analyst/SKILL.md
+│       ├── fact-checker/SKILL.md
+│       ├── financial-auditor/SKILL.md
+│       ├── flow-analyst/SKILL.md
+│       ├── lynch-evaluator/SKILL.md
+│       ├── macro-analyst/SKILL.md
+│       ├── munger-evaluator/SKILL.md
+│       ├── oneil-evaluator/SKILL.md
+│       ├── portfolio-manager/SKILL.md
+│       ├── regulatory-analyst/SKILL.md
+│       ├── risk-officer/SKILL.md
+│       ├── sentiment-analyst/SKILL.md
+│       └── technical-analyst/SKILL.md
 ├── cache/                          # [Local Cache] SEC EDGAR filings, market data & macro series
 │   ├── sec_filings/                # 10-K, 10-Q raw filings & parsed financial line items (TTL: 90d)
 │   ├── market_data/                # Historical OHLCV, volume profiles & quant metrics (TTL: 24h)
@@ -397,13 +414,7 @@ DADAIC Investment Firm/
 │   ├── cio_screener.py              # Autonomous Top-of-Funnel Screener (CIO PICKS)
 │   └── ...
 ├── DecisionMemo/                    # [Archive] 날짜별 투자의원회 결정 메모 보관 폴더
-│   ├── AMD-Investment-Committee-Decision-Memo-261006.md
-│   ├── AMD-Investment-Committee-Decision-Memo-Process-261006.md
 │   └── Media/                       # [Visual Assets] 대형 폰트 영문/한글 비주얼 미디어 (인터랙티브 HTML 4종, 온디맨드 PDF/PNG)
-│       ├── AMD-Investment-Committee-Decision-Memo-Slide-EN-261006.html
-│       ├── AMD-Investment-Committee-Decision-Memo-Slide-KR-261006.html
-│       ├── AMD-Investment-Committee-Decision-Memo-Infographic-EN-261006.html
-│       └── AMD-Investment-Committee-Decision-Memo-Infographic-KR-261006.html
 ├── skills/                          # IDE Direct Reference Synced Markdown Files
 ├── ai-prompts/                      # Raw Text Prompts Archive
 ├── my-portfolio.yaml                # [User Config] Portfolio & Investor Profile (Bilingual)

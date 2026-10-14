@@ -1,4 +1,41 @@
 # 📁 DADAIC Investment Firm - Local Data Cache (`cache/`)
+> **Institutional Local Data Cache Architecture**  
+> *Bilingual Edition: [English](#-english-version) | [한국어](#-한국어-버전)*
+
+---
+
+# 🇺🇸 English Version
+
+## 📌 Purpose & Operational Principles
+This directory serves as an institutional-grade local data cache designed to locally store raw US SEC filings, quantitative time-series data, and macroeconomic indicators. Its primary goals are to **maximize repeat analysis speed** and **prevent external API rate limit throttling**.
+
+---
+
+## 🗂️ Subdirectory Structure
+
+- `cache/sec_filings/`: Parsed JSON items and raw financial statements from US SEC EDGAR Form 10-K and 10-Q filings (Default TTL: 90 days).
+- `cache/market_data/`: Ticker-specific daily/weekly OHLCV time-series, volume profiles, and quantitative/technical metrics (Default TTL: 24 hours / 72 hours over weekends).
+- `cache/macro/`: Federal Reserve Net Liquidity, Treasury yield curve spreads, and Reverse Repo (RRP) series (Default TTL: 24 hours).
+
+---
+
+## ⏱️ Data Freshness & TTL (Time-To-Live) Policy
+
+1. **Real-Time Market Prices vs. Cached Data**:
+   - For trade order sizing and rebalancing executions (`CIO REBALANCE`), the latest live prices are always fetched with top priority.
+   - For historical analysis, multi-year backtesting, 3Y/5Y CAGR calculations, and portfolio Beta modeling, local cached time-series are actively utilized.
+2. **SEC Periodic Filings (10-K, 10-Q)**:
+   - Immediately following quarterly earnings releases, the latest 10-Q is refreshed on demand. Established historical 10-K/10-Q filings are retained permanently to eliminate redundant remote queries.
+3. **Integrity Principle (Zero-Friction Fallback)**:
+   - If a cached file is detected to be corrupted or fails schema validation, it is immediately re-downloaded from the primary source and overwritten without interrupting execution.
+
+---
+
+<br><br>
+
+---
+
+# 🇰🇷 한국어 버전
 
 ## 📌 목적 및 운영 원칙
 본 디렉터리는 미국 SEC 공시 원문, 퀀트 주가 시계열, 거시경제 지표 데이터를 로컬에 임시 저장하여 **반복 분석 속도 극대화** 및 **외부 API Rate Limit 방지**를 위해 운용되는 기관급 로컬 데이터 캐시입니다.
