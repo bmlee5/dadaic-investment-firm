@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>AVGO 투자위원회 전략 인포그래픽 (한국어)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', 'Inter', sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.infographic-container {
+  width: 1140px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 46px 50px 38px 50px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.firm-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.hero-verdict-box {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verdict-tag {
+  background: #3b82f6;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.verdict-text {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.verdict-sub {
+  font-size: 16px;
+  color: #93c5fd;
+  margin-top: 4px;
+}
+
+.content-body {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.section-title {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 10px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.stat-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.stat-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.stat-note {
+  font-size: 14px;
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.stat-note.neutral { color: #64748b; }
+.stat-note.danger { color: #ef4444; }
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.card-title {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.badge-blue { background: #dbeafe; color: #1e40af; }
+.badge-purple { background: #f3e8ff; color: #6b21a8; }
+.badge-emerald { background: #d1fae5; color: #065f46; }
+.badge-amber { background: #fef3c7; color: #92400e; }
+.badge-red { background: #fee2e2; color: #991b1b; }
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+table.data-table th {
+  background: #f8fafc;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #475569;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+table.data-table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.footer {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #94a3b8;
+}
+</style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <!-- HERO HEADER -->
+  <div class="hero-header">
+    <div class="hero-top">
+      <div class="firm-badge">DADAIC INVESTMENT FIRM • 공식 전략 원장</div>
+      <div style="font-size: 14px; color: #cbd5e1; font-weight: 600;">심의 일자: 2026년 10월 12일</div>
+    </div>
+    <h1 class="hero-title">브로드컴 (AVGO): 커스텀 AI 반도체 & 엔터프라이즈 인프라 독점 패권</h1>
+    <div class="hero-subtitle">BM사장님 맞춤형 다년간 실증 검증, 5대 거장 심사 및 실전 포트폴리오 전략 보고서</div>
+
+    <div class="hero-verdict-box">
+      <div>
+        <div class="verdict-tag">투자위원회 최종 판정</div>
+        <div class="verdict-text">승인: 조건부 보유 유지 및 조정 시 분할 매수</div>
+        <div class="verdict-sub">기존 357주 보유 유지 ($127.7K USD / 비중 7.9%) | 안전마진($315 ~ $335 USD) 조정 시에만 제한적 추가 매수</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-family: 'Outfit'; font-size: 32px; font-weight: 900; color: #60a5fa;">$440.00 USD</div>
+        <div style="font-size: 13px; color: #bfdbfe;">12개월 기본 목표가 (+23.0%)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-body">
+    <!-- 1. KEY METRICS -->
+    <div>
+      <div class="section-title">📊 핵심 재무 및 밸류에이션 성적표</div>
+      <div class="grid-4">
+        <div class="stat-card">
+          <span class="stat-label">현재 주가</span>
+          <span class="stat-val">$357.80</span>
+          <span class="stat-note neutral">200일선 위 건전한 횡보</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">보수적 내재가치</span>
+          <span class="stat-val">$395.00</span>
+          <span class="stat-note">+10.4% 안전마진 할인</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">선행 PEG 비율</span>
+          <span class="stat-val">0.78</span>
+          <span class="stat-note">피터 린치 1.0 이하 저평가</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Q3 FY26 잉여현금흐름</span>
+          <span class="stat-val">$13.70B</span>
+          <span class="stat-note">매출의 46% 현금 전환율</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. MULTI-YEAR AUDIT & SEGMENT ARCHITECTURE -->
+    <div>
+      <div class="section-title">🏛️ 다년간 실증 검증 스코어카드 (BM사장님 30년 투자 원칙)</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>검증 주기 / 지표</th>
+            <th>다년간 감사 실증 팩트 (USD 기준)</th>
+            <th>벤치마크 비교</th>
+            <th>투자위원회 실증 판정</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1개년 총수익률</strong></td>
+            <td><strong>+10.42%</strong> ($324.03 ➔ $357.80 USD)</td>
+            <td>S&P 500: +18.2% / 필라델피아 반도체: +24.6%</td>
+            <td><span class="badge badge-blue">액면분할 후 베이스 형성 및 횡보</span></td>
+          </tr>
+          <tr>
+            <td><strong>3개년 총수익 및 CAGR</strong></td>
+            <td><strong>+336.40%</strong> (연평균 CAGR: <strong>+63.44%</strong>)</td>
+            <td>글로벌 대형주 상위 2% 초과 수익</td>
+            <td><span class="badge badge-emerald">커스텀 AI 가속기 & 이더넷 슈퍼사이클</span></td>
+          </tr>
+          <tr>
+            <td><strong>5개년 총수익 및 CAGR</strong></td>
+            <td><strong>+658.20%</strong> (연평균 CAGR: <strong>+50.02%</strong>)</td>
+            <td>2022년 금리 인상 충격 극복</td>
+            <td><span class="badge badge-emerald">영구적 자본 복리 증식 톨게이트</span></td>
+          </tr>
+          <tr>
+            <td><strong>분기 매출 성장 궤적</strong></td>
+            <td>Q3 FY24: $13.07B ➔ <strong>Q3 FY26: $29.60B</strong> (+86% YoY)</td>
+            <td>Q4 FY26 가이던스: $34.80B (+93% YoY)</td>
+            <td><span class="badge badge-purple">세 자릿수 AI 반도체 매출 폭증</span></td>
+          </tr>
+          <tr>
+            <td><strong>수익성 및 잉여현금흐름</strong></td>
+            <td>통합 영업이익률: <strong>68.0%</strong> | Q3 FCF: <strong>$13.70B</strong></td>
+            <td>소프트웨어 매출총이익률: ~93% | 반도체: ~69.5%</td>
+            <td><span class="badge badge-emerald">독보적 가격결정력 및 마진 스케일</span></td>
+          </tr>
+          <tr>
+            <td><strong>대차대조표 부채 감축</strong></td>
+            <td>현금: <strong>$23.98B</strong> vs 총부채: <strong>$59.42B</strong></td>
+            <td>순부채 / EBITDA: ~1.85x | 2분기 $62B 대비 감소</td>
+            <td><span class="badge badge-blue">탁월한 VMware 인수 부채 감축 집행</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 3. THE 5 MASTERS & CHIEF MARKET TECHNICIAN (BALANCED 3x2 GRID) -->
+    <div>
+      <div class="section-title">🧠 세계 5대 거장 & 수석 마켓 테크니션 종합 평가 (6인 심사 체계)</div>
+      <div class="grid-3">
+        <!-- 1. Buffett -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-blue">버핏</span>
+            <span>경제적 해자 & 안전마진</span>
+          </div>
+          <p><strong>판정: 기존 보유 유지 / 20% 하락 시 매수</strong><br>
+          "혹 탄은 최고 수준의 경영자입니다. 분기 137억 달러의 FCF는 경이롭지만 594억 달러의 부채가 남아 있습니다. 357주 보유를 유지하고 $315~$335 USD 조정 시에만 추가 매수하십시오."</p>
+        </div>
+
+        <!-- 2. Munger -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-purple">멍거</span>
+            <span>롤라팔루자 & 역발상</span>
+          </div>
+          <p><strong>판정: 역발상 검증 통과 / 독점적 톨게이트</strong><br>
+          "93% 마진의 VMware와 토마호크 이더넷 스위치가 결합된 완벽한 복리 기계입니다. 빅테크는 NVLink 종속을 피하기 위해 울트라 이더넷에 결집하고 있으며 유형자산 ROIC는 38~42%에 달합니다."</p>
+        </div>
+
+        <!-- 3. Lynch -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-emerald">린치</span>
+            <span>고성장주 & PEG (0.78)</span>
+          </div>
+          <p><strong>판정: 최상위 고성장 저평가주 (적극 매수)</strong><br>
+          "분기 EPS +45% 성장에 선행 PER 25배로 PEG는 0.78입니다! 린치 기준(1.0 이하)에서 완벽한 매수 영역이며 AI 하드웨어 매출이 3자리수로 폭증하고 있습니다."</p>
+        </div>
+
+        <!-- 4. Druckenmiller -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-amber">드러켄밀러</span>
+            <span>비대칭 알파 (3.4 : 1)</span>
+          </div>
+          <p><strong>판정: 커스텀 ASIC 독점 패권주</strong><br>
+          "하이퍼스케일러들은 엔비디아의 75% 마진을 피하기 위해 자체 XPU로 전환 중입니다. 브로드컴은 그 모든 ASIC의 독점 파트너입니다. 18개월 변곡점 기준 위험 대비 보상은 3.4대 1입니다."</p>
+        </div>
+
+        <!-- 5. O'Neil -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-blue">오닐</span>
+            <span>CAN SLIM & 베이스 돌파</span>
+          </div>
+          <p><strong>판정: 2단계 기관 집중 매집 주도주</strong><br>
+          "EPS +45%, 매출 +86% 급증. 4,600개 이상의 유수 기관이 매집 중이며 200일 이동평균선($358) 위에서 건전한 직사각형 박스권을 다지고 있습니다. 손절선 $315 USD 준수."</p>
+        </div>
+
+        <!-- 6. Chief Market Technician -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-red">테크니션</span>
+            <span>200일선 지지 (R:R 1:2.6)</span>
+          </div>
+          <p><strong>판정: 장기 지지선 안착 매매 셋업</strong><br>
+          "주가는 200일선($358) 및 $350~$355 지지대 바로 위에 있습니다. RSI는 44.2로 과매도 근접. 50일선($364.50) 돌파 시 $440 목표가를 향해 급등할 수 있습니다. 손절 기준 $315 USD."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. CRO BLIND AUDIT & FATAL FLAWS -->
+    <div>
+      <div class="section-title">🛡️ 블라인드 리스크 감사 및 3대 구조적 결점</div>
+      <div class="grid-3">
+        <div class="card" style="border-left: 4px solid #ef4444;">
+          <div class="card-title" style="color: #b91c1c;">결점 1: 빅테크 ASIC 수요 독점 위험</div>
+          <p>커스텀 AI 가속기 매출의 60% 이상이 알파벳과 메타에 편중되어 있습니다. 고객사의 전략 변경 시 가격 협상력이 급격히 약화될 위험이 상존합니다.</p>
+        </div>
+        <div class="card" style="border-left: 4px solid #ef4444;">
+          <div class="card-title" style="color: #b91c1c;">결점 2: $59.4B 대규모 레버리지 부채</div>
+          <p>미국 10년물 국채 금리가 5.28%에 달하는 고금리 환경에서, 반도체 다운사이클이 도래할 경우 막대한 부채가 재무적 부담으로 작용할 수 있습니다.</p>
+        </div>
+        <div class="card" style="border-left: 4px solid #ef4444;">
+          <div class="card-title" style="color: #b91c1c;">결점 3: BM사장님 포트폴리오 팩터 과밀</div>
+          <p>BM사장님 포트폴리오의 테크/AI 팩터 노출도는 이미 68%를 초과합니다 (NVDA 21.5%, AVGO 7.9% 등). 현 시점의 추가 자금 투입은 거짓 다각화를 심화시킵니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. TACTICAL BLUEPRINT FOR BM사장님 -->
+    <div>
+      <div class="section-title">🎯 BM사장님 맞춤형 실전 자산배분 실행안 (`my-portfolio.yaml`)</div>
+      <div class="grid-2">
+        <div class="card" style="background: #f8fafc;">
+          <div class="card-title">📋 실전 매매 집행 지침 및 비중 상한</div>
+          <ul style="padding-left: 20px; font-size: 15px; line-height: 1.7; color: #334155;">
+            <li><strong>기존 핵심 물량 유지:</strong> <strong>기존 357주 전량 확고한 보유(HOLD)</strong> (~$127,735 USD / 비중 7.93%).</li>
+            <li><strong>안전마진 조정 시 추가 매수:</strong> 시장 변동성으로 주가가 <strong>$315.00 ~ $335.00 USD</strong>에 진입할 경우에 한하여 <strong>최대 43주</strong> (~$14,000 USD) 분할 매수.</li>
+            <li><strong>포트폴리오 비중 상한:</strong> <strong>최대 400주 (~$143,000 USD / 비중 8.8%) 절대 초과 금지</strong>. CRO 팩터 집중 억제 캡 준수.</li>
+            <li><strong>구조적 재앙 손절 기준:</strong> <strong>$285.00 USD</strong> (52주 신저가 지지선 붕괴 시).</li>
+          </ul>
+        </div>
+
+        <div class="card" style="background: #fffbeb; border: 1px solid #fef3c7;">
+          <div class="card-title" style="color: #92400e;">🚨 전량 매도 트리거 (투자 가설 파기 기준)</div>
+          <p style="color: #78350f; font-size: 15px; line-height: 1.7;">
+            <strong>전량 매도 집행:</strong> 다음 조건 발생 시 즉시 전량 청산(100% EXIT): <em>"브로드컴의 분기 Non-GAAP 영업이익률이 2분기 연속 55.0% 미만으로 하락하여 VMware 가격 정책 실패 또는 ASIC 마진 붕괴가 입증될 경우; 또는 구글과 메타가 TPU/MTIA 파트너십을 해지하고 타사로 전환하여 미래 반도체 매출의 30% 이상이 영구 훼손될 경우."</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>DADAIC Investment Firm • Strictly Confidential</span>
+    <span>분석 대상 자산: 브로드컴 (Broadcom Inc., AVGO) • 심의 일자: 2026년 10월 12일</span>
+    <span>최고 의사결정권자: BM사장님</span>
+  </div>
+</div>
+
+</body>
+</html>

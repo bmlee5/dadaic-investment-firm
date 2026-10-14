@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lockheed Martin (LMT) Strategic Infographic - English</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.infographic-container {
+  width: 1140px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 46px 50px 38px 50px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.firm-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.hero-verdict-box {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verdict-tag {
+  background: #16a34a;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.verdict-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.verdict-sub {
+  font-size: 16px;
+  color: #93c5fd;
+  margin-top: 4px;
+}
+
+.content-section {
+  padding: 40px 50px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.section-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-heading::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 24px;
+  background: #2563eb;
+  border-radius: 3px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.kpi-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+}
+
+.kpi-label {
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.kpi-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 34px;
+  font-weight: 900;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+.kpi-desc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.masters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.master-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.master-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 8px;
+}
+
+.master-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.master-score {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  color: #16a34a;
+  background: #f0fdf4;
+  padding: 3px 10px;
+  border-radius: 9999px;
+}
+
+.master-body {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+table.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table.info-table th {
+  background: #f8fafc;
+  color: #334155;
+  font-weight: 700;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+table.info-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+}
+
+.footer {
+  background: #f8fafc;
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+</style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <!-- HERO HEADER -->
+  <div class="hero-header">
+    <div class="hero-top">
+      <div class="firm-badge">DADAIC INVESTMENT FIRM</div>
+      <div style="font-size: 15px; color: #94a3b8;">Document: DADAIC-IC-INFO-LMT-261010</div>
+    </div>
+    <div class="hero-title">LOCKHEED MARTIN (NYSE: LMT)</div>
+    <div class="hero-subtitle">Executive Decision & Asymmetric Portfolio Gap-Filling Infographic</div>
+
+    <div class="hero-verdict-box">
+      <div>
+        <div class="verdict-tag">APPROVED FOR INITIATION</div>
+        <div class="verdict-text">CORE DEFENSIVE BALLAST (4.0% - 6.0% TARGET SIZING)</div>
+        <div class="verdict-sub">Target Share Count: 130 to 185 Shares (~$66,200 to $94,300 USD) | Prepared for: BM사장님</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 15px; color: #cbd5e1;">12M Base Target</div>
+        <div style="font-family: 'Outfit'; font-size: 34px; font-weight: 900; color: #ffffff;">$585.00</div>
+        <div style="font-size: 14px; color: #86efac;">+17.6% Total Return</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: KEY METRICS -->
+  <div class="content-section">
+    <div class="section-heading">Key Fundamental Indicators & Valuation</div>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Market Price</div>
+        <div class="kpi-val">$509.59</div>
+        <div class="kpi-desc">Forward P/E 15.6x<br>16.5% Margin of Safety</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">5-Year Beta</div>
+        <div class="kpi-val">0.10</div>
+        <div class="kpi-desc">Near-zero market beta<br>-0.08 correlation with tech</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Record Backlog</div>
+        <div class="kpi-val">$230.0B</div>
+        <div class="kpi-desc">All-time record firm orders<br>~2.85 years sales visibility</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">ROIC / Dividend Yield</div>
+        <div class="kpi-val">25.1% / 2.8%</div>
+        <div class="kpi-desc">2026E FCF $7.0B - $7.2B<br>23 years dividend increases</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: 6 EVALUATORS CONSENSUS -->
+  <div class="content-section">
+    <div class="section-heading">The 5 Masters & Market Technician Consensus (6 Evaluators)</div>
+    <div class="masters-grid">
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">Warren Buffett</div>
+          <div class="master-score">94 / 100</div>
+        </div>
+        <div class="master-body">
+          <strong>Tollbridge Monopoly</strong>: Essential defense infrastructure for US DoD and 19 allies. 15.6x forward multiple offers 20% margin of safety. 23 consecutive years of dividend growth.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">Charlie Munger</div>
+          <div class="master-score">92 / 100</div>
+        </div>
+        <div class="master-body">
+          <strong>Lollapalooza Advantage</strong>: Inversion test passed. Global multipolar rearmament makes defense non-discretionary. High ROIC (25.1%) proves superior tangible capital compounding.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">Peter Lynch</div>
+          <div class="master-score">90 / 100</div>
+        </div>
+        <div class="master-body">
+          <strong>Stalwart with PEG 0.96</strong>: Accelerating EPS (~$30.30) against 15.6x multiple gives PEG below 1.0. Record $230B backlog guarantees production through 2030 with zero retail inventory risk.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">Stanley Druckenmiller</div>
+          <div class="master-score">88 / 100</div>
+        </div>
+        <div class="master-body">
+          <strong>Asymmetric Portfolio Hedge</strong>: Beta of 0.10 buffers BM사장님's tech beta (1.54). Geopolitical flight-to-safety drives sovereign capital into defense. 3.4 : 1 reward-to-risk ratio.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">William J. O'Neil</div>
+          <div class="master-score">82 / 100</div>
+        </div>
+        <div class="master-body">
+          <strong>CAN SLIM Base Accumulation</strong>: Massive Q2 earnings turnaround ($7.94 vs $1.46 YoY); PAC-3 output doubling; institutional ownership >96%. Sound accumulation base with stop-loss at $468.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">Market Technician</div>
+          <div class="master-score">85 / 100</div>
+        </div>
+        <div class="master-body">
+          <strong>Ascending Base Setup</strong>: Daily 20 EMA & 50 SMA bullish golden cross over 200 SMA ($488). Heavy institutional volume profile support at $490 - $502 USD. Target $585 with 1 : 2.9 R:R.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: PORTFOLIO BLUEPRINT & CRO STRESS TEST -->
+  <div class="content-section">
+    <div class="section-heading">Macro Stress-Testing Simulation & Execution Directives</div>
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px;">
+      <div>
+        <table class="info-table">
+          <thead>
+            <tr>
+              <th>Systemic Shock Scenario</th>
+              <th>Tech Portfolio (Beta 1.54)</th>
+              <th>LMT Impact (Beta 0.10)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>AI Capex Digestion (-35% Tech)</strong></td>
+              <td style="color: #dc2626; font-weight: 700;">-42.0% MDD</td>
+              <td style="color: #16a34a; font-weight: 700;">+4.5% to +8.0%</td>
+            </tr>
+            <tr>
+              <td><strong>Geopolitical Oil Spike ($120/bbl)</strong></td>
+              <td style="color: #dc2626; font-weight: 700;">-26.5% MDD</td>
+              <td style="color: #16a34a; font-weight: 700;">+12.0% to +18.5%</td>
+            </tr>
+            <tr>
+              <td><strong>10Y Yields >5.5% Liquidity Contraction</strong></td>
+              <td style="color: #dc2626; font-weight: 700;">-28.0% MDD</td>
+              <td style="color: #475569; font-weight: 700;">-3.5% to -5.0%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; font-size: 15px; line-height: 1.7;">
+        <strong>Tactical Execution Blueprint for BM사장님:</strong><br>
+        • <strong>Tranche 1</strong>: Buy 65-90 shares at market ($509.59 USD).<br>
+        • <strong>Tranche 2</strong>: Buy 65-95 shares on retest of $495 - $505 USD.<br>
+        • <strong>Target Sizing</strong>: 130 to 185 shares (~$66,200 to $94,300 USD).<br>
+        • <strong>Hard Stop-Loss</strong>: Strictly at $468.00 USD.
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>Approved By: Chief Investment Officer (CIO), DADAIC Investment Firm</div>
+    <div>Target Asset: LMT (NYSE) | Date: October 10, 2026</div>
+  </div>
+</div>
+
+</body>
+</html>

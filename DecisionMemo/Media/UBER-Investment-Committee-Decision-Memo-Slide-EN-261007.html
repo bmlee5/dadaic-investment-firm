@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UBER Investment Committee Decision Deck (English)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+@page {
+  size: 1920px 1080px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.slide {
+  width: 1920px;
+  height: 1080px;
+  page-break-after: always;
+  page-break-inside: avoid;
+  position: relative;
+  padding: 44px 64px;
+  overflow: hidden;
+  background: radial-gradient(circle at 90% 10%, rgba(16, 185, 129, 0.05) 0%, transparent 45%),
+              radial-gradient(circle at 10% 90%, rgba(37, 99, 235, 0.06) 0%, transparent 45%),
+              #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 14px;
+}
+
+.slide-title-wrap h2 {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.slide-title-wrap p {
+  font-size: 20px;
+  color: #64748b;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.firm-tag {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #059669;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: #ecfdf5;
+  padding: 8px 20px;
+  border-radius: 24px;
+  border: 1px solid #a7f3d0;
+}
+
+.slide-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.slide-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 14px;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card p, .card li {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.stat-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.stat-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.stat-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px 22px;
+}
+
+.stat-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #0f172a;
+  margin-top: 4px;
+}
+
+.stat-sub {
+  font-size: 16px;
+  color: #16a34a;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.badge-verdict {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  padding: 8px 22px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.badge-blue {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+table.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+table.report-table th {
+  background: #f1f5f9;
+  color: #475569;
+  text-align: left;
+  padding: 16px 20px;
+  font-weight: 800;
+  font-size: 19px;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+table.report-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+table.report-table tr:hover {
+  background: #f8fafc;
+}
+
+.highlight-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.highlight-box h5 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.highlight-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: Executive Verdict -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>UBER: Executive Investment Committee Verdict</h2>
+      <p>Institutional Due Diligence & Decision Directive | October 7, 2026</p>
+    </div>
+    <div class="firm-tag">DADAIC INVESTMENT FIRM</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <div>
+          <span class="badge-verdict">OFFICIAL VERDICT: STRONG BUY / ASYMMETRIC ALPHA ENTRY</span>
+          <span class="badge-blue" style="margin-left: 12px;">CONTRARIAN VALUE ACCUMULATION</span>
+        </div>
+        <div style="font-size: 18px; color: #64748b; font-weight: 700;">Principal Investor: <strong>BM사장님</strong></div>
+      </div>
+      <p style="font-size: 20px; line-height: 1.7; color: #1e293b;">
+        Uber Technologies, Inc. (UBER) has corrected <strong>-31.8% from its 52-week peak ($100.35 to $68.45 USD)</strong> due to market overreaction regarding autonomous robotaxis. The Investment Committee concludes that this represents an exceptional disconnect between bearish headlines and soaring cash generation ($8.18B True FCF, PEG 0.69, Net Debt/EBITDA 0.64x). Autonomous vehicle adoption will serve as Uber's greatest historical margin expander rather than a terminal threat.
+      </p>
+    </div>
+
+    <div class="stat-grid-4">
+      <div class="stat-box">
+        <div class="stat-label">Current Market Price</div>
+        <div class="stat-val">$68.45</div>
+        <div class="stat-sub">52W Low: $65.41 Support</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Conservative Intrinsic Value</div>
+        <div class="stat-val">$88.00</div>
+        <div class="stat-sub">+22.2% Margin of Safety</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">12M Target Price (Base)</div>
+        <div class="stat-val">$98.00</div>
+        <div class="stat-sub">+43.2% Expected Return</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Recommended Allocation</div>
+        <div class="stat-val">3.5% - 4.5%</div>
+        <div class="stat-sub">~$60,000 USD (~892 Shares)</div>
+      </div>
+    </div>
+
+    <div class="stat-grid-3">
+      <div class="highlight-box">
+        <h5>🏛️ Capital Allocation Turnaround</h5>
+        <p>Pruned non-core vanity units, generated $10.12B GAAP FCF, and executing a $7B share buyback program under Dara Khosrowshahi.</p>
+      </div>
+      <div class="highlight-box">
+        <h5>🚗 Autonomous Fleet Aggregator</h5>
+        <p>162M active users provide the indispensable liquidity layer for Waymo, Cruise, and Avride robotaxi fleets needing >75% utilization.</p>
+      </div>
+      <div class="highlight-box">
+        <h5>🧩 Portfolio Gap-Filling</h5>
+        <p>Beta of 1.26 with zero semiconductor capex correlation, providing vital factor diversification to BM사장님's 45.7% semi-heavy portfolio.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div>Document: DADAIC-IC-SLIDE-UBER-261007-EN</div>
+    <div>Slide 1 of 5 | Executive Verdict</div>
+  </div>
+</div>
+
+<!-- SLIDE 2: Multi-Year Empirical Validation -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>Multi-Year Empirical Validation Scorecard</h2>
+      <p>BM사장님 30-Year Veteran Investment Mandate | Mandatory Multi-Year Audit</p>
+    </div>
+    <div class="firm-tag">EMPIRICAL PROOF</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="card">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th>Metric Category</th>
+            <th>Multi-Year Audited Fact</th>
+            <th>Peer / Benchmark Context</th>
+            <th>Committee Institutional Verdict</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1-Year Return</strong></td>
+            <td><strong style="color: #dc2626;">-30.99%</strong> ($100.35 ➔ $68.45)</td>
+            <td>S&P 500: +24.5% / Tech: +35%</td>
+            <td><span class="badge-blue">Oversold Sentiment Disconnect</span></td>
+          </tr>
+          <tr>
+            <td><strong>3-Year Return & CAGR</strong></td>
+            <td><strong style="color: #16a34a;">+51.23%</strong> (CAGR: <strong>+14.78%</strong>)</td>
+            <td>Post-pandemic operational inflection</td>
+            <td><span class="badge-blue">Proven Long-Term Alpha</span></td>
+          </tr>
+          <tr>
+            <td><strong>5-Year Return & CAGR</strong></td>
+            <td><strong style="color: #16a34a;">+44.61%</strong> (CAGR: <strong>+7.66%</strong>)</td>
+            <td>Overcame 2022 high-rate bear market</td>
+            <td><span class="badge-blue">Durable Moat Surpassed Cycles</span></td>
+          </tr>
+          <tr>
+            <td><strong>Revenue Trajectory</strong></td>
+            <td>'22: $31.88B ➔ '24: $43.98B ➔ <strong>TTM: $55.23B</strong></td>
+            <td>Q2 '26 Gross Bookings $58B+ (+22% YoY)</td>
+            <td><span class="badge-blue">Organic Scale Expansion</span></td>
+          </tr>
+          <tr>
+            <td><strong>True FCF (Net of SBC)</strong></td>
+            <td>'22: -$1.40B ➔ '24: +$5.10B ➔ <strong>TTM: +$8.18B</strong></td>
+            <td>GAAP FCF $10.12B - SBC $1.94B</td>
+            <td><span class="badge-blue">True Cash Flow Machine Validated</span></td>
+          </tr>
+          <tr>
+            <td><strong>Balance Sheet Solvency</strong></td>
+            <td>Cash: $7.63B vs Debt: $12.08B (Net Debt: $4.45B)</td>
+            <td>Net Debt / EBITDA: <strong>0.64x</strong></td>
+            <td><span class="badge-blue">Investment Grade Solvency</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="stat-grid-3">
+      <div class="stat-box">
+        <div class="stat-label">TTM GAAP Free Cash Flow</div>
+        <div class="stat-val">$10.12B</div>
+        <div class="stat-sub">First time in corporate history</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Stock-Based Comp Ratio</div>
+        <div class="stat-val">3.5%</div>
+        <div class="stat-sub">SBC / Revenue down from 8.2% in 2021</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Return on Equity (ROE)</div>
+        <div class="stat-val">37.2%</div>
+        <div class="stat-sub">Top decile platform profitability</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div>Document: DADAIC-IC-SLIDE-UBER-261007-EN</div>
+    <div>Slide 2 of 5 | Empirical Validation</div>
+  </div>
+</div>
+
+<!-- SLIDE 3: Master Evaluation Matrix -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>The Masters' Consensus & Philosophical Matrix</h2>
+      <p>Multi-Disciplinary Value, Growth & Market Technician Synthesis</p>
+    </div>
+    <div class="firm-tag">PHILOSOPHICAL ALIGNMENT</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="stat-grid-2">
+      <div class="card">
+        <div class="card-title">🛡️ Warren Buffett: Toll Bridge Moat</div>
+        <p><strong>Verdict: Strong Buy (22.2% Margin of Safety)</strong></p>
+        <p style="margin-top: 8px;">Uber operates an essential toll bridge on worldwide urban transport without owning vehicles or funding capital depreciation. CEO Dara Khosrowshahi eliminated cash-burning experiments, generating $10B+ FCF with disciplined $7B buybacks.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">🔄 Charlie Munger: Inversion & Network Flywheel</div>
+        <p><strong>Verdict: Exceptional Network Moat / Inversion Solved</strong></p>
+        <p style="margin-top: 8px;"><em>Invert: What kills Uber?</em> An autonomous fleet bypassing Uber completely. <em>Refutation:</em> AV fleets need >75% utilization to survive massive hardware capex. Uber's 162M active users are indispensable to robotaxi operators.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">📈 Peter Lynch: PEG 0.69 Screaming Bargain</div>
+        <p><strong>Verdict: Fast Grower / Conviction Buy</strong></p>
+        <p style="margin-top: 8px;">Forward P/E is 15.5x against 22.5% expected EPS growth. Lynch PEG ratio of <strong>0.69</strong> is a generational buying signal for a dominant market leader possessing zero physical inventory drag.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">⚡ Stanley Druckenmiller: 4.2 : 1 Asymmetric Alpha</div>
+        <p><strong>Verdict: High-Conviction Asymmetric Long</strong></p>
+        <p style="margin-top: 8px;">The market misinterprets robotaxis as a terminal risk. Over the next 18-24 months, removing driver payouts (~70% of bookings) will expand operating margins from 13% toward 25%+, generating immense operational leverage.</p>
+      </div>
+    </div>
+
+    <div class="card" style="padding: 18px 26px; background: #f0fdf4; border: 1px solid #bbf7d0;">
+      <h4 style="font-size: 19px; color: #166534; font-weight: 800; margin-bottom: 6px;">CIO Final Conflict Arbitration</h4>
+      <p style="font-size: 17px; color: #14532d; line-height: 1.6;">
+        Technical resistance at the 200 SMA ($74.63) is decisively overridden by foundational valuation fundamentals. Trading at 15.5x forward earnings and ~17x True FCF with 22% bookings growth represents an irrationally priced margin of safety.
+      </p>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div>Document: DADAIC-IC-SLIDE-UBER-261007-EN</div>
+    <div>Slide 3 of 5 | Master Consensus</div>
+  </div>
+</div>
+
+<!-- SLIDE 4: Scenario Valuation & AV Reality -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>Scenario-Based Valuation & The AV Economics</h2>
+      <p>12-Month Target Price Projections & Autonomous Fleet Realities</p>
+    </div>
+    <div class="firm-tag">VALUATION ARCHITECTURE</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="card">
+      <div class="card-title">🎯 12-Month Institutional Price Targets</div>
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Probability</th>
+            <th>Valuation Multiple Applied</th>
+            <th>Target Price ($ USD)</th>
+            <th>Implied Return</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bull Case (AV Fleet Scale & High Ads Growth)</strong></td>
+            <td>25%</td>
+            <td>22.0x Forward P/E (FY27E EPS $5.70)</td>
+            <td><strong>$125.40</strong></td>
+            <td><strong style="color: #16a34a;">+83.2%</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Base Case (Sustained 20% Bookings & 15% Margin)</strong></td>
+            <td>55%</td>
+            <td>18.5x Forward P/E (FY27E EPS $5.30)</td>
+            <td><strong>$98.05</strong></td>
+            <td><strong style="color: #16a34a;">+43.2%</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Bear Case (AV Integration Delays & Macro Slump)</strong></td>
+            <td>20%</td>
+            <td>13.5x Forward P/E (FY27E EPS $4.60)</td>
+            <td><strong>$62.10</strong></td>
+            <td><strong style="color: #dc2626;">-9.3%</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 14px; font-size: 18px; font-weight: 700; color: #0f172a;">
+        Probability-Weighted 12-Month Expected Target: <span style="color: #16a34a; font-size: 22px;">$97.70 USD</span> (+42.7% expected return from current price).
+      </div>
+    </div>
+
+    <div class="stat-grid-3">
+      <div class="highlight-box">
+        <h5>🤖 Waymo & Cruise Integration</h5>
+        <p>Already live in Phoenix, Austin, and Atlanta. AV OEMs recognize that consumer acquisition cost (CAC) on a standalone app destroys unit economics.</p>
+      </div>
+      <div class="highlight-box">
+        <h5>🚗 Tesla Cybercab Context</h5>
+        <p>Tesla has zero commercial driverless licenses in operation. Full commercial deployment is years away; Uber remains the default real-world demand hub.</p>
+      </div>
+      <div class="highlight-box">
+        <h5>📢 High-Margin Advertising Engine</h5>
+        <p>$1.2B+ advertising run-rate flowing directly to the bottom line at 80%+ gross margin, expanding consolidated corporate EBITDA margins.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div>Document: DADAIC-IC-SLIDE-UBER-261007-EN</div>
+    <div>Slide 4 of 5 | Valuation Scenarios</div>
+  </div>
+</div>
+
+<!-- SLIDE 5: Portfolio Allocation & Execution -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>Tactical Execution & Thesis Invalidation Clause</h2>
+      <p>BM사장님 Portfolio Blueprint (`my-portfolio.yaml`) & Risk Management</p>
+    </div>
+    <div class="firm-tag">EXECUTION DIRECTIVES</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="stat-grid-2">
+      <div class="card">
+        <div class="card-title">🧩 Portfolio Diagnostic & Gap-Filling</div>
+        <p><strong>Total Portfolio Assets: $1,800,000.00 USD (Equities: $1,486,521.84 / 82.6% | Cash: $313,478.16 / 17.4%)</strong></p>
+        <p style="margin-top: 8px;"><strong>The Semi Factor Overhang:</strong> NVDA (22.8%), AVGO (8.4%), AMD (7.4%), TSM (3.6%), MU (2.8%) represent <strong>45.68% pure semiconductor exposure</strong> ($714.6k USD).</p>
+        <p style="margin-top: 8px;"><strong>UBER Role:</strong> Low beta (1.26), non-correlated real economy cash flow, diluting semiconductor cyclicality while adding asymmetric growth.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">⚡ Phased 2-Tranche Trade Matrix</div>
+        <ul style="margin-left: 20px; margin-top: 8px;">
+          <li><strong>Tranche 1 (Immediate Market Order):</strong> Deploy <strong>$30,000 USD</strong> at <strong>$68.45 USD</strong> (~438 shares) using dry powder cash.</li>
+          <li><strong>Tranche 2 (Pullback Limit Order):</strong> Place resting limit order for <strong>$30,000 USD</strong> at <strong>$66.00 USD</strong> (~454 shares).</li>
+          <li><strong>Total Target Size:</strong> <strong>892 Shares</strong> (~$60,000 USD | <strong>3.83% of Portfolio</strong>).</li>
+          <li><strong>Hard Stop-Loss / Disaster Floor:</strong> <strong>$62.50 USD</strong> (-8.7%).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="background: #fef2f2; border: 1px solid #fecaca;">
+      <h4 style="font-size: 20px; color: #991b1b; font-weight: 800; margin-bottom: 6px;">⚠️ The Non-Negotiable Thesis Invalidation Clause (100% Exit Trigger)</h4>
+      <p style="font-size: 17px; color: #7f1d1d; line-height: 1.6;">
+        "This position will be liquidated immediately in full (100% exit) if Waymo, Cruise, and major AV OEMs completely terminate dispatch agreements with Uber and launch price-undercutting proprietary networks that cause Uber's Mobility Gross Bookings to decline YoY for two consecutive quarters; OR if regulatory mandates classify gig drivers as W-2 employees globally without pricing pass-through ability, structurally crushing operating margins below 5%."
+      </p>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div>Document: DADAIC-IC-SLIDE-UBER-261007-EN</div>
+    <div>Slide 5 of 5 | Portfolio Allocation</div>
+  </div>
+</div>
+
+</body>
+</html>

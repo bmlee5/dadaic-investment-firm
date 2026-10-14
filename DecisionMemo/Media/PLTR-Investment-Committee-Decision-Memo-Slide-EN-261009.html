@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PLTR Investment Committee Decision Deck (English)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+@page {
+  size: 1920px 1080px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.slide {
+  width: 1920px;
+  height: 1080px;
+  page-break-after: always;
+  page-break-inside: avoid;
+  position: relative;
+  padding: 44px 64px;
+  overflow: hidden;
+  background: radial-gradient(circle at 90% 10%, rgba(37, 99, 235, 0.05) 0%, transparent 45%),
+              radial-gradient(circle at 10% 90%, rgba(16, 185, 129, 0.06) 0%, transparent 45%),
+              #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 14px;
+}
+
+.slide-title-wrap h2 {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.slide-title-wrap p {
+  font-size: 19px;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.slide-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  letter-spacing: 0.5px;
+}
+
+.slide-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 14px;
+  font-size: 15px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.slide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 24px 28px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+}
+
+.card-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card p, .card li {
+  font-size: 18px;
+  color: #334155;
+  line-height: 1.65;
+}
+
+.stat-box {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 22px 24px;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.stat-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.stat-sub {
+  font-size: 15px;
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.table-wrap {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.table-wrap th {
+  background: #f1f5f9;
+  padding: 14px 18px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #334155;
+  text-align: left;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+.table-wrap td {
+  padding: 14px 18px;
+  font-size: 17px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.badge-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.badge-green { background: #dcfce7; color: #166534; }
+.badge-blue { background: #dbeafe; color: #1e40af; }
+.badge-amber { background: #fef3c7; color: #92400e; }
+.badge-red { background: #fee2e2; color: #991b1b; }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: COVER & VERDICT -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>DADAIC INVESTMENT COMMITTEE EXECUTIVE MEMO</h2>
+      <p>Target Asset: PLTR | Palantir Technologies Inc. (NYSE)</p>
+    </div>
+    <div class="slide-badge">MEETING DATE: OCTOBER 9, 2026</div>
+  </div>
+
+  <div class="slide-content">
+    <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #ffffff; padding: 36px 44px; border-radius: 20px; display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        <span style="background: #3b82f6; color: #ffffff; padding: 6px 14px; border-radius: 6px; font-size: 15px; font-weight: 800; letter-spacing: 1px;">OFFICIAL COMMITTEE VERDICT</span>
+        <h1 style="font-family: 'Outfit'; font-size: 46px; font-weight: 900; margin: 12px 0 8px 0; color: #ffffff;">APPROVED: CONDITIONAL SIZE CAP (MAX 4.5%)</h1>
+        <p style="font-size: 21px; color: #93c5fd; font-weight: 500;">Hold Existing 153 Shares ($31,483 USD) • No Chasing at ATH • Accumulate on Dip (<$165.00)</p>
+      </div>
+      <div style="text-align: right; background: rgba(255,255,255,0.1); padding: 20px 32px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.2);">
+        <div style="font-size: 16px; color: #cbd5e1; text-transform: uppercase;">Current Weight</div>
+        <div style="font-family: 'Outfit'; font-size: 48px; font-weight: 900; color: #60a5fa;">1.86%</div>
+        <div style="font-size: 15px; color: #cbd5e1;">Target Cap: 3.5% - 4.5%</div>
+      </div>
+    </div>
+
+    <div class="grid-4">
+      <div class="stat-box">
+        <div class="stat-label">Current Market Price</div>
+        <div class="stat-val">$205.77</div>
+        <div class="stat-sub" style="color: #64748b;">Market Cap: $485 Billion</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Conservative Intrinsic Value</div>
+        <div class="stat-val">$155.00</div>
+        <div class="stat-sub" style="color: #ea580c;">+32.7% Valuation Premium</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">12-Month Base Target</div>
+        <div class="stat-val">$245.00</div>
+        <div class="stat-sub">+19.1% Expected Upside</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Forward P/E & Growth</div>
+        <div class="stat-val">95.0x</div>
+        <div class="stat-sub">PEG: 1.16 | Guided Rev: +82%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm • Global Autonomous Asset Management</span>
+    <span>Prepared Exclusively for BM사장님 • Page 1 of 6</span>
+  </div>
+</div>
+
+<!-- SLIDE 2: MULTI-YEAR EMPIRICAL VALIDATION -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>MULTI-YEAR EMPIRICAL VALIDATION SCORECARD</h2>
+      <p>Mandatory Multi-Year Audited Reality Check (BM사장님 30-Year Veteran Protocol)</p>
+    </div>
+    <div class="slide-badge">AUDITED SEC EDGAR DATA</div>
+  </div>
+
+  <div class="slide-content">
+    <table class="table-wrap">
+      <thead>
+        <tr>
+          <th>Metric Category</th>
+          <th>Multi-Year Audited Fact (USD)</th>
+          <th>Benchmark / Sector Context</th>
+          <th>Institutional Verdict</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1-Year Total Return</strong></td>
+          <td><strong>+115.8%</strong> ($95.35 ➔ $205.77 USD)</td>
+          <td>S&P 500: +24.5% / Tech Software IGV: +38.2%</td>
+          <td><span class="badge-tag badge-green">Hyper-Alpha Expansion</span></td>
+        </tr>
+        <tr>
+          <td><strong>3-Year Return & CAGR</strong></td>
+          <td><strong>+1,148.5%</strong> (CAGR: <strong>+131.5%</strong> from $16.48)</td>
+          <td>Top 1% of US large-cap equities (AIP Flywheel)</td>
+          <td><span class="badge-tag badge-green">Generational Winner</span></td>
+        </tr>
+        <tr>
+          <td><strong>5-Year Return & CAGR</strong></td>
+          <td><strong>+794.2%</strong> (CAGR: <strong>+49.2%</strong> from $23.01)</td>
+          <td>Completely absorbed 2022 Fed rate hiking cycle</td>
+          <td><span class="badge-tag badge-green">Cycle-Tested Moat</span></td>
+        </tr>
+        <tr>
+          <td><strong>Revenue Scale & Guidance</strong></td>
+          <td>2023: <strong>$2.23B</strong> ➔ 2025: <strong>$4.48B</strong> ➔ 2026E: <strong>$8.15B</strong></td>
+          <td>Q2 2026 Revenue: $1.935B (+93% YoY)</td>
+          <td><span class="badge-tag badge-blue">Hyper-Growth Velocity</span></td>
+        </tr>
+        <tr>
+          <td><strong>US Commercial Acceleration</strong></td>
+          <td>Q2 US Commercial: <strong>+149% YoY</strong> | NDR: <strong>138%</strong></td>
+          <td>AIP Bootcamps converting Fortune 500 in 72 hours</td>
+          <td><span class="badge-tag badge-blue">Enterprise Standard</span></td>
+        </tr>
+        <tr>
+          <td><strong>Free Cash Flow & Margins</strong></td>
+          <td>Gross Margin: <strong>85.0%</strong> | Q2 Adj FCF: <strong>$1.22B</strong> (63% Margin)</td>
+          <td>Highest cash generation in enterprise SaaS</td>
+          <td><span class="badge-tag badge-green">Elite Unit Economics</span></td>
+        </tr>
+        <tr>
+          <td><strong>Balance Sheet Solvency</strong></td>
+          <td>Cash/ST Treasuries: <strong>$9.20B USD</strong> | Debt: <strong>$0.00</strong></td>
+          <td>Zero debt, net interest income surplus</td>
+          <td><span class="badge-tag badge-green">Fortress Safe Haven</span></td>
+        </tr>
+        <tr>
+          <td><strong>SBC Share Dilution Control</strong></td>
+          <td>Q2 SBC: <strong>$265.2M USD</strong> (13.7% of Rev, down from 32%)</td>
+          <td>Diluted share count growth contained at <2.2%</td>
+          <td><span class="badge-tag badge-green">Dilution Risk Cleared</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm • Global Autonomous Asset Management</span>
+    <span>Prepared Exclusively for BM사장님 • Page 2 of 6</span>
+  </div>
+</div>
+
+<!-- SLIDE 3: MASTER EVALUATION MATRIX -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>MASTER EVALUATION MATRIX: THE 5 MASTERS & TECHNICIAN</h2>
+      <p>Synthesizing Value, Inversion, Fast Growth, Asymmetry, Breakout Momentum, and Chart Setups</p>
+    </div>
+    <div class="slide-badge">6-EVALUATOR ARBITRATION</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">
+          <span style="font-size: 24px;">☕</span> Warren Buffett: Toll Bridge
+          <span class="badge-tag badge-amber" style="margin-left: auto;">Overheated</span>
+        </div>
+        <p><strong>Core Moat</strong>: Palantir's Ontology is the ultimate enterprise toll bridge. Ripping it out would paralyze operations. $9.20B net cash and zero debt represent pristine balance sheet defense.</p>
+        <p style="margin-top: 6px; color: #b45309;"><strong>Red Flag</strong>: Trailing P/E of 155x and 50x sales offer zero margin of safety. A magnificent business at an extreme price. Wait for multiple compression.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span style="font-size: 24px;">🧠</span> Charlie Munger: Lollapalooza
+          <span class="badge-tag badge-blue" style="margin-left: auto;">Inversion Cleared</span>
+        </div>
+        <p><strong>Lollapalooza Moat</strong>: Military IL6 security monopoly + digital twin ontology + AIP bootcamp speed + enterprise network effects combine to create extreme competitive advantages.</p>
+        <p style="margin-top: 6px; color: #15803d;"><strong>Inversion Cleared</strong>: Big Tech cannot replicate Palantir's forward-deployed field culture; NATO sovereign defense budgets surged +85% in Europe.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span style="font-size: 24px;">📈</span> Peter Lynch: Fast Grower
+          <span class="badge-tag badge-green" style="margin-left: auto;">PEG 1.16</span>
+        </div>
+        <p><strong>Growth Engine</strong>: The quintessential Fast Grower compounding at 82-93% with 63% FCF margins. AIP bootcamps compress 9-month sales cycles into 72 hours.</p>
+        <p style="margin-top: 6px; color: #0284c7;"><strong>PEG Assessment</strong>: Forward P/E 95.0x / 82% growth yields a PEG of 1.16. Reasonable premium for a category monopolist, but susceptible to growth deceleration.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span style="font-size: 24px;">🌊</span> Stanley Druckenmiller: Alpha
+          <span class="badge-tag badge-blue" style="margin-left: auto;">3.2 : 1 Asymmetry</span>
+        </div>
+        <p><strong>18-Month Inflection</strong>: The world is rearming; governments cannot rely on consumer AI toys. Palantir is the de facto sovereign AI operating system. Commercial +149% proves S-curve acceleration.</p>
+        <p style="margin-top: 6px; color: #b45309;"><strong>Macro Watch</strong>: Overcrowded hedge fund positioning (70% institutional ownership) makes it vulnerable to macro rate shock selloffs.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span style="font-size: 24px;">🎯</span> William J. O'Neil: CAN SLIM
+          <span class="badge-tag badge-amber" style="margin-left: auto;">Extended Base</span>
+        </div>
+        <p><strong>CAN SLIM Leader</strong>: C (+105% EPS), A (+131% 3-Yr CAGR), N (AIP new highs), S (2.7% low short float), L (RS rating 98), I (4,100 institutions). Elite market leader.</p>
+        <p style="margin-top: 6px; color: #b45309;"><strong>Base Retest Needed</strong>: Stock is 38% extended past $148 base pivot; 14-day RSI at 75.6 signals short-term exhaustion. Wait for 50-DMA ($193.50) support.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span style="font-size: 24px;">📐</span> Market Technician: Chart Setup
+          <span class="badge-tag badge-blue" style="margin-left: auto;">1 : 2.6 Risk / Reward</span>
+        </div>
+        <p><strong>Trend & Volume Profile</strong>: Perfect moving average alignment: Price ($205.77) > 50-DMA ($193.50) > 200-DMA ($182.80). Testing ATH resistance near $207.50.</p>
+        <p style="margin-top: 6px; color: #0284c7;"><strong>Trade Execution</strong>: Support: <strong>$193.00 - $194.50</strong> | Demand Floor: <strong>$182.00 - $183.00</strong> | Targets: <strong>$230 / $265</strong> | Stop Floor: <strong>$178.00 USD</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm • Global Autonomous Asset Management</span>
+    <span>Prepared Exclusively for BM사장님 • Page 3 of 6</span>
+  </div>
+</div>
+
+<!-- SLIDE 4: ADVERSARIAL CRO BLIND AUDIT -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>ADVERSARIAL CRO BLIND AUDIT: 3 MANDATORY FATAL FLAWS</h2>
+      <p>Independent Tail-Risk Guardian & Capital Preservation Directives</p>
+    </div>
+    <div class="slide-badge" style="color: #dc2626; background: #fef2f2; border-color: #fca5a5;">BINDING CRO DIRECTIVE</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="grid-3">
+      <div class="card" style="border-top: 5px solid #dc2626;">
+        <div class="card-title" style="color: #dc2626; font-size: 22px;">1. Valuation Compression Risk</div>
+        <p><strong>Audited Vulnerability</strong>: Trading at 50x forward sales and 95x forward earnings leaves zero margin of safety. If revenue growth normalizes to 45%, a re-rating to 40x P/E triggers a <strong>-45% to -55% drawdown</strong> ($110 - $125 USD).</p>
+        <p style="margin-top: 10px; font-size: 16px; color: #64748b;"><strong>Mitigation</strong>: Forbid market order chasing at all-time highs; buy only on technical pullbacks.</p>
+      </div>
+
+      <div class="card" style="border-top: 5px solid #ea580c;">
+        <div class="card-title" style="color: #ea580c; font-size: 22px;">2. Portfolio Factor Overlap</div>
+        <p><strong>Factor Correlation Audit</strong>: BM사장님 already holds >68% in AI and semiconductors (NVDA, GOOG, AMZN, AVGO, AMD). PLTR carries a high beta of 1.85. Aggressive buying worsens False Diversification.</p>
+        <p style="margin-top: 10px; font-size: 16px; color: #64748b;"><strong>Binding Cap</strong>: Enforce a mechanical <strong>4.5% ceiling</strong> (~370 shares max / $76,000 USD).</p>
+      </div>
+
+      <div class="card" style="border-top: 5px solid #d97706;">
+        <div class="card-title" style="color: #d97706; font-size: 22px;">3. Executive & Political Key-Man Risk</div>
+        <p><strong>Governance Scrutiny</strong>: High operational reliance on CEO Alex Karp. Unconventional political stances, while advantageous in US defense circles, generate friction in European commercial enterprise contracts.</p>
+        <p style="margin-top: 10px; font-size: 16px; color: #64748b;"><strong>Mitigation</strong>: Continuous monitoring of continental European commercial adoption metrics.</p>
+      </div>
+    </div>
+
+    <div style="background: #f8fafc; border: 2px solid #cbd5e1; border-radius: 14px; padding: 20px 28px;">
+      <div style="font-size: 19px; font-weight: 800; color: #0f172a; margin-bottom: 6px;">
+        CRO Macro Stress Simulation for BM사장님's Portfolio:
+      </div>
+      <p style="font-size: 17px; color: #475569; line-height: 1.6;">
+        • <strong>Tech Multiple Compression Shock (10Y Yield 5.75%)</strong>: PLTR -38% ➔ Portfolio MDD impact limited to <strong>-0.71%</strong>.<br>
+        • <strong>Commercial AI Digestion Pause</strong>: PLTR -28.5% ➔ Portfolio MDD impact <strong>-0.53%</strong>. Triggers Buy Tranche at $155 - $165 USD.<br>
+        • <strong>Geopolitical Defense Surge Shock</strong>: PLTR +28% ➔ Portfolio Alpha expansion <strong>+0.52%</strong>.
+      </p>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm • Global Autonomous Asset Management</span>
+    <span>Prepared Exclusively for BM사장님 • Page 4 of 6</span>
+  </div>
+</div>
+
+<!-- SLIDE 5: SCENARIOS & VALUATION -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>12-MONTH VALUATION SCENARIOS & PRICE TARGETS</h2>
+      <p>Probability-Weighted Expected Value Architecture & Margin of Safety Zones</p>
+    </div>
+    <div class="slide-badge">PROBABILITY WEIGHTED</div>
+  </div>
+
+  <div class="slide-content">
+    <table class="table-wrap">
+      <thead>
+        <tr>
+          <th>Scenario</th>
+          <th>Probability</th>
+          <th>Multiple Applied (FY2027E)</th>
+          <th>Price Target (USD)</th>
+          <th>Implied Return</th>
+          <th>Core Fundamental Drivers</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Bull Case</strong></td>
+          <td>30%</td>
+          <td>110.0x Forward P/E (EPS $2.85)</td>
+          <td><strong style="color: #166534; font-size: 20px;">$313.50</strong></td>
+          <td><span class="badge-tag badge-green">+52.4%</span></td>
+          <td>Enterprise agentic ecosystem monopoly; NATO defense deals surge +70% YoY.</td>
+        </tr>
+        <tr>
+          <td><strong>Base Case</strong></td>
+          <td>50%</td>
+          <td>85.0x Forward P/E (EPS $2.88)</td>
+          <td><strong style="color: #1e40af; font-size: 20px;">$244.80</strong></td>
+          <td><span class="badge-tag badge-blue">+19.0%</span></td>
+          <td>US commercial revenue sustains +60% growth; adjusted FCF margins maintain ~60%.</td>
+        </tr>
+        <tr>
+          <td><strong>Bear Case</strong></td>
+          <td>20%</td>
+          <td>48.0x Forward P/E (EPS $2.60)</td>
+          <td><strong style="color: #991b1b; font-size: 20px;">$124.80</strong></td>
+          <td><span class="badge-tag badge-red">-39.3%</span></td>
+          <td>Enterprise AI pilot digestion; macro rate shock forces high-growth multiple compression.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="grid-2">
+      <div class="card" style="background: #eff6ff; border-color: #bfdbfe;">
+        <div class="card-title" style="color: #1e40af;">Probability-Weighted Target: $241.41 USD</div>
+        <p>Blended 12-month expected return of <strong>+17.3%</strong>. Skew remains asymmetric in favor of long-term holders, but upside is constrained by initial entry multiples.</p>
+      </div>
+      <div class="card" style="background: #f0fdf4; border-color: #bbf7d0;">
+        <div class="card-title" style="color: #166534;">Safe Accumulation Zone: $148 - $165 USD</div>
+        <p>Presents a genuine <strong>20% margin of safety</strong> against intrinsic value ($155 USD). If broader markets pull back, deploy queued accumulation limit orders.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm • Global Autonomous Asset Management</span>
+    <span>Prepared Exclusively for BM사장님 • Page 5 of 6</span>
+  </div>
+</div>
+
+<!-- SLIDE 6: ACTIONABLE PORTFOLIO BLUEPRINT -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>ACTIONABLE PORTFOLIO BLUEPRINT FOR BM사장님</h2>
+      <p>Target Allocation, Tranche Staging, Rebalancing Matrix, and Strict Invalidation Trigger</p>
+    </div>
+    <div class="slide-badge">EXECUTION PROTOCOL</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">1. Existing Holding Directive</div>
+        <p><strong>Maintain Full 153 Shares</strong> (~$31,483 USD / 1.86% weight). Do not sell or trim. Let this elite sovereign compounder run with AIP tailwinds.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">2. Phased Accumulation Tranches</div>
+        <p><strong>Tranche 1</strong>: 50 Shares at 50-DMA ($185-$193 USD).<br><strong>Tranche 2</strong>: 100 Shares at Margin of Safety ($155-$165 USD). Total target: 303 Shares (2.95% weight).</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">3. Capital Discipline & Stop-Loss</div>
+        <p><strong>Zero Market Orders at $205.77</strong>. Mechanical ceiling capped at 4.5% ($76,000 USD). Hard disaster stop-loss floor at <strong>$142.00 USD</strong>.</p>
+      </div>
+    </div>
+
+    <div class="card" style="border-left: 6px solid #dc2626; background: #fffaf0;">
+      <div class="card-title" style="color: #b45309; font-size: 20px;">
+        ⚠️ Strict Non-Negotiable Sell Trigger (Thesis Invalidation)
+      </div>
+      <p style="font-size: 17px; color: #78350f;">
+        Downgrade to <strong>IMMEDIATE 50% TRIM / EXIT</strong> if: <em>"Palantir's U.S. Commercial revenue growth decelerates below 35% YoY for two consecutive quarters; OR if non-GAAP operating margin contracts below 40% driven by resurgent SBC; OR if major hyperscalers successfully deploy open-architecture enterprise ontologies that cause Net Dollar Retention (NDR) to fall below 110%."</em>
+      </p>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm • Global Autonomous Asset Management</span>
+    <span>Prepared Exclusively for BM사장님 • Page 6 of 6</span>
+  </div>
+</div>
+
+</body>
+</html>

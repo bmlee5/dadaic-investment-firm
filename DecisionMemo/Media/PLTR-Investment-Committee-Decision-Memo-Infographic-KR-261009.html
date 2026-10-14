@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>PLTR 투자위원회 전략 인포그래픽 (한국어)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', 'Inter', sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.infographic-container {
+  width: 1140px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 46px 50px 38px 50px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.firm-badge {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.hero-verdict-box {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verdict-tag {
+  background: #3b82f6;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.verdict-text {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.content-body {
+  padding: 44px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.section-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.metric-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.metric-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.metric-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.metric-sub {
+  font-size: 14px;
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.info-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.info-card-header {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.footer-bar {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 500;
+}
+</style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <!-- HERO HEADER -->
+  <div class="hero-header">
+    <div class="hero-top">
+      <div class="firm-badge">DADAIC INVESTMENT FIRM • 공식 전략 인포그래픽</div>
+      <div style="font-size: 15px; color: #94a3b8; font-weight: 500;">2026년 10월 9일</div>
+    </div>
+    <div class="hero-title">팔란티어 테크놀로지스 (NYSE: PLTR)</div>
+    <div class="hero-subtitle">국가 안보 및 엔터프라이즈 미션 크리티컬 AI 운영체제 • BM사장님 맞춤형 자산배분</div>
+
+    <div class="hero-verdict-box">
+      <div>
+        <span class="verdict-tag">투자위원회 공식 판정</span>
+        <div class="verdict-text">APPROVED: 조건부 비중 상한 승인 (최대 4.5%)</div>
+        <div style="font-size: 16px; color: #93c5fd; margin-top: 4px;">기보유 153주 ($31,483 USD / 1.86% 비중) 전량 보유 • 눌림목 분할 매수 (<$165)</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 14px; color: #cbd5e1; text-transform: uppercase;">12개월 기본 목표가</div>
+        <div style="font-family: 'Outfit'; font-size: 38px; font-weight: 900; color: #60a5fa;">$245.00</div>
+        <div style="font-size: 14px; color: #6ee7b7;">+19.1% 기대 상승률</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-body">
+    <!-- SECTION 1: KEY FINANCIAL SNAPSHOT -->
+    <div>
+      <div class="section-title">📊 다년간 실증 검증 핵심 지표</div>
+      <div class="grid-4">
+        <div class="metric-card">
+          <div class="metric-label">현재 주가</div>
+          <div class="metric-val">$205.77</div>
+          <div class="metric-sub" style="color: #64748b;">시가총액: $4,850억 달러</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">3개년 연평균 CAGR</div>
+          <div class="metric-val">+131.5%</div>
+          <div class="metric-sub">3개년 총수익 +1,148%</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">2분기 매출 성장률</div>
+          <div class="metric-val">+93.0%</div>
+          <div class="metric-sub">미국 상업 부문 +149% YoY</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">조정 잉여현금흐름</div>
+          <div class="metric-val">$1.22B</div>
+          <div class="metric-sub">2분기 FCF 마진 63.0%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: 5 MASTERS & TECHNICIAN CONSENSUS -->
+    <div>
+      <div class="section-title">🏛️ 세계 5대 거장 & 수석 마켓 테크니션 종합 평가</div>
+      <div class="grid-3">
+        <div class="info-card">
+          <div class="info-card-header">☕ 워런 버핏: 유료 통행료 다리</div>
+          <p><strong>판정</strong>: 과열 경계 / 안전마진 전무.<br>온톨로지는 대체 불가능한 유료 다리이자 무차입 $92억 순현금 요새입니다. 그러나 PER 155배는 신규 진입에 안전마진이 없습니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">🧠 찰리 멍거: 롤라팔루자 효과</div>
+          <p><strong>판정</strong>: 역발상 통과 / 최상위 독점 해자.<br>4대 롤라팔루자 해자: 국방 IL6 독점 + 온톨로지 디지털 트윈 + 부트캠프 침투력 + 공급망 네트워크 효과의 결합입니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">📈 피터 린치: 고성장주 진단</div>
+          <p><strong>판정</strong>: 전형적 패스트 그로어 (PEG 1.16).<br>82~93%의 외형 성장과 63%의 현금흐름 마진을 기록 중입니다. 72시간 부트캠프로 미국 대기업들을 신속히 장악했습니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">🌊 스탠리 드러켄밀러: 비대칭 알파</div>
+          <p><strong>판정</strong>: 소버린 AI 주도주 (3.2 : 1 비대칭).<br>18개월 변곡점 현실화. 서방 정부는 환각이 있는 소비자용 LLM을 쓸 수 없으며, 팔란티어의 결정론적 제어 계층이 필수적입니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">🎯 윌리엄 오닐: CAN SLIM 진단</div>
+          <p><strong>판정</strong>: 시장 주도주 (눌림목 대기).<br>RS 점수 98점, 분기 EPS +105%. 주가가 $148 베이스 대비 38% 이격되었고 RSI 75.6이므로 50일선($193.50) 조정을 대기해야 합니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">📐 마켓 테크니션: 차트 셋업</div>
+          <p><strong>판정</strong>: 상승 정배열 (조정 시 1 : 2.6 손익비).<br>주가($205.77) > 50일선($193.50) > 200일선($182.80). 1차 지지선 $193~$194, 강력 수요 바닥 $182~$183.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: CRO 3 FATAL FLAWS -->
+    <div>
+      <div class="section-title" style="color: #dc2626; border-color: #fca5a5;">
+        🛡️ 최고리스크관리자(CRO) 블라인드 감사: 3대 필수 결점
+      </div>
+      <div class="grid-3">
+        <div class="info-card" style="border-top: 4px solid #dc2626;">
+          <div class="info-card-header" style="color: #dc2626;">1. 밸류에이션 멀티플 압축 위험</div>
+          <p>PSR 50배 및 Forward PER 95배는 결점 없는 성장만을 전제합니다. 성장률이 45%로 둔화되면 <strong>-45% ~ -55% 급락 위험</strong>이 있습니다.</p>
+        </div>
+        <div class="info-card" style="border-top: 4px solid #ea580c;">
+          <div class="info-card-header" style="color: #ea580c;">2. 포트폴리오 팩터 중복 (가짜 분산)</div>
+          <p>BM사장님 계좌는 이미 AI/반도체 노출도가 68%를 상회합니다. 고베타(1.85)인 PLTR 추격 매수는 가짜 분산을 초래하므로 <strong>최대 4.5% 상한을 강제</strong>합니다.</p>
+        </div>
+        <div class="info-card" style="border-top: 4px solid #d97706;">
+          <div class="info-card-header" style="color: #d97706;">3. 핵심 경영진 및 정치적 리스크</div>
+          <p>알렉스 카프 CEO 개인에 대한 의존도가 높습니다. 카프의 거침없는 정치적 행보는 미국 국방부엔 유리하나 유럽 민간 기업 협상에선 마찰을 낳습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: STRATEGIC BLUEPRINT FOR BM사장님 -->
+    <div>
+      <div class="section-title">🎯 BM사장님 맞춤형 포트폴리오 실행 블루프린트</div>
+      <div class="grid-2">
+        <div class="info-card" style="background: #f8fafc;">
+          <div class="info-card-header">실행 가이드라인</div>
+          <p>
+            • <strong>기보유 지분</strong>: 153주 전량 강력 보유 ($31,483 USD / 1.86% 비중).<br>
+            • <strong>시장가 매수</strong>: 사상 최고가($205.77) 부근 추격 매수 금지.<br>
+            • <strong>1차 매수 (50일선)</strong>: $185 ~ $193 USD 도달 시 50주 분할 매수.<br>
+            • <strong>2차 매수 (안전마진)</strong>: $155 ~ $165 USD 도달 시 100주 추가 매수.<br>
+            • <strong>구조적 손절 기준</strong>: $142.00 USD (200일 이평선 붕괴).
+          </p>
+        </div>
+        <div class="info-card" style="background: #fffaf0; border-color: #fde68a;">
+          <div class="info-card-header" style="color: #b45309;">투자 전제 훼손 매도 원칙 (Sell Trigger)</div>
+          <p style="color: #78350f;">
+            <strong>보유 지분 50% 즉시 매도(비중 축소) 조건</strong>:<br>
+            <em>"미국 민간 상업 부문 매출 성장률이 2분기 연속 35% 미만으로 급락하거나, SBC 재확대로 Non-GAAP 영업이익률이 40% 이하로 훼손되는 경우, 또는 빅테크가 오픈소스 온톨로지를 완전히 대체하여 순 달러 유지율(NDR)이 110% 이하로 추락하는 경우."</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-bar">
+    <div>DADAIC INVESTMENT FIRM • CHIEF INVESTMENT OFFICER (CIO)</div>
+    <div>CONFIDENTIAL & PROPRIETARY • PREPARED EXCLUSIVELY FOR BM사장님</div>
+  </div>
+</div>
+
+</body>
+</html>

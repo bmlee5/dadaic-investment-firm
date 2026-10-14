@@ -1,0 +1,10 @@
+Date,Ticker,Verdict,CRO_Ruling,Price_At_Memo,Entry_Band_Low,Entry_Band_High,Target_12M_Base,Stop_Loss,Position_Size_Pct,Invalidation_Trigger
+2026-10-05,NVDA,APPROVED: HIGH CONVICTION,APPROVED: SIZE CAP,237.47,215.00,230.00,285.00,195.00,20.0,Hyperscaler AI Capex YoY negative growth or Blackwell packaging thermal flaw
+2026-10-05,TSM,APPROVED: HIGH CONVICTION,APPROVED: UNRESTRICTED,472.20,430.00,460.00,560.00,395.00,5.0,Cross-strait physical military blockade or Sub-2nm yield collapse below 30%
+2026-10-05,MU,APPROVED: CONDITIONAL ACCUMULATE,APPROVED: SIZE CAP,1088.00,950.00,1050.00,1350.00,850.00,3.0,HBM3E/HBM4 qualification failure with tier-1 GPU vendor
+2026-10-05,SCHD,APPROVED: CORE BALLAST,APPROVED: UNRESTRICTED,28.45,26.50,28.00,33.00,24.00,10.0,Financial sector contagion leading to structural dividend cut exceeding 15%
+2026-10-06,AMD,APPROVED: CONDITIONAL ACCUMULATE,APPROVED: SIZE CAP,645.86,580.00,620.00,780.00,520.00,5.0,MI350/MI400 hyperscaler cancellation or datacenter GPU share falling below 5%
+2026-10-07,NFLX,HOLD CORE + CONDITIONAL ACCUMULATE,APPROVED: CONDITIONAL CAP,69.70,62.50,67.00,83.60,60.50,3.0,US TV viewing time falling below 5% or sustained 2-quarter ad revenue contraction
+2026-10-07,UBER,APPROVED: CONDITIONAL ACCUMULATE,APPROVED: CONDITIONAL CAP,74.50,68.00,72.00,95.00,62.00,4.0,Autonomous robotaxi network achieving sub-$0.50/mile parity without Uber platform integration
+2026-10-08,GOOG,APPROVED: QUALITY COMPOUNDER WITH SIZE CAP,APPROVED: FACTOR OVERLAP CAP,344.86,315.00,335.00,420.00,295.00,12.87,DOJ forced divestiture of Chrome/Android or Google Cloud revenue growth decelerating below 20%
+2026-10-09,PLTR,APPROVED: CONDITIONAL SIZE CAP,APPROVED: SIZE CAP & ATH CHASE BAN,205.77,155.00,165.00,245.00,142.00,1.86,US Commercial YoY growth falling below 35% or SBC resurgence driving OPM below 40%

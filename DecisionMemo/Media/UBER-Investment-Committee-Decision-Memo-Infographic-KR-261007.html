@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>UBER 투자위원회 핵심 전략 인포그래픽 (한글판)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.infographic-container {
+  width: 1140px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 46px 50px 38px 50px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.firm-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #6ee7b7;
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.memo-num {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.verdict-banner {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.verdict-box h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  letter-spacing: 1px;
+}
+
+.verdict-tag {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #34d399;
+  margin-top: 4px;
+}
+
+.v-item h5 {
+  font-size: 13px;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.v-item p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.info-body {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: #f8fafc;
+}
+
+.section-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.sec-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.sec-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sec-tag {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.metric-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.m-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.m-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #0f172a;
+  margin-top: 4px;
+}
+
+.m-desc {
+  font-size: 13px;
+  color: #059669;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.table-custom th {
+  background: #f8fafc;
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 700;
+  color: #475569;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.table-custom td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.callout-box {
+  background: #f0fdf4;
+  border-left: 4px solid #10b981;
+  padding: 16px 20px;
+  border-radius: 0 12px 12px 0;
+  margin-top: 14px;
+}
+
+.callout-box p {
+  font-size: 15px;
+  color: #065f46;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.warn-box {
+  background: #fef2f2;
+  border-left: 4px solid #ef4444;
+  padding: 16px 20px;
+  border-radius: 0 12px 12px 0;
+  margin-top: 14px;
+}
+
+.warn-box p {
+  font-size: 15px;
+  color: #991b1b;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.info-footer {
+  padding: 24px 50px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <!-- HERO HEADER -->
+  <div class="hero-header">
+    <div class="hero-top">
+      <div class="firm-badge">DADAIC INVESTMENT FIRM • 기관 리서치 본부</div>
+      <div class="memo-num">문서 번호: DADAIC-IC-INFO-UBER-261007-KR</div>
+    </div>
+    <h1 class="hero-title">우버 테크놀로지스 (NYSE: UBER)</h1>
+    <p class="hero-sub">전 세계 도시 교통을 독점하는 디지털 통행세 징수소 및 자율주행 배차 오케스트레이터</p>
+    
+    <div class="verdict-banner">
+      <div class="verdict-box">
+        <h4>투자위원회 최종 판정</h4>
+        <div class="verdict-tag">강력 매수 / 역발상 알파 편입</div>
+      </div>
+      <div class="v-item">
+        <h5>현재 시장가</h5>
+        <p>$68.45 달러</p>
+      </div>
+      <div class="v-item">
+        <h5>보수적 본질가치</h5>
+        <p>$88.00 달러</p>
+      </div>
+      <div class="v-item">
+        <h5>12개월 목표가</h5>
+        <p>$98.00 달러</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFOGRAPHIC BODY -->
+  <div class="info-body">
+    <!-- SECTION 1: EMPIRICAL SCORECARD -->
+    <div class="section-card">
+      <div class="sec-head">
+        <div class="sec-title">📊 다개년 실증 데이터 전수 검증 성적표</div>
+        <div class="sec-tag">BM사장님 30년 투자 원칙</div>
+      </div>
+      
+      <div class="grid-4">
+        <div class="metric-card">
+          <div class="m-label">최근 1년 총수익률</div>
+          <div class="m-val" style="color: #dc2626;">-30.99%</div>
+          <div class="m-desc">52주 고점($100.35) 대비 과매도</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">최근 3년 수익률 및 CAGR</div>
+          <div class="m-val" style="color: #059669;">+51.2%</div>
+          <div class="m-desc">CAGR: +14.78% ($45.68에서 성장)</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">TTM 진성 FCF (SBC 차감 후)</div>
+          <div class="m-val">$8.18B</div>
+          <div class="m-desc">GAAP FCF $10.12B - SBC $1.94B</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">피터 린치 PEG 비율</div>
+          <div class="m-val" style="color: #2563eb;">0.69</div>
+          <div class="m-desc">P/E 15.5배 / EPS 성장률 22.5%</div>
+        </div>
+      </div>
+
+      <div class="callout-box">
+        <p><strong>실증 턴어라운드 확인:</strong> 영업이익이 2022년 -$1.83B 달러 적자에서 2025년 +$5.57B 달러, 최근 4분기 합산 $6.69B 달러로 폭발적 개선. 2026 Q2 총예약액은 $58B 달러 돌파(+22% YoY)로 흔들림 없는 독점적 수요 증명.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 2: THE 5 MASTERS & CHIEF TECHNICIAN -->
+    <div class="section-card">
+      <div class="sec-head">
+        <div class="sec-title">🏛️ 5대 투자 거장 & 수석 시장 기술적 분석가 심층 평가</div>
+        <div class="sec-tag">만장일치 매수 추천</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="metric-card">
+          <div style="font-size: 16px; font-weight: 800; color: #0f172a; margin-bottom: 6px;">🛡️ 워런 버핏 (가치 투자 관점)</div>
+          <p style="font-size: 14px; color: #334155; line-height: 1.6;">
+            <strong>판정: 강력 매수 (22.2% 안전마진 확보).</strong> 차량 자산 소유 없이 25%의 통행세를 거두는 독점 비즈니스. $7B 규모 자사주 매입으로 주주 환원 가속화.
+          </p>
+        </div>
+        <div class="metric-card">
+          <div style="font-size: 16px; font-weight: 800; color: #0f172a; margin-bottom: 6px;">🔄 찰리 멍거 (역발상 반증 관점)</div>
+          <p style="font-size: 14px; color: #334155; line-height: 1.6;">
+            <strong>판정: 최상위 양면 네트워크 해자.</strong> 반증 극복: 로보택시 회사는 높은 가동률(70%+)이 없으면 고정비로 파산함. 1억 6천만 결제 고객 풀을 가진 우버와의 제휴는 필수불가결함.
+          </p>
+        </div>
+        <div class="metric-card">
+          <div style="font-size: 16px; font-weight: 800; color: #0f172a; margin-bottom: 6px;">📈 피터 린치 (성장주 관점)</div>
+          <p style="font-size: 14px; color: #334155; line-height: 1.6;">
+            <strong>판정: 확신 매수 (PEG 0.69).</strong> 예약액이 22% 성장하는데 선행 P/E는 15.5배에 불과함. 재고 없는 독점 플랫폼 기업이 PEG 0.7 미만인 것은 일생일대의 바겐세일.
+          </p>
+        </div>
+        <div class="metric-card">
+          <div style="font-size: 16px; font-weight: 800; color: #0f172a; margin-bottom: 6px;">⚡ 스탠리 드러켄밀러 (매크로 비대칭성)</div>
+          <p style="font-size: 14px; color: #334155; line-height: 1.6;">
+            <strong>판정: 4.2 : 1 비대칭 롱 포지션.</strong> 운전기사 정산금(~70%)이 제거되면 영업이익률이 13%에서 25% 이상으로 도약함. 로보택시 확산은 최대의 마진 확장 촉매제임.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: PEER BENCHMARKING -->
+    <div class="section-card">
+      <div class="sec-head">
+        <div class="sec-title">⚔️ 동종 플랫폼 및 빅테크 밸류에이션 비교</div>
+        <div class="sec-tag">수익성 & 멀티플</div>
+      </div>
+
+      <table class="table-custom">
+        <thead>
+          <tr>
+            <th>기업명</th>
+            <th>시가총액</th>
+            <th>선행 P/E</th>
+            <th>EV / EBITDA</th>
+            <th>영업이익률</th>
+            <th>ROE (%)</th>
+            <th>베타</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: #f0fdf4; font-weight: 700;">
+            <td>우버 (UBER)</td>
+            <td>$1,398억 달러</td>
+            <td>15.5배</td>
+            <td>20.3배</td>
+            <td>13.3%</td>
+            <td>37.2%</td>
+            <td>1.26</td>
+          </tr>
+          <tr>
+            <td>도어대시 (DASH)</td>
+            <td>$829억 달러</td>
+            <td>23.2배</td>
+            <td>57.0배</td>
+            <td>3.9%</td>
+            <td>8.9%</td>
+            <td>1.89</td>
+          </tr>
+          <tr>
+            <td>리프트 (LYFT)</td>
+            <td>$59억 달러</td>
+            <td>7.2배</td>
+            <td>117.3배</td>
+            <td>2.6%</td>
+            <td>152.6%</td>
+            <td>1.96</td>
+          </tr>
+          <tr>
+            <td>알파벳 (GOOG)</td>
+            <td>$42,483억 달러</td>
+            <td>22.9배</td>
+            <td>23.7배</td>
+            <td>34.0%</td>
+            <td>48.7%</td>
+            <td>1.21</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SECTION 4: PORTFOLIO ALLOCATION & INITIATION -->
+    <div class="section-card">
+      <div class="sec-head">
+        <div class="sec-title">🎯 포트폴리오 자산배분 실행안 (`my-portfolio.yaml`)</div>
+        <div class="sec-tag">반도체 편중 해소</div>
+      </div>
+
+      <div class="grid-3">
+        <div class="metric-card">
+          <div class="m-label">1차 즉시 매수 (시장가)</div>
+          <div class="m-val">$30,000 달러</div>
+          <div class="m-desc">약 438주 @ $68.45 달러</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">2차 눌림목 매수 (지정가)</div>
+          <div class="m-val">$30,000 달러</div>
+          <div class="m-desc">약 454주 @ $66.00 달러</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">철통 손절선 (Disaster Floor)</div>
+          <div class="m-val" style="color: #dc2626;">$62.50 달러</div>
+          <div class="m-desc">-8.7% 하향 이탈 시 전량 손절</div>
+        </div>
+      </div>
+
+      <div class="warn-box">
+        <p><strong>전량 청산 및 투자 철회 원칙:</strong> 웨이모/크루즈가 우버 제휴를 파기하여 모빌리티 예약액이 2분기 연속 전년 대비 역성장하거나, 기그 노동자 전원 정규직화로 영업이익률이 5% 미만으로 추락할 경우 100% 전량 매도합니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFOGRAPHIC FOOTER -->
+  <div class="info-footer">
+    <div>맞춤형 리포트 수신: BM사장님 | DADAIC Investment Firm</div>
+    <div>통화 기준: 전액 순수 미국 달러 ($) 표기 | 원화 환산 일체 배제</div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AMD Investment Committee Strategic Infographic (EN)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.infographic-container {
+  width: 1120px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 46px 50px 38px 50px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.firm-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.memo-num {
+  font-size: 13px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.hero-sub {
+  font-size: 17px;
+  color: #cbd5e1;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.verdict-banner {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.verdict-box h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  letter-spacing: 1px;
+}
+
+.verdict-tag {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fbbf24;
+  margin-top: 4px;
+}
+
+.v-item h5 {
+  font-size: 12px;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.v-item p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.info-body {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: #f8fafc;
+}
+
+.section-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.sec-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.sec-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sec-tag {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.metric-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.m-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.m-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 4px;
+}
+
+.m-sub {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.text-emerald { color: #059669; }
+.text-rose { color: #e11d48; }
+.text-amber { color: #d97706; }
+.text-blue { color: #2563eb; }
+
+table.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table.info-table th {
+  background: #f8fafc;
+  color: #475569;
+  text-align: left;
+  padding: 12px 14px;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+table.info-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: top;
+}
+
+.footer-bar {
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #64748b;
+}
+</style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <!-- HERO HEADER -->
+  <div class="hero-header">
+    <div class="hero-top">
+      <span class="firm-badge">DADAIC INVESTMENT FIRM</span>
+      <span class="memo-num">DOC ID: DADAIC-IC-MEMO-AMD-261006</span>
+    </div>
+    <h1 class="hero-title">Advanced Micro Devices (AMD)</h1>
+    <p class="hero-sub">Institutional Investment Committee Due Diligence & Portfolio Diagnostic | Principal: BM사장님</p>
+
+    <div class="verdict-banner">
+      <div class="verdict-box">
+        <h4>Executive Committee Verdict</h4>
+        <div class="verdict-tag">HOLD & MAINTAIN ALLOCATION</div>
+      </div>
+      <div class="v-item">
+        <h5>Current Price</h5>
+        <p>$649.42 USD</p>
+      </div>
+      <div class="v-item">
+        <h5>Intrinsic Value</h5>
+        <p>$560.00 USD</p>
+      </div>
+      <div class="v-item">
+        <h5>12M Target (Base)</h5>
+        <p style="color: #4ade80;">$740.00 USD</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY CONTENT -->
+  <div class="info-body">
+    <!-- SECTION 1: EMPIRICAL VALIDATION (BM사장님 MANDATE) -->
+    <div class="section-card">
+      <div class="sec-head">
+        <h3 class="sec-title">🏛️ 1. Multi-Year Empirical Validation Scorecard</h3>
+        <span class="sec-tag">BM사장님 30-YEAR MANDATE</span>
+      </div>
+      <div class="grid-4">
+        <div class="metric-card">
+          <div class="m-label">1-Year Total Return</div>
+          <div class="m-val text-emerald">+218.80%</div>
+          <div class="m-sub text-emerald">From $203.71 to $649.42</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">3-Year Return & CAGR</div>
+          <div class="m-val text-emerald">+528.86%</div>
+          <div class="m-sub text-emerald">3Y CAGR: +84.58%</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">5-Year Return & CAGR</div>
+          <div class="m-val text-emerald">+510.07%</div>
+          <div class="m-sub text-emerald">5Y CAGR: +43.57%</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">2022 Bear Market MDD</div>
+          <div class="m-val text-rose">-65.45%</div>
+          <div class="m-sub text-rose">Beta: 2.45 (High Cyclicality)</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 18px;">
+        <table class="info-table">
+          <thead>
+            <tr>
+              <th>Metric Category</th>
+              <th>Audited Multi-Year Fact</th>
+              <th>Benchmark / Peer Context</th>
+              <th>Empirical Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>TTM Revenue Trajectory</strong></td>
+              <td><strong>$41.31B USD</strong> (up from $23.60B in FY2022)</td>
+              <td>Data Center EPYC + Instinct Surge</td>
+              <td><span class="sec-tag text-emerald">Structural Expansion</span></td>
+            </tr>
+            <tr>
+              <td><strong>Gross Margin Trend</strong></td>
+              <td><strong>53.7%</strong> (up from 44.9% in FY2022)</td>
+              <td>+880 bps lift via server mix</td>
+              <td><span class="sec-tag text-emerald">High Pricing Power</span></td>
+            </tr>
+            <tr>
+              <td><strong>True FCF (Net of SBC)</strong></td>
+              <td><strong>$6.51B USD</strong> (GAAP FCF $8.41B - SBC $1.90B)</td>
+              <td>Net income cash conversion 98.6%</td>
+              <td><span class="sec-tag text-emerald">Cash Quality A+</span></td>
+            </tr>
+            <tr>
+              <td><strong>Net Cash on Balance Sheet</strong></td>
+              <td><strong>+$8.84B USD</strong> ($13.12B cash vs $4.28B debt)</td>
+              <td>Interest coverage: 42.5x | Altman Z: 8.42</td>
+              <td><span class="sec-tag text-emerald">Fortress Balance Sheet</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SECTION 2: 4 MASTERS EVALUATION -->
+    <div class="section-card">
+      <div class="sec-head">
+        <h3 class="sec-title">⚖️ 2. The 4 Masters' Strategy Evaluation Matrix</h3>
+        <span class="sec-tag">PHILOSOPHICAL CONSENSUS</span>
+      </div>
+      <div class="grid-2">
+        <div class="metric-card" style="background: #ffffff;">
+          <h4 style="font-size: 15px; color: #b45309; font-weight: 800;">WARREN BUFFETT: Moat & 20-30% Margin of Safety</h4>
+          <p style="font-size: 13px; line-height: 1.6; color: #475569; margin-top: 6px;">
+            <strong>Verdict: Hold Existing / Pass on New Buys</strong><br>
+            • Commends Dr. Lisa Su's disciplined capital allocation and $8.84B net cash.<br>
+            • Zero margin of safety at $649.42 (15.9% premium to intrinsic value $560). Strict refusal to chase at market peaks.
+          </p>
+        </div>
+        <div class="metric-card" style="background: #ffffff;">
+          <h4 style="font-size: 15px; color: #b45309; font-weight: 800;">CHARLIE MUNGER: ROIC Compounding & Inversion</h4>
+          <p style="font-size: 13px; line-height: 1.6; color: #475569; margin-top: 6px;">
+            <strong>Verdict: Elite Compounder / Inversion Alert</strong><br>
+            • Fabless TSMC model prevents foundry capital destruction.<br>
+            • <em>Inversion vector</em>: Squeezed between NVIDIA CUDA dominance above and Hyperscaler proprietary ASICs below.
+          </p>
+        </div>
+        <div class="metric-card" style="background: #ffffff;">
+          <h4 style="font-size: 15px; color: #16a34a; font-weight: 800;">PETER LYNCH: Fast Grower & PEG Ratio</h4>
+          <p style="font-size: 13px; line-height: 1.6; color: #475569; margin-top: 6px;">
+            <strong>Verdict: Fast Grower / PEG 0.88 (Hold Runner)</strong><br>
+            • Forward P/E 41.3x / 47% EPS growth = <strong>PEG 0.88</strong> (< 1.0 threshold).<br>
+            • Stock up +218% in 12 months with RSI 83.3; grassroot rule dictates letting existing winners run without averaging up.
+          </p>
+        </div>
+        <div class="metric-card" style="background: #ffffff;">
+          <h4 style="font-size: 15px; color: #dc2626; font-weight: 800;">MARKET TECHNICIAN: Trend & Risk/Reward</h4>
+          <p style="font-size: 13px; line-height: 1.6; color: #475569; margin-top: 6px;">
+            <strong>Verdict: Parabolic Overbought / Await Support Retest</strong><br>
+            • Bullish trend intact, but 14-day RSI is at <strong>83.28</strong>.<br>
+            • Extended +11.7% above 20 EMA ($581) and +25.2% above 50 SMA ($519). R:R is 1:0.78. Approved limit buy at $520-$560.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: VALUATION & SCENARIOS -->
+    <div class="section-card">
+      <div class="sec-head">
+        <h3 class="sec-title">🎯 3. Probabilistic Scenario Valuation & 12M Targets</h3>
+        <span class="sec-tag">PROBABILITY-WEIGHTED: $727.20 USD (+12.0%)</span>
+      </div>
+      <div class="grid-3">
+        <div class="metric-card" style="border-top: 4px solid #16a34a;">
+          <div class="m-label text-emerald">Bull Case (25% Prob)</div>
+          <div class="m-val">$900.00 USD</div>
+          <div class="m-sub text-emerald">+38.6% Return Potential</div>
+          <p style="font-size: 12px; color: #64748b; margin-top: 8px;">
+            MI350 captures >18% merchant share; 45.0x Forward P/E on $20 EPS.
+          </p>
+        </div>
+        <div class="metric-card" style="border-top: 4px solid #2563eb;">
+          <div class="m-label text-blue">Base Case (55% Prob)</div>
+          <div class="m-val">$740.00 USD</div>
+          <div class="m-sub text-blue">+13.9% Expected Return</div>
+          <p style="font-size: 12px; color: #64748b; margin-top: 8px;">
+            Sustained cloud capex; 12% second-source share; 37.0x Forward P/E.
+          </p>
+        </div>
+        <div class="metric-card" style="border-top: 4px solid #dc2626;">
+          <div class="m-label text-rose">Bear Case (20% Prob)</div>
+          <div class="m-val">$476.00 USD</div>
+          <div class="m-sub text-rose">-26.7% Downside Risk</div>
+          <p style="font-size: 12px; color: #64748b; margin-top: 8px;">
+            Hyperscaler ASIC cannibalization; capex digestion pause; 28.0x P/E.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: PORTFOLIO REBALANCING & CRO DIRECTIVE -->
+    <div class="section-card">
+      <div class="sec-head">
+        <h3 class="sec-title">💼 4. Portfolio Allocation & Risk Diagnostics</h3>
+        <span class="sec-tag">BM사장님 LIVE PORTFOLIO (`my-portfolio.yaml`)</span>
+      </div>
+      <div class="grid-4">
+        <div class="metric-card">
+          <div class="m-label">Total Portfolio</div>
+          <div class="m-val">$1.75M USD</div>
+          <div class="m-sub">$1,751,413.80 Assets</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">AMD Holding</div>
+          <div class="m-val">180 Shares</div>
+          <div class="m-sub">$116,895.60 (6.67%)</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">Pure Semi Exposure</div>
+          <div class="m-val text-rose">40.98%</div>
+          <div class="m-sub">$717,761.56 Combined</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">Cash Dry Powder</div>
+          <div class="m-val text-emerald">$262.7k USD</div>
+          <div class="m-sub">15.00% Buffer Intact</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 18px; padding: 18px 22px; background: #fff1f2; border: 1px solid #fecdd3; border-radius: 12px;">
+        <h4 style="font-size: 14px; color: #9f1239; font-weight: 800; margin-bottom: 6px;">CRO Hard Sizing Directive & False Diversification Audit:</h4>
+        <p style="font-size: 13px; line-height: 1.6; color: #881337;">
+          BM사장님's portfolio already holds 40.98% direct semiconductor factor exposure (NVDA 20.49%, AVGO 7.51%, AMD 6.67%, TSM 3.30%, MU 2.39%, SKHY 0.46%, SOXL 0.16%).
+          Adding capital to AMD at an RSI of 83.3 would breach the 45% sector cap.
+          <strong>Directive: Maintain existing 180 shares (HOLD). Zero new capital deployed. Staged buy order permitted only if price pulls back to $520-$560.</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 5: NON-NEGOTIABLE EXIT TRIGGER -->
+    <div class="section-card" style="border: 2px solid #fecaca; background: #fffaf0;">
+      <div class="sec-head" style="border-bottom-color: #fed7aa;">
+        <h3 class="sec-title" style="color: #c2410c;">🚨 5. The Non-Negotiable Invalidation Trigger</h3>
+        <span class="sec-tag" style="background: #ffedd5; color: #c2410c;">100% EXIT THRESHOLD</span>
+      </div>
+      <p style="font-size: 14px; line-height: 1.7; color: #9a3412; font-weight: 600;">
+        "Regardless of short-term price momentum or bullish headlines, DADAIC Investment Firm will immediately liquidate all 180 shares (100% exit) if:
+        <strong>AMD's Data Center GPU (Instinct) sequential revenue growth turns negative for two consecutive quarters, OR Microsoft, Meta, and Oracle collectively halt MI300/MI325 deployments in favor of proprietary custom ASICs (Maia, MTIA), proving that AMD cannot sustain a profitable merchant accelerator business outside of EPYC CPUs.</strong>"
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-bar">
+    <span>DADAIC Investment Firm | Official Investment Committee Deliverable</span>
+    <span>Doc ID: DADAIC-IC-MEMO-AMD-261006 | Strictly USD Denominated</span>
+  </div>
+</div>
+
+</body>
+</html>

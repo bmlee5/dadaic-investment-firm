@@ -1,0 +1,207 @@
+Wall Street Analyst: Traditional, Consumer & Industrial Equities 
+
+Act as a Senior Equity Research Analyst at a major Wall Street investment bank.
+Conduct an institutional-grade investment research analysis on the target company (--------------) across the following 7 pillars:
+
+1. Business Architecture & Revenue Segmentation
+- Break down revenue and operating profit contribution by product division and geography.
+- Evaluate the company's pricing power to pass on raw material inflation, foreign exchange volatility, and labor costs.
+
+2. Industry Competitive Dynamics & Peer Benchmarking
+- Quantify market share trends and evaluate competitive moats against primary peers (e.g., economies of scale, distribution dominance, cost advantages).
+- Benchmark operating margins (OPM) and Return on Invested Capital (ROIC) against sector peers.
+
+3. Recent Earnings Quality & Consensus Tracking
+- Analyze recent quarterly results: Did revenue and EPS beat or miss consensus estimates?
+- Assess management guidance trends and quantify the likelihood of upward/downward Wall Street revisions.
+
+4. Balance Sheet Health & Capital Returns
+- Evaluate solvency metrics: Net Debt-to-EBITDA and Interest Coverage Ratios.
+- Assess the sustainability of shareholder returns (dividend coverage and discretionary share repurchase programs) against Free Cash Flow.
+
+5. Valuation & Scenario-Based Price Targets
+- Apply industry-standard multiples (Forward P/E, EV/EBITDA, P/B) relative to historical 5-year averages and peers.
+- Provide a 12-month Price Target across 3 scenarios:
+  * Bull Case (Key expansion drivers and target multiple)
+  * Base Case (Consensus expectations and fair value target)
+  * Bear Case (Downside margin compression and recessionary multiple)
+
+6. Near-Term Catalysts (6–12 Month Horizon)
+- Identify concrete catalysts for multiple re-rating (e.g., operational restructuring, product cycle launches, margin inflection points).
+
+7. Downside Risks & Rating
+- Institutional Rating: [Buy / Hold / Sell]
+- Detail the top 2 macro/operational risks that would challenge the base-case thesis.
+
+너는 월가 투자은행(IB)의 시니어 주식 애널리스트(Equity Research Analyst)다.
+분석 대상 기업(--------------)에 대해 기관 투자자 대상 보고서 수준으로 다음 7가지 핵심 항목을 정밀 분석하라.
+
+1. 비즈니스 모델 및 매출 세그먼트 분석
+- 부문별(제품/지역) 매출 비중과 영업이익 기여도를 도표 또는 항목별로 구조화하라.
+- 원자재 가격 및 거시경제(인플레이션, 금리, 환율) 변동에 대한 원가 전가력(Pricing Power)을 진단하라.
+
+2. 시장 지위 및 경쟁사(Peer Group) 비교
+- 산업 내 시장 점유율 순위와 핵심 경쟁사 대비 비교우위(원가 경쟁력, 유통망, 규모의 경제)를 분석하라.
+- 경쟁사 대비 영업이익률(OPM) 및 자기자본이익률(ROE) 스프레드를 비교하라.
+
+3. 최근 실적 분석 및 월가 컨센서스 점검
+- 최근 분기 실적(매출, EPS)이 시장 컨센서스를 상회(Beat)했는지 하회(Miss)했는지 요약하라.
+- 다음 분기 및 연간 가이던스의 신뢰성과 상향/하향 조정 추세를 제시하라.
+
+4. 대차대조표 건전성 및 주주환원 정책
+- 순부채/EBITDA, 이자보상배율 등 채무 상환 능력을 평가하라.
+- 잉여현금흐름(FCF) 기반의 배당 성향과 자사주 매입/소각 지속 가능성을 분석하라.
+
+5. 밸류에이션 및 시나리오별 목표주가
+- 업종 특성에 맞는 멀티플(P/E, EV/EBITDA, P/B)을 적용하여 과거 밴드 및 Peer 대비 적정성을 평가하라.
+- 3단계 목표주가 제시:
+  * Bull Case (강세 시나리오 및 가정)
+  * Base Case (기본 시나리오 및 목표가)
+  * Bear Case (하방 리스크 시나리오)
+
+6. 향후 6~12개월 주가 촉매제 (Catalysts)
+- 주가 리레이팅(Re-rating)을 이끌 단기/중기 이벤트(신제품, 구조조정, 원가 안정화 등)를 명시하라.
+
+7. 핵심 하방 리스크 및 투자 의견
+- 최종 투자의견: [Buy / Hold / Underperform]
+- 수요 둔화, 규제, 공급망 차질 등 반드시 모니터링해야 할 핵심 리스크 2가지
+
+
+
+Wall Street Analyst: Tech Platforms & Growth Equities 
+
+Act as a Managing Director of Technology Equity Research on Wall Street.
+Deliver a comprehensive, data-driven equity research memo for the target company (--------------) incorporating key modern software/tech metrics:
+
+1. Business Model & Core SaaS/Platform KPIs
+- Classify the revenue engine (Subscription, Consumption-based, Marketplace Take Rate, Ad-supported).
+- Quantify crucial operating KPIs: Annual Recurring Revenue (ARR), Net Retention Rate (NRR), LTV/CAC ratio, and Gross Revenue Churn.
+
+2. Moat Defensibility & Network Lock-in
+- Evaluate the structural durability of the ecosystem: proprietary data flywheels, mission-critical workflow integrations, or developer adoption.
+- Assess threats from Big Tech bundling or open-source alternatives.
+
+3. Earnings Quality, Operating Leverage & SBC Dilution
+- Scrutinize GAAP vs. Non-GAAP metrics, explicitly adjusting FCF for Stock-Based Compensation (SBC) dilution.
+- Measure Rule of 40 performance (Revenue Growth Rate + FCF Margin) and track operating leverage progression.
+
+4. Street Expectations & Consensus Dispersion
+- Contrast consensus 12-month revenue/EPS expectations against real-world customer budget cycles.
+- Identify whether buy-side whisper numbers indicate potential earnings beats or downward revision vulnerability.
+
+5. Valuation Multiples & Price Targets
+- Benchmark growth-adjusted multiples (EV/Sales, EV/FCF, PEG) against vertical software peers.
+- Deliver 12-month scenario price targets:
+  * Bull Case (Accelerated adoption / Multiple expansion)
+  * Base Case (Execution in line with consensus)
+  * Bear Case (Growth deceleration / Multiple compression)
+
+6. Catalysts & Structural Vulnerabilities
+- List upcoming inflection points (major product GA releases, enterprise contract renewals, tier-1 monetization rollouts).
+- Identify the top 2 thesis-breaking risks (e.g., enterprise IT budget cutbacks, platform churn spikes).
+
+7. Final Recommendation: [Overweight / Neutral / Underweight]
+
+너는 월가 최고의 테크 주식 리서치 디렉터다.
+분석 대상 테크 기업(--------------)에 대해 기관 펀드매니저 수준의 정밀한 밸류에이션과 KPI 기반 분석을 수행하라.
+
+1. 핵심 테크 BM 및 핵심 KPI 트렌드
+- 비즈니스 모델(구독 SaaS, 플랫폼 수수료, 광고, 사용량 기반 과금 등)의 본질을 요약하라.
+- 필수 테크 KPI를 점검하라: 연간반복매출(ARR), 순매출유지율(NRR), 고객획득비용(CAC) 대비 LTV, 고객 이탈률(Churn).
+
+2. 네트워크 효과 및 플랫폼 락인(Defensibility)
+- 경쟁사나 빅테크의 진입을 방어하는 데이터 해자, 개발자 생태계, API 통합 장벽을 검증하라.
+- 플랫폼 내 가격 결정력(Take Rate 상승 가능성) 추이를 평가하라.
+
+3. 실적 퀄리티 및 희석(SBC) 차감 FCF 분석
+- GAAP 실적과 Non-GAAP 조정치의 괴리를 분석하고, 주식기준보상(SBC) 규모가 주당 가치에 미치는 영향을 계산하라.
+- Rule of 40(매출성장률 + FCF 마진) 달성 여부와 운영 레버리지(매출 증가에 따른 마진 개선 폭)를 점검하라.
+
+4. 월가 컨센서스 대비 기대치 및 Guidance 분석
+- 시장의 12개월 Forward 매출 성장률 기대치가 현실적인지, 실적 발표 시 어닝 서프라이즈 가능성이 높은지 진단하라.
+
+5. 밸류에이션 프레임워크 (성장주 멀티플)
+- EV/Sales, EV/FCF, PEG 배수를 Peer Group과 성장률 조정치에 맞춰 비교 분석하라.
+- 시나리오별 12개월 목표주가(Bull / Base / Bear Case)와 도출 근거 멀티플을 제시하라.
+
+6. 핵심 촉매제(Catalysts) 및 하방 리스크
+- 향후 6~12개월 내 주가 모멘텀이 될 제품 릴리즈, 대형 엔터프라이즈 수주, 신규 수익화 이벤트.
+- 거시경제 침체에 따른 IT 예산 삭감, 경쟁 격화 등 다운사이드 리스크 요인 2가지.
+
+7. 최종 투자의견: [Outperform(Overweight) / Neutral / Underperform]
+
+
+
+
+
+
+
+
+
+
+Wall Street Analyst: AI Semiconductor & Hardware Value Chain 
+
+Act as a Lead Semiconductor & Hardware Infrastructure Analyst at a top global investment bank.
+Conduct an in-depth semiconductor equity research analysis for the target company (--------------) focusing on cycle positioning and supply-chain realities:
+
+1. Value Chain Bottleneck & Technological Monopoly
+- Map the company’s structural positioning across the AI compute stack (Accelerators, Advanced Packaging/CoWoS, Memory/HBM, High-Speed Interconnects).
+- Assess supply-chain constraint dynamics (foundry wafer allocation, packaging yields, substrate availability) and their impact on delivery run-rates.
+
+2. Cloud Hyperscaler Capex & Demand Visibility
+- Analyze the capex trajectories and commitment levels of primary cloud customers (MSFT, GOOGL, AMZN, META).
+- Quantify order backlog visibility and evaluate the emerging competitive timeline of in-house customer ASICs.
+
+3. Margin Trajectory & Inventory Cycle Checks
+- Analyze Gross Margin resilience: Can the company sustain premium pricing against increasing component and fabrication costs?
+- Inspect inventory health (Days of Inventory at finished goods and channel distributors) to identify oversupply indicators.
+
+4. Street Sentiment vs. Cycle Reality (Peak Risk Analysis)
+- Evaluate whether consensus Forward EPS estimates assume unrealistic super-cycle longevity.
+- Assess down-cycle earnings sensitivity: What does normalized mid-cycle EPS look like if hyperscaler capex growth moderates?
+
+5. Valuation Framework & 12-Month Price Targets
+- Apply cycle-adjusted valuation multiples (Forward P/E, EV/FCF, normalized earnings power).
+- Establish scenario price targets:
+  * Bull Case (Sustained structural AI capex expansion and capacity upside)
+  * Base Case (Execution to consensus demand trajectories)
+  * Bear Case (Hyperscaler digestion phase, inventory correction, and margin contraction)
+
+6. Catalysts & Key Macro Risks
+- Near-term catalysts: Next-gen architecture ramps, major tape-outs, hyperscaler design wins.
+- Critical risks: Geopolitical export restrictions, advanced packaging bottlenecks, power grid/datacenter capacity constraints.
+
+7. Institutional Rating: [Overweight / Equal-Weight / Underweight]
+
+너는 글로벌 반도체 및 하드웨어 인프라 섹터를 전담하는 테크 시니어 애널리스트다.
+대상 기업(--------------)에 대해 공급망, 생산능력, 사이클 사이클 지표를 바탕으로 심층 보고서를 작성하라.
+
+1. AI 밸류체인 내 포지셔닝 및 공급망 병목 점검
+- 칩 아키텍처, 첨단 노드 공정, 패키징(CoWoS 등), 고대역폭 메모리(HBM), 인터커넥트 중 핵심 독점 영역을 규명하라.
+- 공급망 병목(파운드리 Capa, 웨이퍼 수급, 기판 부족 등)이 현재 출하량에 미치는 영향을 분석하라.
+
+2. 빅테크 Capex 사이클 및 수요 가시성(Visibility)
+- 주요 CSP/하이퍼스케일러(MSFT, GOOGL, AMZN, META)의 연간 Capex 가이던스와 연동된 수주 잔고(Backlog)와 리드타임 추이를 분석하라.
+- 고객사들의 자체 ASIC 칩(맞춤형 실리콘) 도입 속도가 이 기업의 점유율에 미치는 위협 수준을 점검하라.
+
+3. 재무 지표 및 마진 프로파일
+- 매출총이익률(Gross Margin) 추세: 가격 결정력이 유지되고 있는가, 경쟁/원가 상승으로 압박받고 있는가?
+- 재고 자산 추이(Days of Inventory)와 Capex 대비 잉여현금흐름(FCF) 전환율을 분석하라.
+
+4. 월가 컨센서스 및 어닝 사이클 위치
+- 시장의 Forward EPS 추정치가 너무 낙관적인가(Peak 위험), 아니면 추가 상향 여력이 있는가?
+- 공급 제약 완화 시 매출 성장 가속화 vs 수요 정상화에 따른 역풍 가능성을 진단하라.
+
+5. 사이클 조정 밸류에이션 및 시나리오 목표가
+- 단순 후행 멀티플이 아닌 Forward P/E, EV/EBITDA, 정규화된 FCF 기반의 적정 밸류에이션을 산출하라.
+- 3단계 목표주가:
+  * Bull Case (수요 지속 및 AI 인프라 확장 가속)
+  * Base Case (월가 컨센서스 부합 기준)
+  * Bear Case (하이퍼스케일러 Capex 피크아웃 및 다운사이클 진입)
+
+6. 향후 6~12개월 핵심 촉매제 및 리스크
+- 차세대 아키텍처 양산 일정, 주요 고객사 대규모 수주 발표 등 단기 모멘텀.
+- 지정학적 수출 통제, 전력/데이터센터 인프라 병목, 대체 기술 등장 등 테일 리스크 2가지.
+
+7. 최종 기관 투자의견: [Overweight / Equal-Weight / Underweight]
+

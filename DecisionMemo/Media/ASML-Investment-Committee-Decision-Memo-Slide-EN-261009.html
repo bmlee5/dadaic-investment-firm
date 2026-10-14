@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ASML Investment Committee Decision Deck (English)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+@page {
+  size: 1920px 1080px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.slide {
+  width: 1920px;
+  height: 1080px;
+  page-break-after: always;
+  page-break-inside: avoid;
+  position: relative;
+  padding: 44px 64px;
+  overflow: hidden;
+  background: radial-gradient(circle at 90% 10%, rgba(37, 99, 235, 0.05) 0%, transparent 45%),
+              radial-gradient(circle at 10% 90%, rgba(16, 185, 129, 0.06) 0%, transparent 45%),
+              #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 14px;
+}
+
+.slide-title-wrap h2 {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.slide-title-wrap p {
+  font-size: 19px;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.slide-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  letter-spacing: 0.5px;
+}
+
+.slide-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 14px;
+  font-size: 15px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.slide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+}
+
+/* CARDS & GRIDS */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 24px 28px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+}
+
+.card-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card p, .card li {
+  font-size: 18px;
+  color: #334155;
+  line-height: 1.7;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.stat-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.stat-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 34px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.stat-sub {
+  font-size: 15px;
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.stat-sub.neutral {
+  color: #64748b;
+}
+
+.stat-sub.danger {
+  color: #ef4444;
+}
+
+.verdict-banner {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 28px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verdict-text-wrap h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.verdict-text-wrap p {
+  font-size: 19px;
+  color: #93c5fd;
+  font-weight: 500;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.tag-blue { background: #dbeafe; color: #1e40af; }
+.tag-emerald { background: #d1fae5; color: #065f46; }
+.tag-amber { background: #fef3c7; color: #92400e; }
+.tag-red { background: #fee2e2; color: #991b1b; }
+.tag-purple { background: #f3e8ff; color: #6b21a8; }
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+table.data-table th {
+  background: #f1f5f9;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #334155;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+table.data-table td {
+  padding: 14px 18px;
+  font-size: 17px;
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+table.data-table tr:last-child td {
+  border-bottom: none;
+}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: EXECUTIVE DECISION SUMMARY -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>Executive Investment Decision: ASML Holding N.V.</h2>
+      <p>DADAIC Investment Committee Synthesis | Target Asset: ASML (NASDAQ: ASML)</p>
+    </div>
+    <div class="slide-badge">STAGE 5: EXECUTIVE MEMO</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="verdict-banner">
+      <div class="verdict-text-wrap">
+        <h3>APPROVED: CONDITIONAL SIZE CAP (MAX 3.0% - 4.0%)</h3>
+        <p>Pure Monopoly in EUV Lithography | Tailored for BM사장님's Capital Compounding</p>
+      </div>
+      <div style="text-align: right;">
+        <span class="tag-badge tag-emerald" style="font-size: 16px; padding: 8px 18px;">ACCUMULATE ON DIP</span>
+        <div style="font-size: 16px; color: #cbd5e1; margin-top: 8px;">Target Zone: $1,560 - $1,650 USD</div>
+      </div>
+    </div>
+
+    <div class="grid-4">
+      <div class="stat-box">
+        <span class="stat-label">Current Market Price</span>
+        <span class="stat-value">$1,769.79</span>
+        <span class="stat-sub">+76.96% 1-Year Total Return</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Conservative Intrinsic Value</span>
+        <span class="stat-value">$1,950.00</span>
+        <span class="stat-sub">+10.2% Base Margin</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">12-Month Target Price</span>
+        <span class="stat-value">$2,150.00</span>
+        <span class="stat-sub">+21.5% Implied Upside</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Portfolio Sizing Mandate</span>
+        <span class="stat-value">2.5% - 4.0%</span>
+        <span class="stat-sub neutral">Pilot: 15 - 25 Shares</span>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">🏛️ Monopoly Moat</div>
+        <p><strong>100% Market Share in EUV:</strong> World's sole commercial supplier of Extreme Ultraviolet lithography machines. Impossible to fabricate <5nm chips without ASML.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">📊 Multi-Year Surge</div>
+        <p><strong>2026E Sales: €43B - €45B:</strong> Accelerating +34% YoY driven by TSMC 2nm N2 ramp, Intel 18A High-NA deployment, and €33B+ confirmed backlog.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">⚠️ Mechanical Size Cap</div>
+        <p><strong>Portfolio Exposure Guard:</strong> BM사장님 already holds >68% factor exposure to Semis/AI. Position strictly capped at 25-30 shares ($41K-$53K USD).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | Strictly Confidential</span>
+    <span>Principal Investor: BM사장님 | Meeting Date: October 9, 2026</span>
+    <span>Slide 1 of 5</span>
+  </div>
+</div>
+
+<!-- SLIDE 2: MULTI-YEAR EMPIRICAL VALIDATION -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>Multi-Year Empirical Validation Scorecard</h2>
+      <p>BM사장님 30-Year Veteran Investment Mandate | Grounded in Audited Financial Statements</p>
+    </div>
+    <div class="slide-badge">STAGE 2: EMPIRICAL AUDIT</div>
+  </div>
+
+  <div class="slide-content">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric Category</th>
+          <th>Multi-Year Audited Empirical Fact</th>
+          <th>Benchmark / Peer Context</th>
+          <th>Institutional Verdict</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1-Year Total Return</strong></td>
+          <td><strong>+76.96%</strong> ($1,000.10 ➔ $1,769.79 USD)</td>
+          <td>S&P 500: +24.5% / SOX Semi Index: +48.2%</td>
+          <td><span class="tag-badge tag-emerald">V-Shaped Cycle Outperformance</span></td>
+        </tr>
+        <tr>
+          <td><strong>3-Year Total Return & CAGR</strong></td>
+          <td><strong>+214.76%</strong> (CAGR: <strong>+46.55%</strong>)</td>
+          <td>Outperformed 95% of Global Equities</td>
+          <td><span class="tag-badge tag-emerald">Generative AI Super-Cycle Alpha</span></td>
+        </tr>
+        <tr>
+          <td><strong>5-Year Total Return & CAGR</strong></td>
+          <td><strong>+162.44%</strong> (CAGR: <strong>+21.28%</strong>)</td>
+          <td>Absorbed 2022 Fed rate hikes & China DUV controls</td>
+          <td><span class="tag-badge tag-blue">Durable Monopoly Compounding Engine</span></td>
+        </tr>
+        <tr>
+          <td><strong>Revenue Trajectory</strong></td>
+          <td>2023: €27.56B ➔ 2024: €28.26B ➔ 2025: €32.70B ➔ <strong>2026E: €43.0B - €45.0B</strong></td>
+          <td>Q2 2026 Net Sales: €9.3B (+21% YoY)</td>
+          <td><span class="tag-badge tag-purple">Accelerating Top-Line Scale</span></td>
+        </tr>
+        <tr>
+          <td><strong>Gross Margin & Pricing Power</strong></td>
+          <td>Gross Margin: <strong>54.0%</strong> (2026E: 54-56%) | EUV ASP: <strong>€180M - €220M</strong></td>
+          <td>Q2 2026 Net Margin: <strong>31.2%</strong> (€2.9B Net Income)</td>
+          <td><span class="tag-badge tag-emerald">Insurmountable Pricing Power</span></td>
+        </tr>
+        <tr>
+          <td><strong>Solvency & Fortress Cash</strong></td>
+          <td>Cash & ST Investments: <strong>€7.58B</strong> vs Non-Current Debt: <strong>€6.24B</strong></td>
+          <td>Net Cash Surplus: <strong>+€1.35B+</strong> | Altman Z: 8.42</td>
+          <td><span class="tag-badge tag-blue">Pristine Sovereign Balance Sheet</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">📦 Order Backlog & Visibility (€33B+)</div>
+        <p>ASML holds over €33 Billion in confirmed net backlog—representing over one full year of capacity. Management is officially expanding 2027-2028 production capacity by +30% to meet sustained demand.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">🔄 Recurring Installed Base Cash Flow (€11B+ Run-Rate)</div>
+        <p>Installed Base Management generated €2.76B in Q2 2026 alone. High-margin maintenance, software upgrades, and optical retrofits generate recurring high-margin cash flow independent of new tool sales.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | Strictly Confidential</span>
+    <span>Principal Investor: BM사장님 | Meeting Date: October 9, 2026</span>
+    <span>Slide 2 of 5</span>
+  </div>
+</div>
+
+<!-- SLIDE 3: THE 5 MASTERS & MARKET TECHNICIAN CONSENSUS -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>The 5 Masters & Market Technician Consensus</h2>
+      <p>Multi-Disciplinary Philosophical Audit | Balanced 2-Row × 3-Column Evaluator Grid</p>
+    </div>
+    <div class="slide-badge">STAGE 3: STRATEGY EVALUATION</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="grid-3">
+      <!-- 1. Warren Buffett -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-blue">Buffett</span>
+          <span>Economic Moat & MoS</span>
+        </div>
+        <p><strong>Verdict: Premier Moat / Accumulate on Dip</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"The ultimate tollbridge on Earth. But at 32x forward P/E, wait for cyclically driven booking pullbacks ($1,560 - $1,650 USD) for a true margin of safety."</p>
+      </div>
+
+      <!-- 2. Charlie Munger -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-purple">Munger</span>
+          <span>Lollapalooza & Inversion</span>
+        </div>
+        <p><strong>Verdict: Inversion Cleared / Peerless Moat</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"Zeiss optics + Cymer lasers + 30-year R&D creates an irreproducible Lollapalooza moat. China exposure is down to 14% without stopping record sales."</p>
+      </div>
+
+      <!-- 3. Peter Lynch -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-emerald">Lynch</span>
+          <span>Fast Grower & PEG (1.15)</span>
+        </div>
+        <p><strong>Verdict: High-Quality Stalwart Compounder</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"34% sales growth with 30% EPS growth justifies a 1.15 PEG. The razor-and-blade service stream (€2.76B/qtr) provides powerful grassroots earnings stability."</p>
+      </div>
+
+      <!-- 4. Stanley Druckenmiller -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-amber">Druckenmiller</span>
+          <span>Asymmetric Alpha (3.2 : 1)</span>
+        </div>
+        <p><strong>Verdict: Core Sovereign Subsidy Beneficiary</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"$120B+ in sovereign fab subsidies (US/EU/Japan) all flow directly to ASML's order book. Fabs cannot operate without EUV. Outstanding 3.2 : 1 risk/reward."</p>
+      </div>
+
+      <!-- 5. William J. O'Neil -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-blue">O'Neil</span>
+          <span>CAN SLIM Growth Leader</span>
+        </div>
+        <p><strong>Verdict: Institutional Leader in Base</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"EPS surged +31% YoY; 4,200+ elite funds backing; consolidating constructively above rising 50-day ($1,728) and 200-day ($1,545) MAs. Hard stop: $1,620."</p>
+      </div>
+
+      <!-- 6. Chief Market Technician -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-emerald">Technician</span>
+          <span>Trend Setup (R:R 1 : 2.8)</span>
+        </div>
+        <p><strong>Verdict: Bullish Flag Consolidation</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"Consolidating between $1,750 and $1,860 on drying volume. RSI at 51.5. Support 1 at $1,728; Support 2 at $1,650; Breakout target at $2,150. Stop: $1,620."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | Strictly Confidential</span>
+    <span>Principal Investor: BM사장님 | Meeting Date: October 9, 2026</span>
+    <span>Slide 3 of 5</span>
+  </div>
+</div>
+
+<!-- SLIDE 4: BLIND CRO AUDIT & 3 FATAL FLAWS -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>Blind CRO Risk Audit & Macro Stress Simulation</h2>
+      <p>Independent Tail-Risk Clearance | 3 Shock Scenarios & Mandatory 3 Structural Flaws</p>
+    </div>
+    <div class="slide-badge">STAGE 4: RISK OVERSIGHT</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="grid-3">
+      <div class="card" style="border-left: 5px solid #ef4444;">
+        <div class="card-title" style="color: #b91c1c;">Flaw 1: Factor Beta Contagion</div>
+        <p>BM사장님 already carries >68% factor exposure to Semis and AI Hardware (NVDA, TSM, AVGO, SOXL). ASML has a 0.85+ correlation during down-cycles, worsening False Diversification.</p>
+      </div>
+      <div class="card" style="border-left: 5px solid #ef4444;">
+        <div class="card-title" style="color: #b91c1c;">Flaw 2: The China Sanctions Cliff</div>
+        <p>While direct China sales declined to 14%, proposed US MATCH Act restrictions on servicing existing DUV tools could threaten €3B-€4B in high-margin recurring annual maintenance EBITDA.</p>
+      </div>
+      <div class="card" style="border-left: 5px solid #ef4444;">
+        <div class="card-title" style="color: #b91c1c;">Flaw 3: Booking Air Pocket Shocks</div>
+        <p>At 32x forward P/E, a single quarterly net booking miss (e.g. October 2024 dip to €2.6B) can trigger severe 15-20% gap-downs due to high institutional expectation density.</p>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Macro Stress Scenario</th>
+          <th>Shock Mechanics & Transmission</th>
+          <th>ASML Expected Drawdown</th>
+          <th>Portfolio Projected MDD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Shock 1: AI Capex Digestion</strong></td>
+          <td>Hyperscalers freeze incremental AI data center buildouts; Semi P/E de-rates by 30%.</td>
+          <td><strong>-26.5%</strong> ($1,300 USD)</td>
+          <td><strong>-22.4%</strong> (NVDA, SOXL, ASML drawdown)</td>
+        </tr>
+        <tr>
+          <td><strong>Shock 2: Geopolitical Supply Shock</strong></td>
+          <td>Taiwan Strait tension; crude oil surges to $115/bbl; stagflationary supply freeze.</td>
+          <td><strong>-32.0%</strong> ($1,200 USD)</td>
+          <td><strong>-28.8%</strong> (TSM, SOXL, TQQQ hit hardest)</td>
+        </tr>
+        <tr>
+          <td><strong>Shock 3: Higher-for-Longer Rates</strong></td>
+          <td>US 10Y Yield spikes above 5.50%; general tech equity multiple contraction.</td>
+          <td><strong>-18.5%</strong> ($1,440 USD)</td>
+          <td><strong>-15.2%</strong> (High-beta & leveraged assets)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | Strictly Confidential</span>
+    <span>Principal Investor: BM사장님 | Meeting Date: October 9, 2026</span>
+    <span>Slide 4 of 5</span>
+  </div>
+</div>
+
+<!-- SLIDE 5: ACTIONABLE PORTFOLIO BLUEPRINT -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>Tactical Portfolio Blueprint for BM사장님</h2>
+      <p>Execution Matrix Grounded in `my-portfolio.yaml` ($1.61M Equity Base)</p>
+    </div>
+    <div class="slide-badge">STAGE 5: EXECUTION MATRIX</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">🎯 Actionable Trade Directives</div>
+        <ul>
+          <li><strong>Tranche 1 (Pilot Entry):</strong> Buy <strong>10 to 15 Shares</strong> (~$17,700 - $26,500 USD) at current support zone ($1,720 - $1,750 USD).</li>
+          <li><strong>Tranche 2 (Margin of Safety Add):</strong> If booking headlines push price to <strong>$1,560 - $1,650 USD</strong>, add <strong>10 Shares</strong> to complete 25 shares (~$41,250 USD / ~2.5% weight).</li>
+          <li><strong>Hard Ceiling:</strong> <strong>Cap at 30 Shares (~$53,000 USD / 3.3% weight)</strong>. Strictly adhere to CRO factor limits.</li>
+          <li><strong>Hard Stop-Loss / Disaster Floor:</strong> <strong>$1,420.00 USD</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">🔮 12-Month Valuation Scenarios</div>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 6px;">
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 10px 0; font-weight: 700; color: #10b981;">Bull Case (25% Prob)</td>
+            <td style="padding: 10px 0; font-size: 18px;">38.0x P/E on $65 EPS ➔ <strong>$2,470.00 USD (+39.6%)</strong></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 10px 0; font-weight: 700; color: #2563eb;">Base Case (55% Prob)</td>
+            <td style="padding: 10px 0; font-size: 18px;">33.0x P/E on $65 EPS ➔ <strong>$2,145.00 USD (+21.2%)</strong></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px 0; font-weight: 700; color: #ef4444;">Bear Case (20% Prob)</td>
+            <td style="padding: 10px 0; font-size: 18px;">25.0x P/E on $58 EPS ➔ <strong>$1,450.00 USD (-18.1%)</strong></td>
+          </tr>
+        </table>
+        <p style="font-size: 16px; color: #64748b; margin-top: 14px;"><strong>Probability-Weighted 12M Target: $2,087.25 USD (+17.9% Expected Return)</strong></p>
+      </div>
+    </div>
+
+    <div class="card" style="background: #fffbeb; border: 1px solid #fef3c7;">
+      <div class="card-title" style="color: #92400e;">🚨 The Non-Negotiable Thesis Invalidation Trigger</div>
+      <p style="color: #78350f; font-size: 17px;">
+        <strong>Sell Directive:</strong> Downgrade to IMMEDIATE EXIT if: <em>"US & Dutch authorities enact a full servicing/parts ban on China's entire DUV installed base causing a permanent >25% revenue destruction; OR if Nanoimprint Lithography (NIL) achieves yield parity in <3nm logic mass production."</em>
+      </p>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | Strictly Confidential</span>
+    <span>Principal Investor: BM사장님 | Meeting Date: October 9, 2026</span>
+    <span>Slide 5 of 5</span>
+  </div>
+</div>
+
+</body>
+</html>

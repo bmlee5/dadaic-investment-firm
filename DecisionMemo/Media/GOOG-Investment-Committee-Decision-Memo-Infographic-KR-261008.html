@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>GOOG 투자위원회 핵심 전략 인포그래픽 (한글판)</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.infographic-container {
+  width: 1140px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 46px 50px 38px 50px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.firm-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.hero-verdict-box {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verdict-tag {
+  background: #3b82f6;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.verdict-text {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.content-body {
+  padding: 44px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.section-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.metric-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.metric-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.metric-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.metric-sub {
+  font-size: 14px;
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.info-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.info-card-header {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.footer-bar {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+</style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <!-- HERO HEADER -->
+  <div class="hero-header">
+    <div class="hero-top">
+      <div class="firm-badge">DADAIC INVESTMENT FIRM • 투자위원회 핵심 브리핑</div>
+      <div style="font-size: 15px; color: #94a3b8; font-weight: 500;">2026년 10월 8일</div>
+    </div>
+    <div class="hero-title">알파벳 (Alphabet Inc. | NASDAQ: GOOG)</div>
+    <div class="hero-subtitle">BM사장님 맞춤형 정밀 기업 실증 분석 및 자산배분 집행 원장</div>
+
+    <div class="hero-verdict-box">
+      <div>
+        <span class="verdict-tag">투자위원회 공식 의결</span>
+        <div class="verdict-text">APPROVED: 최상위 핵심 복리 자산 / 비중 상한 준수</div>
+        <div style="font-size: 16px; color: #93c5fd; margin-top: 4px;">기보유 600주($206,916 USD / 비중 12.87%) 전량 유지 • 신규 자금 투입 잠정 동결</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 14px; color: #cbd5e1; text-transform: uppercase;">12개월 기본 목표가</div>
+        <div style="font-family: 'Outfit'; font-size: 38px; font-weight: 900; color: #60a5fa;">$420.00</div>
+        <div style="font-size: 14px; color: #6ee7b7;">+21.8% 기대 수익률</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-body">
+    <!-- SECTION 1: 핵심 실증 재무 스냅샷 -->
+    <div>
+      <div class="section-title">📊 다년간 공시 실증 재무 건전성</div>
+      <div class="grid-4">
+        <div class="metric-card">
+          <div class="metric-label">현재 시장 주가</div>
+          <div class="metric-val">$344.86</div>
+          <div class="metric-sub" style="color: #64748b;">시가총액: $4.18조 달러</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">2026년 Q2 매출액</div>
+          <div class="metric-val">$119.8B</div>
+          <div class="metric-sub">전년 대비 +24% 성장</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">클라우드 매출 & OPM</div>
+          <div class="metric-val">$24.8B</div>
+          <div class="metric-sub">+82% YoY (OPM: 35.6%)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">밸류에이션 멀티플</div>
+          <div class="metric-val">17.1x</div>
+          <div class="metric-sub">PEG 비율: 0.88 (< 1.0)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: 세계 5대 거장 & 마켓 테크니션 종합 평가 -->
+    <div>
+      <div class="section-title">🏛️ 세계 5대 투자 거장 & 마켓 테크니션 종합 평가</div>
+      <div class="grid-3">
+        <div class="info-card">
+          <div class="info-card-header">☕ 워런 버핏 (경제적 해자와 내재가치)</div>
+          <p><strong>판정: 적정가 핵심 매수</strong>. 구글 검색(점유율 89.94%)은 디지털 통행료 다리입니다. $1,443억 달러의 순현금이 강력한 완충재 역할을 합니다. 보수적 내재가치는 $395 USD입니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">🧠 찰리 멍거 (롤라팔루자 효과 & 역발상)</div>
+          <p><strong>판정: 역발상 검증 통과</strong>. 안드로이드(30억 대) + 크롬 + 유튜브 + 클라우드 + 자체 Ironwood TPU7x 칩이 상호 결합된 독점 플라이휠. 강제 분할 리스크는 2025년 12월 기각됨.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">📈 피터 린치 (고성장주와 PEG 지수)</div>
+          <p><strong>판정: 강력 추천 고성장주 (PEG 0.88)</strong>. $4.18조 시총에도 매출이 24% 급증했으며 Forward PER은 19.5배에 불과합니다. 린치 기준 1.0 미만의 명백한 저평가 우량주입니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">🌊 스탠리 드러켄밀러 (비대칭 알파)</div>
+          <p><strong>판정: 3.4 : 1 비대칭 우위</strong>. 시장은 구글 검색이 몰락할 것이라 오판했으나, 자체 TPU 칩을 통한 압도적 원가 경쟁력으로 엔터프라이즈 AI 클라우드 점유율을 대거 흡수하고 있습니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">🎯 윌리엄 오닐 (CAN SLIM 모멘텀 & 지지선)</div>
+          <p><strong>판정: 기관 매집 재축적</strong>. 2분기 순익 +294% GAAP(+28% 조정), 3개년 EPS CAGR +40.2%. 5,000개 이상 기관 매집 및 200일 이평선($339.61) 강력 지지 안착 확인.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-header">📐 마켓 테크니션 (차트 지지선 & 손익비)</div>
+          <p><strong>판정: R:R 1 : 3.8 셋업</strong>. 핵심 수급 지지선 $335~$338 및 200일선 수요층 확인. 14일 RSI(49.8) 중립 반등권. 목표가 $420, 손절 $318로 최상의 손익비 제공.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: CRO 블라인드 리스크 감사 -->
+    <div>
+      <div class="section-title" style="color: #dc2626;">🛡️ 독립 CRO 블라인드 리스크 감사 (의무 3대 결점)</div>
+      <div class="grid-3">
+        <div class="info-card" style="border-left: 5px solid #dc2626;">
+          <div class="info-card-header" style="color: #dc2626;">1. 설비투자 폭증과 FCF 음수</div>
+          <p>2분기 CapEx가 $449.2억 달러로 급증하며 분기 FCF -$58.6억 달러(SBC 차감 True FCF -$138.2억 달러) 기록. 연간 $2,000억 달러 투자 집행으로 AI 수익화 지연 시 ROIC 압박 위험.</p>
+        </div>
+        <div class="info-card" style="border-left: 5px solid #ea580c;">
+          <div class="info-card-header" style="color: #ea580c;">2. 포트폴리오 팩터 집중 위험</div>
+          <p>BM사장님께서는 이미 구글 600주($206,916 USD / 비중 12.87%)를 보유 중이며, 테크/반도체 비중이 69%를 초과합니다. 구글 추가 매수 시 거짓 분산(False Diversification) 심화.</p>
+        </div>
+        <div class="info-card" style="border-left: 5px solid #d97706;">
+          <div class="info-card-header" style="color: #d97706;">3. 워싱턴 항소법원 배포 소송</div>
+          <p>메타 판사의 강제 분할 기각에도 불구하고, 미 법무부는 2026년 7월 애플 등에 대한 기본 검색 탑재 수수료 전면 금지를 요구하며 항소. 단기 점유율 변동성 유발 가능.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: BM사장님 맞춤형 실행 로드맵 -->
+    <div>
+      <div class="section-title" style="color: #059669;">🎯 BM사장님 맞춤형 포트폴리오 집행 로드맵</div>
+      <div class="grid-3">
+        <div class="info-card" style="background: #f0fdf4; border-color: #bbf7d0;">
+          <div class="info-card-header" style="color: #166534;">1. 기보유 지분 운용 지침</div>
+          <div style="font-family: 'Outfit', 'Noto Sans KR'; font-size: 24px; font-weight: 900; color: #166534; margin-bottom: 6px;">전량 강력 보유 (600주)</div>
+          <p style="font-size: 15px;">보유 중인 600주($206,916 USD / 12.87%)는 단 1주도 매도하지 않습니다. 핵심 복리 자산으로 온전히 유지합니다.</p>
+        </div>
+        <div class="info-card" style="background: #eff6ff; border-color: #bfdbfe;">
+          <div class="info-card-header" style="color: #1e40af;">2. 신규 자금 집행 방침</div>
+          <div style="font-family: 'Outfit', 'Noto Sans KR'; font-size: 24px; font-weight: 900; color: #1e40af; margin-bottom: 6px;">신규 매수 잠정 동결</div>
+          <p style="font-size: 15px;">현재 주가($344.86 USD)에서는 신규 자금을 추가 투입하지 않고 비(非)빅테크 분산 자산 및 현금 버퍼에 배분합니다.</p>
+        </div>
+        <div class="info-card" style="background: #fffbeb; border-color: #fde68a;">
+          <div class="info-card-header" style="color: #92400e;">3. 위기 시 비상 매수 계획</div>
+          <div style="font-family: 'Outfit', 'Noto Sans KR'; font-size: 24px; font-weight: 900; color: #92400e; margin-bottom: 6px;">$330 이하 분할 매수</div>
+          <p style="font-size: 15px;">시장 패닉 등으로 $330.00 USD 이하로 급락할 경우에만 최대 50주를 추가 매수하여 CRO 한도인 15.0%($240k)까지 채웁니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER BAR -->
+  <div class="footer-bar">
+    <div><strong>DADAIC INVESTMENT FIRM</strong> • 글로벌 자율형 자산배분 시스템</div>
+    <div>대외비 • BM사장님 단독 보고용 • 기준 통화: 미국 달러(USD) 전용</div>
+  </div>
+</div>
+
+</body>
+</html>

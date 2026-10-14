@@ -1,0 +1,130 @@
+name: Investment_Committee_Pipeline
+description: End-to-end institutional equity evaluation and portfolio allocation pipeline
+
+inputs:
+  ticker:
+    type: string
+    description: "Stock Ticker Symbol (e.g., NVDA, TSM, AAPL, MSFT)"
+  investor_profile:
+    type: string
+    default: "장기 투자, 중립적 위험 감수 (Long-term, Moderate Risk)"
+  current_portfolio:
+    type: string
+    description: "Current holdings, cash weight, and allocation (Optional/Context)"
+    default: "Cash 20%, S&P 500 ETF 40%, Tech Equities 40%"
+
+stages:
+  # --------------------------------------------------------------------------
+  # Stage 1: Ticker Classification (CIO Orchestrator)
+  # --------------------------------------------------------------------------
+  - name: Classification
+    agent: cio-orchestrator
+    instruction: >-
+      Classify the target ticker into one of the three core sector categories:
+      (1) Traditional, Consumer & Industrial,
+      (2) Tech Platforms & Growth Equities, or
+      (3) AI Semiconductor & Hardware Value Chain.
+      Set the category routing parameter for all subsequent downstream analyst skills.
+
+  # --------------------------------------------------------------------------
+  # Stage 2: Fact Gathering & Forensic Audits (Parallel Execution)
+  # --------------------------------------------------------------------------
+  - name: Fact_Gathering
+    parallel: true
+    instruction: >-
+      Check local cache/ (sec_filings, market_data, macro) first before external fetching.
+      Persist parsed 10-K/10-Q figures and historical series into cache/ to accelerate repeat runs.
+    tasks:
+      - skill: .agent/skills/macro-analyst/SKILL.md
+        instruction: "Analyze global interest rates, net liquidity, inflation, and macro transmission to the sector (utilize cache/macro/)."
+      - skill: .agent/skills/equity-analyst/SKILL.md
+        instruction: "Produce institutional equity research report, business architecture, Core Business Segments, Flagship Products, and Segment Performance Matrix with YoY growth, and 3-scenario price targets (utilize cache/market_data/)."
+      - skill: .agent/skills/financial-auditor/SKILL.md
+        instruction: "Audit 3-5Y SEC filings (10-K/10-Q), DuPont ROE, True FCF net of SBC, and debt solvency (utilize cache/sec_filings/)."
+      - skill: .agent/skills/earnings-analyst/SKILL.md
+        instruction: "Dissect latest quarterly print, consensus beat/miss deltas, guidance shifts, and conference call tone."
+      - skill: .agent/skills/competitor-analyst/SKILL.md
+        instruction: "Benchmark relative moat durability, market share trends, and margin spreads against top 3 rivals."
+      - skill: .agent/skills/flow-analyst/SKILL.md
+        instruction: "Audit SEC Form 4 insider cluster trades, 13F institutional ownership changes, short squeeze metrics, and options GEX/skew."
+      - skill: .agent/skills/regulatory-analyst/SKILL.md
+        instruction: "Audit antitrust investigations (DOJ/FTC/EU), BIS export controls, patent cliffs, Item 3 litigation, and sovereign subsidy risks."
+      - skill: .agent/skills/sentiment-analyst/SKILL.md
+        instruction: "Audit media sentiment extremes, contrarian fear/greed asymmetry, narrative vs fundamental divergence, and 3-6M catalyst timeline."
+
+  # --------------------------------------------------------------------------
+  # Stage 2.5: Dual-Source Fact-Check Gatekeeper
+  # --------------------------------------------------------------------------
+  - name: Fact_Check_Gatekeeper
+    tasks:
+      - skill: .agent/skills/fact-checker/SKILL.md
+        instruction: >-
+          Conduct independent 2-source live cross-verification of industry narratives, competitor status,
+          commercial product operations, regulatory permits, and SEC filings. Eliminate hallucinations
+          and outdated premises before Great Masters' evaluation.
+
+  # --------------------------------------------------------------------------
+  # Stage 3: Great Masters' Strategy Evaluation (Parallel Execution)
+  # --------------------------------------------------------------------------
+  - name: Strategy_Evaluation
+    parallel: true
+    tasks:
+      - skill: .agent/skills/buffett-evaluator/SKILL.md
+        instruction: "Evaluate 4 Buffett pillars: simple BM, durable moat, management candor, and 20-30% margin of safety."
+      - skill: .agent/skills/munger-evaluator/SKILL.md
+        instruction: "Audit Lollapalooza moats, ROIC reinvestment runway, 'Invert always invert' fatal flaws, and fair price."
+      - skill: .agent/skills/lynch-evaluator/SKILL.md
+        instruction: "Classify into 6 categories, conduct 2-minute drill, calculate PEG ratio, and define story-breakdown exits."
+      - skill: .agent/skills/druckenmiller-evaluator/SKILL.md
+        instruction: "Audit 18-month forward inflection points, asymmetric risk/reward ratio (>= 3:1), macro liquidity tailwinds, and aggressive sizing."
+      - skill: .agent/skills/oneil-evaluator/SKILL.md
+        instruction: "Execute 7-pillar CAN SLIM audit (EPS/Sales acceleration, RS rating >= 80, volume breakout, and strict 7-8% stop-loss)."
+      - skill: .agent/skills/technical-analyst/SKILL.md
+        instruction: "Analyze multi-timeframe weekly/daily chart, 20/50/200 MAs, volume profiles, and 1:2 R:R entry setup."
+
+  # --------------------------------------------------------------------------
+  # Stage 4: Portfolio Allocation & Risk Sizing (Portfolio Manager & CRO)
+  # --------------------------------------------------------------------------
+  - name: Portfolio_Allocation
+    tasks:
+      - skill: .agent/skills/portfolio-manager/SKILL.md
+        instruction: >-
+          Diagnose false diversification against my-portfolio.yaml, simulate portfolio MDD across 3 macro stress scenarios,
+          and determine the recommended position sizing (%) and rebalancing blueprint.
+      - skill: .agent/skills/risk-officer/SKILL.md
+        instruction: >-
+          Conduct independent systemic risk stress testing, black-swan tail-risk simulation, leverage drag audit on my-portfolio.yaml,
+          calculate VaR/MDD, and issue binding CRO risk clearance or sizing veto.
+
+  # --------------------------------------------------------------------------
+  # Stage 5: Final Synthesis & Decision Memo (CIO Orchestrator)
+  # --------------------------------------------------------------------------
+  - name: Final_Synthesis
+    agent: cio-orchestrator
+    instruction: >-
+      Synthesize all findings from Stages 1 through 4 into the full 10-part bilingual deliverable suite:
+      (1) The official Executive Decision Memo:
+          DecisionMemo/[TICKER]-Investment-Committee-Decision-Memo-YYMMDD.md
+      (2) The complete Deliberation Process & Research Dossier (with Source Ledger):
+          DecisionMemo/[TICKER]-Investment-Committee-Decision-Memo-Process-YYMMDD.md
+      (3) English Slide Deck PDF (16:9, Bright Light Theme):
+          DecisionMemo/Media/[TICKER]-Investment-Committee-Decision-Memo-Slide-EN-YYMMDD.pdf
+      (4) Korean Slide Deck PDF (16:9, Bright Light Theme):
+          DecisionMemo/Media/[TICKER]-Investment-Committee-Decision-Memo-Slide-KR-YYMMDD.pdf
+      (5) English Slide Deck Interactive HTML:
+          DecisionMemo/Media/[TICKER]-Investment-Committee-Decision-Memo-Slide-EN-YYMMDD.html
+      (6) Korean Slide Deck Interactive HTML:
+          DecisionMemo/Media/[TICKER]-Investment-Committee-Decision-Memo-Slide-KR-YYMMDD.html
+      (7) English Strategic Infographic PNG (Portrait, High-Res):
+          DecisionMemo/Media/[TICKER]-Investment-Committee-Decision-Memo-Infographic-EN-YYMMDD.png
+      (8) Korean Strategic Infographic PNG (Portrait, High-Res):
+          DecisionMemo/Media/[TICKER]-Investment-Committee-Decision-Memo-Infographic-KR-YYMMDD.png
+      (9) English Strategic Infographic Interactive HTML:
+          DecisionMemo/Media/[TICKER]-Investment-Committee-Decision-Memo-Infographic-EN-YYMMDD.html
+      (10) Korean Strategic Infographic Interactive HTML:
+          DecisionMemo/Media/[TICKER]-Investment-Committee-Decision-Memo-Infographic-KR-YYMMDD.html
+      The written documents must be rendered in both English and Korean with 100% Structural & Table Parity.
+      Provide an unequivocal verdict, margin-of-safety entry range, strict position sizing (%), and thesis-invalidation sell triggers.
+      Mandatory Parity Gatekeeper: Execute 'python scripts/validate_bilingual_parity.py' on both generated markdown files
+      (Executive Memo and Process Dossier) to verify table parity, line density (>= 85%), and absence of KRW/generic user terms.
+      Any deliverable failing validation must be expanded and re-validated until exit code 0 is achieved.

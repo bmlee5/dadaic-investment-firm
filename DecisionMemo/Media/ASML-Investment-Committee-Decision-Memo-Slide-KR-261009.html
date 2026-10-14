@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>ASML 투자위원회 공식 의사결정 슬라이드 덱 (한국어)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+@page {
+  size: 1920px 1080px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', 'Inter', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.slide {
+  width: 1920px;
+  height: 1080px;
+  page-break-after: always;
+  page-break-inside: avoid;
+  position: relative;
+  padding: 44px 64px;
+  overflow: hidden;
+  background: radial-gradient(circle at 90% 10%, rgba(37, 99, 235, 0.05) 0%, transparent 45%),
+              radial-gradient(circle at 10% 90%, rgba(16, 185, 129, 0.06) 0%, transparent 45%),
+              #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 14px;
+}
+
+.slide-title-wrap h2 {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.slide-title-wrap p {
+  font-size: 19px;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.slide-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  letter-spacing: 0.5px;
+}
+
+.slide-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 14px;
+  font-size: 15px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.slide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+}
+
+/* CARDS & GRIDS */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 24px 28px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+}
+
+.card-title {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card p, .card li {
+  font-size: 18px;
+  color: #334155;
+  line-height: 1.7;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.stat-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.stat-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 34px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.stat-sub {
+  font-size: 15px;
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.stat-sub.neutral {
+  color: #64748b;
+}
+
+.verdict-banner {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 28px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verdict-text-wrap h3 {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.verdict-text-wrap p {
+  font-size: 19px;
+  color: #93c5fd;
+  font-weight: 500;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.tag-blue { background: #dbeafe; color: #1e40af; }
+.tag-emerald { background: #d1fae5; color: #065f46; }
+.tag-amber { background: #fef3c7; color: #92400e; }
+.tag-red { background: #fee2e2; color: #991b1b; }
+.tag-purple { background: #f3e8ff; color: #6b21a8; }
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+table.data-table th {
+  background: #f1f5f9;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #334155;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+table.data-table td {
+  padding: 14px 18px;
+  font-size: 17px;
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+table.data-table tr:last-child td {
+  border-bottom: none;
+}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: 투자 판정 총괄 요약 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>최고투자책임자(CIO) 투자 판정 총괄: ASML 홀딩</h2>
+      <p>DADAIC 투자위원회 심의 합성 | 분석 대상: ASML (나스닥: ASML)</p>
+    </div>
+    <div class="slide-badge">STAGE 5: 공식 의사결정 집행</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="verdict-banner">
+      <div class="verdict-text-wrap">
+        <h3>APPROVED: CONDITIONAL SIZE CAP (최대 3.0% ~ 4.0% 비중 상한 승인)</h3>
+        <p>전 세계 극자외선(EUV) 노광 장비 100% 독점 | BM사장님 맞춤형 자산배분</p>
+      </div>
+      <div style="text-align: right;">
+        <span class="tag-badge tag-emerald" style="font-size: 16px; padding: 8px 18px;">안전마진 조정 시 분할 매수</span>
+        <div style="font-size: 16px; color: #cbd5e1; margin-top: 8px;">매수 목표 밴드: $1,560 ~ $1,650 USD</div>
+      </div>
+    </div>
+
+    <div class="grid-4">
+      <div class="stat-box">
+        <span class="stat-label">현재 시장 주가</span>
+        <span class="stat-value">$1,769.79</span>
+        <span class="stat-sub">1개년 총수익률 +76.96%</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">보수적 본질 내재가치</span>
+        <span class="stat-value">$1,950.00</span>
+        <span class="stat-sub">+10.2% 기본 안전마진</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">12개월 목표 주가</span>
+        <span class="stat-value">$2,150.00</span>
+        <span class="stat-sub">+21.5% 기대 상승 여력</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">목표 포트폴리오 비중</span>
+        <span class="stat-value">2.5% ~ 4.0%</span>
+        <span class="stat-sub neutral">파일럿 매수: 15 ~ 25주</span>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">🏛️ 완전 독점 해자</div>
+        <p><strong>EUV 점유율 100%:</strong> 전 세계 유일의 극자외선 노광기 제조사. ASML 없이는 5nm 이하의 최첨단 AI 칩을 단 1개도 생산할 수 없음.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">📊 폭발적 실적 가속</div>
+        <p><strong>2026E 매출 €43B~€45B:</strong> TSMC 2nm N2 양산 돌입, 인텔 18A High-NA 실전 배치, 330억 유로 이상의 확정 수주잔고 확보.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">⚠️ 기계적 비중 상한 발동</div>
+        <p><strong>가짜 분산 방지 규정:</strong> BM사장님의 기존 포트폴리오 반도체/AI 팩터 비중이 68%를 상회하므로 최대 25~30주($41K~$53K USD)로 제한.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | 대외비 (Strictly Confidential)</span>
+    <span>최고 의사결정권자: BM사장님 | 심의 일자: 2026년 10월 9일</span>
+    <span>Slide 1 of 5</span>
+  </div>
+</div>
+
+<!-- SLIDE 2: 다년간 실증 검증 스코어카드 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>다년간 실증 검증 스코어카드 (Multi-Year Validation)</h2>
+      <p>BM사장님의 30년 투자 원칙 준수 | 공시 감사 재무제표 및 실제 현금흐름 검증</p>
+    </div>
+    <div class="slide-badge">STAGE 2: 실증 팩트 검증</div>
+  </div>
+
+  <div class="slide-content">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>검증 지표</th>
+          <th>다년간 감사 실증 팩트 (USD / EUR 기준)</th>
+          <th>벤치마크 및 동종 업계 비교</th>
+          <th>투자위원회 실증 판정</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1개년 총수익률</strong></td>
+          <td><strong>+76.96%</strong> ($1,000.10 ➔ $1,769.79 USD)</td>
+          <td>S&P 500: +24.5% / 필라델피아 반도체: +48.2%</td>
+          <td><span class="tag-badge tag-emerald">사이클 V자 회복기 압도적 알파</span></td>
+        </tr>
+        <tr>
+          <td><strong>3개년 총수익 및 CAGR</strong></td>
+          <td><strong>+214.76%</strong> (연평균 CAGR: <strong>+46.55%</strong>)</td>
+          <td>글로벌 대형주 상위 5% 초과 수익률</td>
+          <td><span class="tag-badge tag-emerald">생성형 AI 인프라 슈퍼사이클 주도</span></td>
+        </tr>
+        <tr>
+          <td><strong>5개년 총수익 및 CAGR</strong></td>
+          <td><strong>+162.44%</strong> (연평균 CAGR: <strong>+21.28%</strong>)</td>
+          <td>2022년 금리 인상 충격 및 대중국 규제 극복</td>
+          <td><span class="tag-badge tag-blue">사이클을 관통하는 독점적 복리 성장</span></td>
+        </tr>
+        <tr>
+          <td><strong>매출액 성장 궤적</strong></td>
+          <td>2023: €27.56B ➔ 2024: €28.26B ➔ 2025: €32.70B ➔ <strong>2026E: €43.0B ~ €45.0B</strong></td>
+          <td>2026년 Q2 순매출액: €9.3B (+21% YoY)</td>
+          <td><span class="tag-badge tag-purple">사상 최대 매출 가이던스 상향 지속</span></td>
+        </tr>
+        <tr>
+          <td><strong>매출총이익률 및 가격결정력</strong></td>
+          <td>통합 마진: <strong>54.0%</strong> (2026E: 54~56%) | EUV 대당: <strong>€1.8억 ~ €2.2억</strong></td>
+          <td>Q2 2026 순이익률: <strong>31.2%</strong> (분기 순이익 €2.9B)</td>
+          <td><span class="tag-badge tag-emerald">고객사를 압도하는 완벽한 가격결정력</span></td>
+        </tr>
+        <tr>
+          <td><strong>대차대조표 건전성</strong></td>
+          <td>현금 및 단기금융자산: <strong>€7.58B</strong> vs 비유동부채: <strong>€6.24B</strong></td>
+          <td>순 현금 흑자 보유 | 알트만 Z: 8.42 (초우량)</td>
+          <td><span class="tag-badge tag-blue">국가급 초우량 요새형 재무 구조</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">📦 수주잔고 및 실적 가시성 (€33B+ 확보)</div>
+        <p>ASML은 현재 330억 유로 이상의 확정 수주잔고를 보유하여 1년 이상의 풀가동 물량을 확보했습니다. 경영진은 지속적인 수요에 대응하기 위해 2027~2028년 생산능력을 +30% 공식 증설 중입니다.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">🔄 설치 기반 서비스 캐시카우 (연 €11B 런레이트)</div>
+        <p>설치 기반 관리(IBM) 매출이 2026년 2분기 단일 분기에만 €27.6억 유로를 기록했습니다. 기설치 장비 대상 유지보수 및 소프트웨어 업그레이드는 하드웨어 경기와 무관한 초고마진 현금흐름을 창출합니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | 대외비 (Strictly Confidential)</span>
+    <span>최고 의사결정권자: BM사장님 | 심의 일자: 2026년 10월 9일</span>
+    <span>Slide 2 of 5</span>
+  </div>
+</div>
+
+<!-- SLIDE 3: 세계 5대 거장 & 수석 마켓 테크니션 종합 평가 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>세계 5대 거장 & 마켓 테크니션 종합 평가</h2>
+      <p>다학제적 투자철학 심의 | 균형 잡힌 2행 × 3열 (Grid-3) 심사위원 매트릭스</p>
+    </div>
+    <div class="slide-badge">STAGE 3: 투자철학 심사</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="grid-3">
+      <!-- 1. 워런 버핏 -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-blue">버핏</span>
+          <span>경제적 해자와 안전마진</span>
+        </div>
+        <p><strong>판정: 최상위 독점 해자 / 조정 시 분할 매수</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"지구상에서 가장 완벽한 유료 통행료 다리입니다. 다만 선행 PER 32x는 깊은 안전마진이 아니므로 분기 수주 충격 시($1,560~$1,650 USD) 분할 매수하십시오."</p>
+      </div>
+
+      <!-- 2. 찰리 멍거 -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-purple">멍거</span>
+          <span>롤라팔루자 & 역발상</span>
+        </div>
+        <p><strong>판정: 역발상 검증 완벽 통과 / 독보적 해자</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"칼 자이스 렌즈와 플라즈마 레이저가 결합된 물리적 롤라팔루자입니다. 중국 매출이 14%로 줄었음에도 사상 최대 실적을 내고 있어 파괴될 방법이 없습니다."</p>
+      </div>
+
+      <!-- 3. 피터 린치 -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-emerald">린치</span>
+          <span>고성장주 & PEG (1.15)</span>
+        </div>
+        <p><strong>판정: 독보적 대형 고성장주 (적정가)</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"연매출 +34%, EPS +30% 성장으로 PEG 1.15 수준입니다. 독점력을 감안하면 합리적이며, 분기 €27.6억 유로의 서비스 매출이 강력한 현금흐름 바닥을 지지합니다."</p>
+      </div>
+
+      <!-- 4. 스탠리 드러켄밀러 -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-amber">드러켄밀러</span>
+          <span>비대칭 알파 (3.2 : 1 손익비)</span>
+        </div>
+        <p><strong>판정: 반도체 보조금 전쟁의 최종 승자</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"미국/유럽/일본의 1,200억 달러 팹 보조금은 결국 ASML 장비 구매로 직결됩니다. 대체제가 없는 병목 장악력으로 3.2:1의 탁월한 비대칭 손익비를 제공합니다."</p>
+      </div>
+
+      <!-- 5. 윌리엄 오닐 -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-blue">오닐</span>
+          <span>CAN SLIM 성장 주도주</span>
+        </div>
+        <p><strong>판정: 2단계 베이스 매집 진행형 주도주</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"분기 EPS +31% 급증, 4,200개 이상 기관 매집, 우상향하는 50일선($1,728)과 200일선($1,545) 위 지지 중입니다. $1,620 손절선을 엄수하며 매수 진입하십시오."</p>
+      </div>
+
+      <!-- 6. 수석 마켓 테크니션 -->
+      <div class="card">
+        <div class="card-title">
+          <span class="tag-badge tag-emerald">테크니션</span>
+          <span>추세 셋업 (손익비 1 : 2.8)</span>
+        </div>
+        <p><strong>판정: 상승 깃발형 건전한 기간 조정</strong></p>
+        <p style="font-size: 16px; margin-top: 6px;">"$1,750~$1,860 박스권에서 거래량을 줄이며 건전하게 매물을 소화 중입니다. RSI 51.5 중립. 1차 지지 $1,728, 2차 지지 $1,650, 목표가 $2,150. 손절선: $1,620."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | 대외비 (Strictly Confidential)</span>
+    <span>최고 의사결정권자: BM사장님 | 심의 일자: 2026년 10월 9일</span>
+    <span>Slide 3 of 5</span>
+  </div>
+</div>
+
+<!-- SLIDE 4: 블라인드 CRO 감사 및 3대 치명적 결점 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>블라인드 CRO 리스크 감사 및 매크로 스트레스 테스트</h2>
+      <p>독립적 꼬리 위험(Tail-Risk) 점검 | 3대 충격 시뮬레이션 및 의무 규정 3대 결점</p>
+    </div>
+    <div class="slide-badge">STAGE 4: 리스크 관리 통제</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="grid-3">
+      <div class="card" style="border-left: 5px solid #ef4444;">
+        <div class="card-title" style="color: #b91c1c;">결점 1: 반도체 팩터 쏠림 및 가짜 분산</div>
+        <p>BM사장님의 포트폴리오는 이미 반도체 및 AI 하드웨어(NVDA, TSM, AVGO, SOXL)에 68% 이상 노출되어 있습니다. 하락장 시 상관계수가 0.85를 초과하여 MDD를 증폭시킵니다.</p>
+      </div>
+      <div class="card" style="border-left: 5px solid #ef4444;">
+        <div class="card-title" style="color: #b91c1c;">결점 2: 대중국 규제 절벽 (MATCH 법안)</div>
+        <p>중국 매출 비중이 14%로 감소했으나, 미 의회의 MATCH 법안으로 중국 내 기설치된 DUV 장비의 부품 및 유지보수 서비스마저 금지될 경우 연간 €30억~€40억의 EBITDA가 타격받습니다.</p>
+      </div>
+      <div class="card" style="border-left: 5px solid #ef4444;">
+        <div class="card-title" style="color: #b91c1c;">결점 3: 분기 수주잔고 충격에 대한 주가 취약성</div>
+        <p>선행 PER 32배의 고 밸류에이션 상태이므로, 단 한 분기라도 신규 수주(Bookings)가 기대치를 밑돌 경우(2024년 10월처럼) 단 하루 만에 주가가 15~20% 폭락하는 구조적 변동성을 가집니다.</p>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>매크로 스트레스 시나리오</th>
+          <th>충격 메커니즘 및 전이 경로</th>
+          <th>ASML 예상 하락률</th>
+          <th>포트폴리오 전체 예상 MDD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>충격 1: AI 설비투자 소화기</strong></td>
+          <td>빅테크 AI 설비투자 증분 동결; 반도체 밸류에이션 멀티플 30% 디레이팅.</td>
+          <td><strong>-26.5%</strong> ($1,300 USD)</td>
+          <td><strong>-22.4%</strong> (NVDA, SOXL, ASML 동반 하락)</td>
+        </tr>
+        <tr>
+          <td><strong>충격 2: 지정학 공급망 충격</strong></td>
+          <td>대만 해협 긴장 격화; 국제유가 $115 돌파; 스태그플레이션 공급망 마비.</td>
+          <td><strong>-32.0%</strong> ($1,200 USD)</td>
+          <td><strong>-28.8%</strong> (TSM, SOXL, TQQQ 극심한 타격)</td>
+        </tr>
+        <tr>
+          <td><strong>충격 3: 고금리 장기화</strong></td>
+          <td>미 10년물 국채 5.50% 돌파; 글로벌 유동성 축소로 성장주 전반 디레이팅.</td>
+          <td><strong>-18.5%</strong> ($1,440 USD)</td>
+          <td><strong>-15.2%</strong> (고베타 기술주 및 레버리지 자산)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | 대외비 (Strictly Confidential)</span>
+    <span>최고 의사결정권자: BM사장님 | 심의 일자: 2026년 10월 9일</span>
+    <span>Slide 4 of 5</span>
+  </div>
+</div>
+
+<!-- SLIDE 5: BM사장님 맞춤형 실행 매트릭스 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>BM사장님 맞춤형 포트폴리오 실행 블루프린트</h2>
+      <p>`my-portfolio.yaml` 총 자산 $1.61M USD 기반 실전 트레이딩 매트릭스</p>
+    </div>
+    <div class="slide-badge">STAGE 5: 실행 매트릭스</div>
+  </div>
+
+  <div class="slide-content">
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">🎯 실전 매매 집행 지침</div>
+        <ul>
+          <li><strong>1차 파일럿 매수:</strong> 현 지지선 밴드($1,720 ~ $1,750 USD)에서 <strong>10주 ~ 15주 매수 실행</strong> (~$17,700 - $26,500 USD / 비중 1.1%~1.6%).</li>
+          <li><strong>2차 안전마진 매수:</strong> 수주 노이즈로 주가가 <strong>$1,560 ~ $1,650 USD</strong>로 조정 시 <strong>추가 10주 매수</strong> (총 25주 / 약 $41,250 USD / 비중 약 2.5%).</li>
+          <li><strong>포트폴리오 비중 상한:</strong> <strong>최대 30주(약 $53,000 USD / 비중 3.3%) 절대 초과 금지</strong>. CRO 팩터 집중도 규정 엄수.</li>
+          <li><strong>재앙적 손절 기준선:</strong> <strong>$1,420.00 USD</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">🔮 12개월 3대 시나리오 목표가</div>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 6px;">
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 10px 0; font-weight: 700; color: #10b981;">낙관 시나리오 (확률 25%)</td>
+            <td style="padding: 10px 0; font-size: 18px;">38.0x PER / $65 EPS ➔ <strong>$2,470.00 USD (+39.6%)</strong></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 10px 0; font-weight: 700; color: #2563eb;">기본 시나리오 (확률 55%)</td>
+            <td style="padding: 10px 0; font-size: 18px;">33.0x PER / $65 EPS ➔ <strong>$2,145.00 USD (+21.2%)</strong></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px 0; font-weight: 700; color: #ef4444;">비관 시나리오 (확률 20%)</td>
+            <td style="padding: 10px 0; font-size: 18px;">25.0x PER / $58 EPS ➔ <strong>$1,450.00 USD (-18.1%)</strong></td>
+          </tr>
+        </table>
+        <p style="font-size: 16px; color: #64748b; margin-top: 14px;"><strong>확률 가중 평균 12개월 목표 주가: $2,087.25 USD (+17.9% 기대 수익률)</strong></p>
+      </div>
+    </div>
+
+    <div class="card" style="background: #fffbeb; border: 1px solid #fef3c7;">
+      <div class="card-title" style="color: #92400e;">🚨 무조건적 투자 가설 파기 기준 (Sell Trigger)</div>
+      <p style="color: #78350f; font-size: 17px;">
+        <strong>전량 청산 지침:</strong> 다음 사태 발생 시 즉시 포지션 청산: <em>"미국 및 네덜란드 정부가 중국 내 기설치된 DUV 장비에 대한 부품 공급 및 유지보수를 전면 금지하여 연간 매출의 25% 이상이 영구 소멸하거나; 나노임프린트(NIL) 등 대체 기술이 3nm 이하 공정에서 양산 수율을 확보하여 독점이 깨지는 경우."</em>
+      </p>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>DADAIC Investment Firm | 대외비 (Strictly Confidential)</span>
+    <span>최고 의사결정권자: BM사장님 | 심의 일자: 2026년 10월 9일</span>
+    <span>Slide 5 of 5</span>
+  </div>
+</div>
+
+</body>
+</html>

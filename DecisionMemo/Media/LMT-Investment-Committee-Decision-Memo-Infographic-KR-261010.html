@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>록히드마틴 (LMT) 전략 인포그래픽 - 한국어</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', 'Inter', sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.infographic-container {
+  width: 1140px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 46px 50px 38px 50px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.firm-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.hero-verdict-box {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verdict-tag {
+  background: #16a34a;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.verdict-text {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.verdict-sub {
+  font-size: 16px;
+  color: #93c5fd;
+  margin-top: 4px;
+}
+
+.content-section {
+  padding: 40px 50px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.section-heading {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-heading::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 24px;
+  background: #2563eb;
+  border-radius: 3px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.kpi-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+}
+
+.kpi-label {
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.kpi-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 34px;
+  font-weight: 900;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+.kpi-desc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.masters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.master-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.master-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 8px;
+}
+
+.master-name {
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.master-score {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  color: #16a34a;
+  background: #f0fdf4;
+  padding: 3px 10px;
+  border-radius: 9999px;
+}
+
+.master-body {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+table.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table.info-table th {
+  background: #f8fafc;
+  color: #334155;
+  font-weight: 700;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+table.info-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+}
+
+.footer {
+  background: #f8fafc;
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+</style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <!-- HERO HEADER (한국어) -->
+  <div class="hero-header">
+    <div class="hero-top">
+      <div class="firm-badge">DADAIC INVESTMENT FIRM</div>
+      <div style="font-size: 15px; color: #94a3b8;">문서 관리 번호: DADAIC-IC-INFO-LMT-261010-KR</div>
+    </div>
+    <div class="hero-title">록히드마틴 (Lockheed Martin, NYSE: LMT)</div>
+    <div class="hero-subtitle">투자위원회 공식 의결 및 비대칭 포트폴리오 갭필러 전략 인포그래픽</div>
+
+    <div class="hero-verdict-box">
+      <div>
+        <div class="verdict-tag">최종 승인: 신규 편입</div>
+        <div class="verdict-text">핵심 방어 밸러스트 (목표 비중 4.0% - 6.0%)</div>
+        <div class="verdict-sub">목표 수량: 130주 ~ 185주 (약 $66,200 ~ $94,300 USD) | 보고 대상: BM사장님</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 15px; color: #cbd5e1;">12개월 기본 목표가</div>
+        <div style="font-family: 'Outfit'; font-size: 34px; font-weight: 900; color: #ffffff;">$585.00</div>
+        <div style="font-size: 14px; color: #86efac;">총수익률 +17.6% (배당 포함)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: KEY METRICS -->
+  <div class="content-section">
+    <div class="section-heading">핵심 펀더멘털 지표 및 밸류에이션</div>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">현재 주가</div>
+        <div class="kpi-val">$509.59</div>
+        <div class="kpi-desc">선행 P/E 15.6배<br>16.5% 안전마진 확보</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">5년 월간 베타</div>
+        <div class="kpi-val">0.10</div>
+        <div class="kpi-desc">시장 무상관 극저베타<br>기술주 상관계수 -0.08</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">확정 수주 잔고</div>
+        <div class="kpi-val">$2,300억</div>
+        <div class="kpi-desc">사상 최고치 경신<br>약 2.85년치 매출 확보</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">ROIC / 배당수익률</div>
+        <div class="kpi-val">25.1% / 2.8%</div>
+        <div class="kpi-desc">2026E FCF $70억~$72억<br>23년 연속 배당 증액</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: 6 EVALUATORS CONSENSUS -->
+  <div class="content-section">
+    <div class="section-heading">세계 5대 거장 & 마켓 테크니션 종합 평가 (6인 심사 체계)</div>
+    <div class="masters-grid">
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">워런 버핏</div>
+          <div class="master-score">94점 / 100점</div>
+        </div>
+        <div class="master-body">
+          <strong>독점 톨브리지</strong>: 미국 정부와 19개 동맹국의 필수 안보 톨게이트. 선행 P/E 15.6배와 4.73% FCF 일드로 20% 안전마진 확보. 23년 연속 배당 증액.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">찰리 멍거</div>
+          <div class="master-score">92점 / 100점</div>
+        </div>
+        <div class="master-body">
+          <strong>롤라팔루자 독점</strong>: 인버전 테스트 통과. 신냉전 다극화로 전 세계 재무장 불가피. F-35는 드론을 통제하는 공중 지휘 노드. 25.1% ROIC로 복리 증식.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">피터 린치</div>
+          <div class="master-score">90점 / 100점</div>
+        </div>
+        <div class="master-body">
+          <strong>우량주 + PEG 0.96</strong>: 연간 EPS $30 돌파 가속화 대비 15.6배 PER로 PEG 1.0 하회. $2,300억 달러 수주 잔고로 2030년까지 가동 보장. 안심 투자 자산.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">스탠리 드럭켄밀러</div>
+          <div class="master-score">88점 / 100점</div>
+        </div>
+        <div class="master-body">
+          <strong>비대칭 포트폴리오 헤지</strong>: 베타 0.10으로 BM사장님의 기술주 계좌(베타 1.54) 방어. 지정학적 위기 시 방산주로 자금 쏠림. 하방은 FCF로 지지된 3.4 : 1 손익비.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">윌리엄 오닐</div>
+          <div class="master-score">82점 / 100점</div>
+        </div>
+        <div class="master-body">
+          <strong>CAN SLIM 베이스 매집</strong>: 2분기 EPS 턴어라운드 폭증($7.94 vs $1.46 YoY), 미사일 생산 2배 증산, 3,700개 최상위 기관 보유. $468.00 달러에 7~8% 손절 규율.
+        </div>
+      </div>
+
+      <div class="master-card">
+        <div class="master-header">
+          <div class="master-name">수석 마켓 테크니션</div>
+          <div class="master-score">85점 / 100점</div>
+        </div>
+        <div class="master-body">
+          <strong>상승 삼각형 수렴 완성</strong>: 일봉 20일선 및 50일선이 200일선($488) 위 골든크로스. $490~$502 달러 매물대 지지 확고. 목표가 $585 달러 (손익비 1 : 2.9).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: PORTFOLIO BLUEPRINT & CRO STRESS TEST -->
+  <div class="content-section">
+    <div class="section-heading">거시 충격 스트레스 테스트 및 포트폴리오 실행 지침</div>
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px;">
+      <div>
+        <table class="info-table">
+          <thead>
+            <tr>
+              <th>시스템 충격 시나리오</th>
+              <th>현재 기술주 계좌 (베타 1.54)</th>
+              <th>LMT 예상 반응 (베타 0.10)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>AI Capex 조정 (기술주 -35%)</strong></td>
+              <td style="color: #dc2626; font-weight: 700;">-42.0% MDD</td>
+              <td style="color: #16a34a; font-weight: 700;">+4.5% ~ +8.0%</td>
+            </tr>
+            <tr>
+              <td><strong>중동 분쟁 및 유가 급등 ($120)</strong></td>
+              <td style="color: #dc2626; font-weight: 700;">-26.5% MDD</td>
+              <td style="color: #16a34a; font-weight: 700;">+12.0% ~ +18.5%</td>
+            </tr>
+            <tr>
+              <td><strong>10년물 금리 5.5% 유동성 위축</strong></td>
+              <td style="color: #dc2626; font-weight: 700;">-28.0% MDD</td>
+              <td style="color: #475569; font-weight: 700;">-3.5% ~ -5.0%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; font-size: 15px; line-height: 1.7;">
+        <strong>BM사장님 맞춤형 매수 실행 지침:</strong><br>
+        • <strong>1차 매수</strong>: 현재가($509.59)에서 65~90주 우선 매수.<br>
+        • <strong>2차 매수</strong>: $495~$505 달러 지지선 테스트 시 65~95주 적립식 분할 편입.<br>
+        • <strong>최종 목표</strong>: 130주 ~ 185주 (약 $66,200 ~ $94,300 USD).<br>
+        • <strong>엄격한 손절선</strong>: 장기 지지선 이탈 지점인 $468.00 USD.
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>발행 승인: DADAIC Investment Firm 최고투자책임자 (CIO)</div>
+    <div>분석 대상 자산: 록히드마틴 (LMT, NYSE) | 일자: 2026년 10월 10일</div>
+  </div>
+</div>
+
+</body>
+</html>

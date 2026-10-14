@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AVGO Investment Committee Strategic Infographic (English)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.infographic-container {
+  width: 1140px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 46px 50px 38px 50px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.firm-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.hero-verdict-box {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verdict-tag {
+  background: #3b82f6;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.verdict-text {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.verdict-sub {
+  font-size: 16px;
+  color: #93c5fd;
+  margin-top: 4px;
+}
+
+.content-body {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.section-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 10px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.stat-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.stat-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.stat-note {
+  font-size: 14px;
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.stat-note.neutral { color: #64748b; }
+.stat-note.danger { color: #ef4444; }
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.card-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.badge-blue { background: #dbeafe; color: #1e40af; }
+.badge-purple { background: #f3e8ff; color: #6b21a8; }
+.badge-emerald { background: #d1fae5; color: #065f46; }
+.badge-amber { background: #fef3c7; color: #92400e; }
+.badge-red { background: #fee2e2; color: #991b1b; }
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+table.data-table th {
+  background: #f8fafc;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #475569;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+table.data-table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.footer {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #94a3b8;
+}
+</style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <!-- HERO HEADER -->
+  <div class="hero-header">
+    <div class="hero-top">
+      <div class="firm-badge">DADAIC INVESTMENT FIRM • EXECUTIVE DOSSIER</div>
+      <div style="font-size: 14px; color: #cbd5e1; font-weight: 600;">DATE: OCTOBER 12, 2026</div>
+    </div>
+    <h1 class="hero-title">Broadcom Inc. (AVGO): The Custom AI Silicon & Enterprise Infrastructure Hegemon</h1>
+    <div class="hero-subtitle">Bilingual Due Diligence, Multi-Year Empirical Validation & Portfolio Strategy for BM사장님</div>
+
+    <div class="hero-verdict-box">
+      <div>
+        <div class="verdict-tag">INVESTMENT COMMITTEE VERDICT</div>
+        <div class="verdict-text">APPROVED: CONDITIONAL HOLD & ACCUMULATE</div>
+        <div class="verdict-sub">Hold Core 357 Shares ($127.7K USD / 7.9% Equities) | Buy Capped at Margin of Safety ($315 - $335 USD)</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-family: 'Outfit'; font-size: 32px; font-weight: 900; color: #60a5fa;">$440.00 USD</div>
+        <div style="font-size: 13px; color: #bfdbfe;">12M Base Target (+23.0%)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-body">
+    <!-- 1. KEY METRICS -->
+    <div>
+      <div class="section-title">📊 Executive Financial & Valuation Metrics</div>
+      <div class="grid-4">
+        <div class="stat-card">
+          <span class="stat-label">Current Market Price</span>
+          <span class="stat-val">$357.80</span>
+          <span class="stat-note neutral">Consolidating above 200 SMA</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Conservative Intrinsic Value</span>
+          <span class="stat-val">$395.00</span>
+          <span class="stat-note">+10.4% MoS Discount</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Forward PEG Ratio</span>
+          <span class="stat-val">0.78</span>
+          <span class="stat-note">Sub-1.0 Peter Lynch Value</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Q3 FY26 Free Cash Flow</span>
+          <span class="stat-val">$13.70B</span>
+          <span class="stat-note">46% Conversion of Revenue</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. MULTI-YEAR AUDIT & SEGMENT ARCHITECTURE -->
+    <div>
+      <div class="section-title">🏛️ Multi-Year Empirical Validation (BM사장님 Mandate)</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Timeframe / Metric</th>
+            <th>Empirical Track Record (USD)</th>
+            <th>Benchmark Context</th>
+            <th>Institutional Verdict</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1-Year Total Return</strong></td>
+            <td><strong>+10.42%</strong> ($324.03 ➔ $357.80 USD)</td>
+            <td>S&P 500: +18.2% / SOX Semi Index: +24.6%</td>
+            <td><span class="badge badge-blue">Post-Split Base Consolidation</span></td>
+          </tr>
+          <tr>
+            <td><strong>3-Year Return & CAGR</strong></td>
+            <td><strong>+336.40%</strong> (CAGR: <strong>+63.44%</strong>)</td>
+            <td>Outperformed 98% of Global Equities</td>
+            <td><span class="badge badge-emerald">Custom AI & Ethernet Super-Cycle Alpha</span></td>
+          </tr>
+          <tr>
+            <td><strong>5-Year Return & CAGR</strong></td>
+            <td><strong>+658.20%</strong> (CAGR: <strong>+50.02%</strong>)</td>
+            <td>Compounded through 2022 Fed rate shock</td>
+            <td><span class="badge badge-emerald">Durable Capital Compounding Tollgate</span></td>
+          </tr>
+          <tr>
+            <td><strong>Quarterly Net Sales</strong></td>
+            <td>Q3 FY24: $13.07B ➔ <strong>Q3 FY26: $29.60B</strong> (+86% YoY)</td>
+            <td>Q4 FY26 Guided to $34.80B (+93% YoY)</td>
+            <td><span class="badge badge-purple">Triple-Digit AI Semi Run-Rate</span></td>
+          </tr>
+          <tr>
+            <td><strong>Profitability & Cash Flow</strong></td>
+            <td>Consolidated OPM: <strong>68.0%</strong> | Q3 FCF: <strong>$13.70B</strong></td>
+            <td>Software Gross Margin: ~93% | Semi GM: ~69.5%</td>
+            <td><span class="badge badge-emerald">Peerless Monopolistic Pricing Power</span></td>
+          </tr>
+          <tr>
+            <td><strong>Solvency & De-leveraging</strong></td>
+            <td>Cash: <strong>$23.98B</strong> vs Total Debt: <strong>$59.42B</strong></td>
+            <td>Net Debt / EBITDA: ~1.85x | Debt paid down from $62B</td>
+            <td><span class="badge badge-blue">Disciplined Post-VMware De-leveraging</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 3. THE 5 MASTERS & CHIEF MARKET TECHNICIAN (BALANCED 3x2 GRID) -->
+    <div>
+      <div class="section-title">🧠 The 5 Masters & Market Technician Consensus (6-Member Committee)</div>
+      <div class="grid-3">
+        <!-- 1. Buffett -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-blue">Buffett</span>
+            <span>Moat & 20-30% MoS</span>
+          </div>
+          <p><strong>Verdict: Hold Core / 20% Dip Buy</strong><br>
+          "Hock Tan is one of the best capital allocators. $13.7B quarterly FCF is astounding. But $59.4B debt warrants discipline. Hold 357 shares; add only on a 20% dip to $315-$335 USD."</p>
+        </div>
+
+        <!-- 2. Munger -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-purple">Munger</span>
+            <span>Lollapalooza & Inversion</span>
+          </div>
+          <p><strong>Verdict: Inversion Cleared / Peerless Tollgate</strong><br>
+          "Combining 93% margin VMware software with Tomahawk Ethernet silicon creates a dual-engine compounding tollgate. ROIC exceeds 38-42% on normalized tangible capital."</p>
+        </div>
+
+        <!-- 3. Lynch -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-emerald">Lynch</span>
+            <span>Fast Grower & PEG (0.78)</span>
+          </div>
+          <p><strong>Verdict: Premier Fast Grower Bargain</strong><br>
+          "45% EPS growth with 25x forward P/E yields a PEG of 0.78! An industry leader trading at a PEG below 0.80 is a rare statistical gift. AI hardware surging +221% YoY."</p>
+        </div>
+
+        <!-- 4. Druckenmiller -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-amber">Druckenmiller</span>
+            <span>Asymmetric Alpha (3.4 : 1)</span>
+          </div>
+          <p><strong>Verdict: Custom ASIC Hegemon</strong><br>
+          "Hyperscalers are fleeing NVIDIA's 75% gross margins. Google TPU and Meta MTIA are the hedge, and Broadcom co-designs them all. Risk/reward asymmetry is 3.4 to 1."</p>
+        </div>
+
+        <!-- 5. O'Neil -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-blue">O'Neil</span>
+            <span>CAN SLIM & Base Breakout</span>
+          </div>
+          <p><strong>Verdict: Stage 2 Institutional Leader</strong><br>
+          "Quarterly EPS up +45%, revenue up +86%. Held by 4,600+ elite global funds. Sound rectangular base above rising 200-day moving average ($358). Stop-loss at $315 USD."</p>
+        </div>
+
+        <!-- 6. Chief Market Technician -->
+        <div class="card">
+          <div class="card-title">
+            <span class="badge badge-red">Technician</span>
+            <span>200-Day SMA Support (R:R 1:2.6)</span>
+          </div>
+          <p><strong>Verdict: Support Rest / Asymmetric Setup</strong><br>
+          "AVGO is resting on 200-day SMA ($358) and $350-$355 demand shelf. RSI at 44.2 (neutral oversold). Break above 50-day SMA ($364.50) triggers run to $440. Stop-loss at $315 USD."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. CRO BLIND AUDIT & FATAL FLAWS -->
+    <div>
+      <div class="section-title">🛡️ Adversarial CRO Blind Audit & Systemic Vulnerabilities</div>
+      <div class="grid-3">
+        <div class="card" style="border-left: 4px solid #ef4444;">
+          <div class="card-title" style="color: #b91c1c;">Flaw 1: Hyperscaler ASIC Monopsony</div>
+          <p>Over 60% of custom AI silicon revenue is concentrated in Alphabet and Meta. If Google scales in-house packaging or Meta tests Marvell, Broadcom lacks pricing leverage.</p>
+        </div>
+        <div class="card" style="border-left: 4px solid #ef4444;">
+          <div class="card-title" style="color: #b91c1c;">Flaw 2: $59.4B Post-Merger Debt Load</div>
+          <p>Carrying $59.4B in debt under a 5.28% 10-year Treasury yield environment. A cyclical semiconductor pause could strain interest coverage if cash flow temporarily slows.</p>
+        </div>
+        <div class="card" style="border-left: 4px solid #ef4444;">
+          <div class="card-title" style="color: #b91c1c;">Flaw 3: Severe Factor Beta Contagion</div>
+          <p>BM사장님 already carries >68% factor exposure to Semis and AI Hardware (NVDA 21.5%, AVGO 7.9%, TSM, AMD). Adding fresh capital worsens False Diversification.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. TACTICAL BLUEPRINT FOR BM사장님 -->
+    <div>
+      <div class="section-title">🎯 Tactical Portfolio Blueprint for BM사장님 (`my-portfolio.yaml`)</div>
+      <div class="grid-2">
+        <div class="card" style="background: #f8fafc;">
+          <div class="card-title">📋 Trade Directives & Execution Limits</div>
+          <ul style="padding-left: 20px; font-size: 15px; line-height: 1.7; color: #334155;">
+            <li><strong>Core Holding Mandate:</strong> <strong>HOLD EXISTING 357 SHARES FIRMLY</strong> (~$127,735 USD / 7.93% weight).</li>
+            <li><strong>Margin of Safety Dip Buy:</strong> Buy up to <strong>+43 Shares</strong> (~$14,000 USD) strictly if price enters <strong>$315.00 - $335.00 USD</strong>.</li>
+            <li><strong>Hard Sizing Cap:</strong> <strong>400 SHARES MAXIMUM (~$143,000 USD / 8.8% Weight)</strong>. Strictly adhere to CRO factor limits.</li>
+            <li><strong>Structural Stop-Loss:</strong> <strong>$285.00 USD</strong> (52-week support breakdown).</li>
+          </ul>
+        </div>
+
+        <div class="card" style="background: #fffbeb; border: 1px solid #fef3c7;">
+          <div class="card-title" style="color: #92400e;">🚨 The Non-Negotiable Invalidation Trigger</div>
+          <p style="color: #78350f; font-size: 15px; line-height: 1.7;">
+            <strong>Sell Directive:</strong> Downgrade to IMMEDIATE EXIT if: <em>"Broadcom's quarterly Non-GAAP Operating Margin contracts below 55.0% for two consecutive quarters; OR if Google and Meta officially terminate custom TPU/MTIA co-development with Broadcom, permanently impairing >30% of forward semiconductor revenue."</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>DADAIC Investment Firm • Strictly Confidential</span>
+    <span>Target Asset: Broadcom Inc. (AVGO) • Meeting Date: October 12, 2026</span>
+    <span>Principal Investor: BM사장님</span>
+  </div>
+</div>
+
+</body>
+</html>

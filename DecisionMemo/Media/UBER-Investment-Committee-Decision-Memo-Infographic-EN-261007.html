@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UBER Investment Committee Strategic Infographic (English)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.infographic-container {
+  width: 1140px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 46px 50px 38px 50px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.firm-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #6ee7b7;
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.memo-num {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.verdict-banner {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.verdict-box h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  letter-spacing: 1px;
+}
+
+.verdict-tag {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #34d399;
+  margin-top: 4px;
+}
+
+.v-item h5 {
+  font-size: 13px;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.v-item p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.info-body {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: #f8fafc;
+}
+
+.section-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.sec-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.sec-title {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sec-tag {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.metric-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.m-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.m-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #0f172a;
+  margin-top: 4px;
+}
+
+.m-desc {
+  font-size: 13px;
+  color: #059669;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.table-custom th {
+  background: #f8fafc;
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 700;
+  color: #475569;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.table-custom td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.callout-box {
+  background: #f0fdf4;
+  border-left: 4px solid #10b981;
+  padding: 16px 20px;
+  border-radius: 0 12px 12px 0;
+  margin-top: 14px;
+}
+
+.callout-box p {
+  font-size: 15px;
+  color: #065f46;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.warn-box {
+  background: #fef2f2;
+  border-left: 4px solid #ef4444;
+  padding: 16px 20px;
+  border-radius: 0 12px 12px 0;
+  margin-top: 14px;
+}
+
+.warn-box p {
+  font-size: 15px;
+  color: #991b1b;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.info-footer {
+  padding: 24px 50px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <!-- HERO HEADER -->
+  <div class="hero-header">
+    <div class="hero-top">
+      <div class="firm-badge">DADAIC INVESTMENT FIRM • STRATEGIC RESEARCH</div>
+      <div class="memo-num">CONTROL NO: DADAIC-IC-INFO-UBER-261007-EN</div>
+    </div>
+    <h1 class="hero-title">UBER TECHNOLOGIES (NYSE: UBER)</h1>
+    <p class="hero-sub">The Indispensable Toll Bridge of Global Mobility & Autonomous Fleet Orchestration</p>
+    
+    <div class="verdict-banner">
+      <div class="verdict-box">
+        <h4>Executive Verdict</h4>
+        <div class="verdict-tag">STRONG BUY / ASYMMETRIC ALPHA</div>
+      </div>
+      <div class="v-item">
+        <h5>Current Price</h5>
+        <p>$68.45 USD</p>
+      </div>
+      <div class="v-item">
+        <h5>Intrinsic Value</h5>
+        <p>$88.00 USD</p>
+      </div>
+      <div class="v-item">
+        <h5>12M Target (Base)</h5>
+        <p>$98.00 USD</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFOGRAPHIC BODY -->
+  <div class="info-body">
+    <!-- SECTION 1: EMPIRICAL SCORECARD -->
+    <div class="section-card">
+      <div class="sec-head">
+        <div class="sec-title">📊 Multi-Year Empirical Validation Scorecard</div>
+        <div class="sec-tag">BM사장님 30-Year Mandate</div>
+      </div>
+      
+      <div class="grid-4">
+        <div class="metric-card">
+          <div class="m-label">1-Year Total Return</div>
+          <div class="m-val" style="color: #dc2626;">-30.99%</div>
+          <div class="m-desc">Pullback from $100.35 High</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">3-Year Return & CAGR</div>
+          <div class="m-val" style="color: #059669;">+51.2%</div>
+          <div class="m-desc">CAGR: +14.78% from $45.68</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">TTM True FCF (Net of SBC)</div>
+          <div class="m-val">$8.18B</div>
+          <div class="m-desc">GAAP FCF $10.12B - SBC $1.94B</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">Peter Lynch PEG Ratio</div>
+          <div class="m-val" style="color: #2563eb;">0.69</div>
+          <div class="m-desc">P/E 15.5x / Growth 22.5%</div>
+        </div>
+      </div>
+
+      <div class="callout-box">
+        <p><strong>Audited Inflection:</strong> Operating Income swung from -$1.83B (2022) to +$5.57B (2025) and $6.69B TTM. Gross Bookings reached $58B+ in Q2 2026 (+22% YoY), demonstrating bulletproof secular demand.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 2: THE 5 MASTERS & CHIEF TECHNICIAN -->
+    <div class="section-card">
+      <div class="sec-head">
+        <div class="sec-title">🏛️ The 5 Masters & Chief Technician Evaluation</div>
+        <div class="sec-tag">Unanimous Consensus</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="metric-card">
+          <div style="font-size: 16px; font-weight: 800; color: #0f172a; margin-bottom: 6px;">🛡️ Warren Buffett (Value Lens)</div>
+          <p style="font-size: 14px; color: #334155; line-height: 1.6;">
+            <strong>Verdict: Strong Buy (22.2% Margin of Safety).</strong> Toll bridge on urban movement with zero vehicle capital expenditure. Disciplined capital allocation: $7B buyback program funded by genuine operating cash.
+          </p>
+        </div>
+        <div class="metric-card">
+          <div style="font-size: 16px; font-weight: 800; color: #0f172a; margin-bottom: 6px;">🔄 Charlie Munger (Inversion Lens)</div>
+          <p style="font-size: 14px; color: #334155; line-height: 1.6;">
+            <strong>Verdict: Top-Tier Network Flywheel.</strong> Inversion solved: AV makers cannot survive low fleet utilization. Uber's 162M active users are indispensable for amortizing expensive robotaxi sensors.
+          </p>
+        </div>
+        <div class="metric-card">
+          <div style="font-size: 16px; font-weight: 800; color: #0f172a; margin-bottom: 6px;">📈 Peter Lynch (Growth Lens)</div>
+          <p style="font-size: 14px; color: #334155; line-height: 1.6;">
+            <strong>Verdict: Conviction Buy (PEG 0.69).</strong> Forward P/E of 15.5x is lower than the S&P 500 average, despite bookings growing +22% YoY. Rare mispricing of a dominant consumer duopolist.
+          </p>
+        </div>
+        <div class="metric-card">
+          <div style="font-size: 16px; font-weight: 800; color: #0f172a; margin-bottom: 6px;">⚡ Stanley Druckenmiller (Macro Lens)</div>
+          <p style="font-size: 14px; color: #334155; line-height: 1.6;">
+            <strong>Verdict: 4.2 : 1 Asymmetric Long.</strong> Driver payouts represent ~70% of bookings. The transition to autonomous vehicles will expand operating margins from 13% toward 25%+.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: PEER BENCHMARKING -->
+    <div class="section-card">
+      <div class="sec-head">
+        <div class="sec-title">⚔️ Head-to-Head Peer Benchmarking</div>
+        <div class="sec-tag">Valuation & Margins</div>
+      </div>
+
+      <table class="table-custom">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Market Cap</th>
+            <th>Forward P/E</th>
+            <th>EV / EBITDA</th>
+            <th>Operating Margin</th>
+            <th>ROE (%)</th>
+            <th>Beta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: #f0fdf4; font-weight: 700;">
+            <td>Uber (UBER)</td>
+            <td>$139.8B</td>
+            <td>15.5x</td>
+            <td>20.3x</td>
+            <td>13.3%</td>
+            <td>37.2%</td>
+            <td>1.26</td>
+          </tr>
+          <tr>
+            <td>DoorDash (DASH)</td>
+            <td>$82.9B</td>
+            <td>23.2x</td>
+            <td>57.0x</td>
+            <td>3.9%</td>
+            <td>8.9%</td>
+            <td>1.89</td>
+          </tr>
+          <tr>
+            <td>Lyft (LYFT)</td>
+            <td>$5.9B</td>
+            <td>7.2x</td>
+            <td>117.3x</td>
+            <td>2.6%</td>
+            <td>152.6%</td>
+            <td>1.96</td>
+          </tr>
+          <tr>
+            <td>Alphabet (GOOG)</td>
+            <td>$4,248B</td>
+            <td>22.9x</td>
+            <td>23.7x</td>
+            <td>34.0%</td>
+            <td>48.7%</td>
+            <td>1.21</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SECTION 4: PORTFOLIO ALLOCATION & INITIATION -->
+    <div class="section-card">
+      <div class="sec-head">
+        <div class="sec-title">🎯 Portfolio Allocation Blueprint (`my-portfolio.yaml`)</div>
+        <div class="sec-tag">Factor Gap-Filling</div>
+      </div>
+
+      <div class="grid-3">
+        <div class="metric-card">
+          <div class="m-label">Tranche 1 (Market Order)</div>
+          <div class="m-val">$30,000</div>
+          <div class="m-desc">~438 Shares @ $68.45 USD</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">Tranche 2 (Pullback Limit)</div>
+          <div class="m-val">$30,000</div>
+          <div class="m-desc">~454 Shares @ $66.00 USD</div>
+        </div>
+        <div class="metric-card">
+          <div class="m-label">Hard Stop-Loss Floor</div>
+          <div class="m-val" style="color: #dc2626;">$62.50</div>
+          <div class="m-desc">-8.7% Risk Management Floor</div>
+        </div>
+      </div>
+
+      <div class="warn-box">
+        <p><strong>Thesis Invalidation Exit Directive:</strong> 100% position liquidation triggered if Waymo/Cruise terminate partnerships and Uber Mobility bookings turn negative YoY for two consecutive quarters, or if global gig worker reclassification reduces operating margins below 5%.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFOGRAPHIC FOOTER -->
+  <div class="info-footer">
+    <div>Prepared for: BM사장님 | DADAIC Investment Firm</div>
+    <div>Strict Currency: Pure USD ($) | No KRW Converted</div>
+  </div>
+</div>
+
+</body>
+</html>

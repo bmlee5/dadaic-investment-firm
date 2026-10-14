@@ -1,0 +1,928 @@
+{
+ "info": {
+  "currentPrice": 69.7,
+  "regularMarketPrice": 69.7,
+  "previousClose": 68.69,
+  "marketCap": 290226569216,
+  "enterpriseValue": 293547769856,
+  "trailingPE": 21.578947,
+  "forwardPE": 18.307945,
+  "trailingEps": 3.23,
+  "forwardEps": 3.80709,
+  "pegRatio": 1.15,
+  "trailingPegRatio": 1.2194,
+  "priceToSalesTrailing12Months": 6.000041,
+  "beta": 1.613,
+  "fiftyTwoWeekHigh": 124.86,
+  "fiftyTwoWeekLow": 65.08,
+  "fiftyDayAverage": 75.4786,
+  "twoHundredDayAverage": 83.8046,
+  "totalRevenue": 48370765824,
+  "revenueGrowth": 0.134,
+  "earningsGrowth": 0.111,
+  "earningsQuarterlyGrowth": 0.088,
+  "grossMargins": 0.49118,
+  "operatingMargins": 0.33381,
+  "profitMargins": 0.28219,
+  "returnOnEquity": 0.49541,
+  "returnOnAssets": 0.16084999,
+  "totalCash": 9127910400,
+  "totalDebt": 16654660608,
+  "debtToEquity": 55.236,
+  "freeCashflow": 25387552768,
+  "operatingCashflow": 11970833408,
+  "sharesOutstanding": 4163939676,
+  "heldPercentInstitutions": 0.84041,
+  "heldPercentInsiders": 0.0057200002,
+  "shortPercentOfFloat": 0.0228,
+  "shortRatio": 3.44,
+  "targetMeanPrice": 92.83778,
+  "targetHighPrice": 135.0,
+  "targetLowPrice": 57.0,
+  "targetMedianPrice": 90.0,
+  "numberOfAnalystOpinions": 45,
+  "recommendationKey": "buy",
+  "ebitda": 14726931456,
+  "enterpriseToEbitda": 19.933,
+  "currentRatio": 1.142,
+  "bookValue": 7.241,
+  "priceToBook": 9.625742
+ },
+ "last_close": 69.69999694824219,
+ "last_date": "2026-10-07",
+ "returns": {
+  "1y": {
+   "start": 119.10600280761719,
+   "total": -0.4148070180742841,
+   "cagr": -0.4148070180742841
+  },
+  "3y": {
+   "start": 38.1510009765625,
+   "total": 0.8269506740088246,
+   "cagr": 0.2224814391587766
+  },
+  "5y": {
+   "start": 63.185001373291016,
+   "total": 0.10310984305375248,
+   "cagr": 0.0198205334396937
+  },
+  "10y": {
+   "start": 10.482000350952148,
+   "total": 5.649493857526048,
+   "cagr": 0.2085896170426973
+  }
+ },
+ "ytd": -0.2566126774723172,
+ "mdd_2022": [
+  -0.759473182516135,
+  "2022-05-11"
+ ],
+ "mdd_5y": [
+  -0.759473182516135,
+  "2022-05-11"
+ ],
+ "dd_from_ath": -0.47951281898770326,
+ "ath": 133.91299438476562,
+ "ath_date": "2025-06-30",
+ "sma20": 72.24000091552735,
+ "sma50": 75.42480010986328,
+ "sma200": 83.68309986114502,
+ "rsi14": 41.0308630098061,
+ "macd": -2.3850762429231906,
+ "macd_signal": -2.1163766536815034,
+ "hi_52w": 124.86000061035156,
+ "lo_52w": 65.08000183105469,
+ "lo_52w_date": "2026-07-17",
+ "hi_52w_date": "2025-10-21",
+ "low_3m": 65.08000183105469,
+ "high_3m": 83.5999984741211,
+ "vol20_vs_vol50": 1.1049864342323534,
+ "last_30_closes": [
+  81.46,
+  79.84,
+  81.72,
+  81.05,
+  80.81,
+  82.73,
+  82.67,
+  78.25,
+  76.77,
+  76.03,
+  76.01,
+  77.4,
+  80.32,
+  77.9,
+  76.41,
+  75.31,
+  71.79,
+  73.36,
+  72.16,
+  71.36,
+  71.72,
+  71.15,
+  69.23,
+  70.3,
+  69.58,
+  67.85,
+  67.06,
+  67.5,
+  68.69,
+  69.7
+ ],
+ "monthly_24": {
+  "2024-11-30": 88.68,
+  "2024-12-31": 89.13,
+  "2025-01-31": 97.68,
+  "2025-02-28": 98.06,
+  "2025-03-31": 93.25,
+  "2025-04-30": 113.17,
+  "2025-05-31": 120.72,
+  "2025-06-30": 133.91,
+  "2025-07-31": 115.94,
+  "2025-08-31": 120.82,
+  "2025-09-30": 119.89,
+  "2025-10-31": 111.89,
+  "2025-11-30": 107.58,
+  "2025-12-31": 93.76,
+  "2026-01-31": 83.49,
+  "2026-02-28": 96.24,
+  "2026-03-31": 96.15,
+  "2026-04-30": 93.61,
+  "2026-05-31": 86.02,
+  "2026-06-30": 71.4,
+  "2026-07-31": 71.71,
+  "2026-08-31": 81.05,
+  "2026-09-30": 69.58,
+  "2026-10-31": 69.7
+ },
+ "spy_1y": 0.17408704711940515,
+ "beta_2y_daily": 0.700221062496363,
+ "corr_spy_2y": 0.3311653982735844,
+ "annual_income": {
+  "Total Revenue": {
+   "2025-12-31": 45183036000.0,
+   "2024-12-31": 39000966000.0,
+   "2023-12-31": 33723297000.0,
+   "2022-12-31": 31615550000.0,
+   "2021-12-31": null
+  },
+  "Gross Profit": {
+   "2025-12-31": 21907707000.0,
+   "2024-12-31": 17962502000.0,
+   "2023-12-31": 14007929000.0,
+   "2022-12-31": 12447265000.0,
+   "2021-12-31": null
+  },
+  "Operating Income": {
+   "2025-12-31": 13326603000.0,
+   "2024-12-31": 10417614000.0,
+   "2023-12-31": 6954003000.0,
+   "2022-12-31": 5632831000.0,
+   "2021-12-31": null
+  },
+  "Net Income": {
+   "2025-12-31": 10981201000.0,
+   "2024-12-31": 8711631000.0,
+   "2023-12-31": 5407990000.0,
+   "2022-12-31": 4491924000.0,
+   "2021-12-31": null
+  },
+  "Diluted EPS": {
+   "2025-12-31": 2.53,
+   "2024-12-31": 1.983,
+   "2023-12-31": 1.203,
+   "2022-12-31": 0.995,
+   "2021-12-31": null
+  },
+  "Diluted Average Shares": {
+   "2025-12-31": 4343863000.0,
+   "2024-12-31": 4392610000.0,
+   "2023-12-31": 4494980000.0,
+   "2022-12-31": 4512900000.0,
+   "2021-12-31": null
+  },
+  "Interest Expense": {
+   "2025-12-31": 776510000.0,
+   "2024-12-31": 718733000.0,
+   "2023-12-31": 748598000.0,
+   "2022-12-31": 706212000.0,
+   "2021-12-31": null
+  }
+ },
+ "annual_cf": {
+  "Operating Cash Flow": {
+   "2025-12-31": 10149273000.0,
+   "2024-12-31": 7361364000.0,
+   "2023-12-31": 7274301000.0,
+   "2022-12-31": 2026257000.0,
+   "2021-12-31": null
+  },
+  "Free Cash Flow": {
+   "2025-12-31": 9461053000.0,
+   "2024-12-31": 6921826000.0,
+   "2023-12-31": 6925749000.0,
+   "2022-12-31": 1618528000.0,
+   "2021-12-31": null
+  },
+  "Capital Expenditure": {
+   "2025-12-31": -688220000.0,
+   "2024-12-31": -439538000.0,
+   "2023-12-31": -348552000.0,
+   "2022-12-31": -407729000.0,
+   "2021-12-31": null
+  },
+  "Stock Based Compensation": {
+   "2025-12-31": 368449000.0,
+   "2024-12-31": 272588000.0,
+   "2023-12-31": 339368000.0,
+   "2022-12-31": 575452000.0,
+   "2021-12-31": null
+  },
+  "Repurchase Of Capital Stock": {
+   "2025-12-31": -9127167000.0,
+   "2024-12-31": -6263746000.0,
+   "2023-12-31": -6045347000.0,
+   "2022-12-31": 0.0,
+   "2021-12-31": null
+  }
+ },
+ "annual_bs": {
+  "Total Assets": {
+   "2025-12-31": 55596993000.0,
+   "2024-12-31": 53630374000.0,
+   "2023-12-31": 48731992000.0,
+   "2022-12-31": 48594768000.0,
+   "2021-12-31": null
+  },
+  "Total Debt": {
+   "2025-12-31": 14462836000.0,
+   "2024-12-31": 15582804000.0,
+   "2023-12-31": 14543261000.0,
+   "2022-12-31": 14353076000.0,
+   "2021-12-31": null
+  },
+  "Cash And Cash Equivalents": {
+   "2025-12-31": 9033681000.0,
+   "2024-12-31": 7804733000.0,
+   "2023-12-31": 7116913000.0,
+   "2022-12-31": 5147176000.0,
+   "2021-12-31": null
+  },
+  "Cash Cash Equivalents And Short Term Investments": {
+   "2025-12-31": 9062359000.0,
+   "2024-12-31": 9583739000.0,
+   "2023-12-31": 7137886000.0,
+   "2022-12-31": 6058452000.0,
+   "2021-12-31": null
+  },
+  "Stockholders Equity": {
+   "2025-12-31": 26615488000.0,
+   "2024-12-31": 24743567000.0,
+   "2023-12-31": 20588313000.0,
+   "2022-12-31": 20777401000.0,
+   "2021-12-31": null
+  },
+  "Total Liabilities Net Minority Interest": {
+   "2025-12-31": 28981505000.0,
+   "2024-12-31": 28886807000.0,
+   "2023-12-31": 28143679000.0,
+   "2022-12-31": 27817367000.0,
+   "2021-12-31": null
+  },
+  "Current Assets": {
+   "2025-12-31": 13020191000.0,
+   "2024-12-31": 13100379000.0,
+   "2023-12-31": 9918133000.0,
+   "2022-12-31": 9266473000.0,
+   "2021-12-31": null
+  },
+  "Current Liabilities": {
+   "2025-12-31": 10980930000.0,
+   "2024-12-31": 10755400000.0,
+   "2023-12-31": 8860655000.0,
+   "2022-12-31": 7930974000.0,
+   "2021-12-31": null
+  },
+  "Retained Earnings": {
+   "2025-12-31": 42282118000.0,
+   "2024-12-31": 31300917000.0,
+   "2023-12-31": 22589286000.0,
+   "2022-12-31": 17181296000.0,
+   "2021-12-31": null
+  }
+ },
+ "q_income": {
+  "Total Revenue": {
+   "2026-06-30": 12559938000.0,
+   "2026-03-31": 12249757000.0,
+   "2025-12-31": 12050762000.0,
+   "2025-09-30": 11510307000.0,
+   "2025-06-30": 11079166000.0
+  },
+  "Operating Income": {
+   "2026-06-30": 4192610000.0,
+   "2026-03-31": 3956997000.0,
+   "2025-12-31": 2956663000.0,
+   "2025-09-30": 3248247000.0,
+   "2025-06-30": 3774694000.0
+  },
+  "Net Income": {
+   "2026-06-30": 3401414000.0,
+   "2026-03-31": 5282791000.0,
+   "2025-12-31": 2418521000.0,
+   "2025-09-30": 2546916000.0,
+   "2025-06-30": 3125413000.0
+  },
+  "Diluted EPS": {
+   "2026-06-30": 0.8,
+   "2026-03-31": 1.23,
+   "2025-12-31": 0.56,
+   "2025-09-30": 0.587,
+   "2025-06-30": 0.719
+  }
+ },
+ "q_cf": {
+  "Operating Cash Flow": {
+   "2026-06-30": 1743812000.0,
+   "2026-03-31": 5290205000.0,
+   "2025-12-31": 2111642000.0,
+   "2025-09-30": 2825174000.0,
+   "2025-06-30": 2423258000.0,
+   "2025-03-31": null
+  },
+  "Free Cash Flow": {
+   "2026-06-30": 1525168000.0,
+   "2026-03-31": 5094075000.0,
+   "2025-12-31": 1872307000.0,
+   "2025-09-30": 2660455000.0,
+   "2025-06-30": 2267369000.0,
+   "2025-03-31": null
+  },
+  "Stock Based Compensation": {
+   "2026-06-30": 131312000.0,
+   "2026-03-31": 140405000.0,
+   "2025-12-31": 134624000.0,
+   "2025-09-30": 80986000.0,
+   "2025-06-30": 80862000.0,
+   "2025-03-31": null
+  }
+ },
+ "earnings_dates": [
+  {
+   "Earnings Date": "2026-10-20 16:00:00-04:00",
+   "EPS Estimate": 0.82,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Earnings Date": "2026-07-16 16:00:00-04:00",
+   "EPS Estimate": 0.79,
+   "Reported EPS": 0.8,
+   "Surprise(%)": 1.45
+  },
+  {
+   "Earnings Date": "2026-04-16 16:00:00-04:00",
+   "EPS Estimate": 1.25,
+   "Reported EPS": 1.23,
+   "Surprise(%)": -1.4
+  },
+  {
+   "Earnings Date": "2026-01-20 16:00:00-05:00",
+   "EPS Estimate": 0.55,
+   "Reported EPS": 0.56,
+   "Surprise(%)": 1.43
+  },
+  {
+   "Earnings Date": "2025-10-21 16:00:00-04:00",
+   "EPS Estimate": 0.7,
+   "Reported EPS": 0.59,
+   "Surprise(%)": -15.79
+  },
+  {
+   "Earnings Date": "2025-07-17 16:00:00-04:00",
+   "EPS Estimate": 0.7,
+   "Reported EPS": 0.72,
+   "Surprise(%)": 2.24
+  },
+  {
+   "Earnings Date": "2025-04-17 16:00:00-04:00",
+   "EPS Estimate": 0.57,
+   "Reported EPS": 0.66,
+   "Surprise(%)": 16.82
+  },
+  {
+   "Earnings Date": "2025-01-21 16:00:00-05:00",
+   "EPS Estimate": 0.42,
+   "Reported EPS": 0.43,
+   "Surprise(%)": 1.41
+  }
+ ],
+ "eps_trend": {
+  "current": {
+   "0q": 0.82285,
+   "+1q": 0.72823,
+   "0y": 3.5834,
+   "+1y": 3.80137
+  },
+  "7daysAgo": {
+   "0q": 0.82285,
+   "+1q": 0.72792,
+   "0y": 3.58364,
+   "+1y": 3.80826
+  },
+  "30daysAgo": {
+   "0q": 0.82233,
+   "+1q": 0.72954,
+   "0y": 3.58437,
+   "+1y": 3.81626
+  },
+  "60daysAgo": {
+   "0q": 0.8218,
+   "+1q": 0.72953,
+   "0y": 3.58253,
+   "+1y": 3.81279
+  },
+  "90daysAgo": {
+   "0q": 0.84195,
+   "+1q": 0.73705,
+   "0y": 3.59078,
+   "+1y": 3.83084
+  },
+  "currency": {
+   "0q": "USD",
+   "+1q": "USD",
+   "0y": "USD",
+   "+1y": "USD"
+  }
+ },
+ "growth_est": {
+  "stockTrend": {
+   "0q": 0.4025,
+   "+1q": 0.3037,
+   "0y": 0.41869998,
+   "+1y": 0.060900003,
+   "LTG": NaN
+  },
+  "indexTrend": {
+   "0q": 0.24290001,
+   "+1q": 0.2574,
+   "0y": 0.32009998,
+   "+1y": 0.16290002,
+   "LTG": 0.122
+  }
+ },
+ "earnings_est": {
+  "avg": {
+   "0q": 0.82285,
+   "+1q": 0.72823,
+   "0y": 3.5834,
+   "+1y": 3.80137
+  },
+  "low": {
+   "0q": 0.79,
+   "+1q": 0.67,
+   "0y": 3.51,
+   "+1y": 3.48
+  },
+  "high": {
+   "0q": 0.87,
+   "+1q": 0.82,
+   "0y": 3.69,
+   "+1y": 4.09
+  },
+  "yearAgoEps": {
+   "0q": 0.587,
+   "+1q": 0.56,
+   "0y": 2.53,
+   "+1y": 3.5834
+  },
+  "numberOfAnalysts": {
+   "0q": 34,
+   "+1q": 32,
+   "0y": 41,
+   "+1y": 45
+  },
+  "growth": {
+   "0q": 0.4018,
+   "+1q": 0.30040002,
+   "0y": 0.4164,
+   "+1y": 0.0608
+  },
+  "currency": {
+   "0q": "USD",
+   "+1q": "USD",
+   "0y": "USD",
+   "+1y": "USD"
+  }
+ },
+ "revenue_est": {
+  "avg": {
+   "0q": 12878934230,
+   "+1q": 13529011540,
+   "0y": 51213691700,
+   "+1y": 56947781800
+  },
+  "low": {
+   "0q": 12804000000,
+   "+1q": 13297000000,
+   "0y": 50954000000,
+   "+1y": 55701220750
+  },
+  "high": {
+   "0q": 13030000000,
+   "+1q": 13722000000,
+   "0y": 51513430150,
+   "+1y": 58274000000
+  },
+  "numberOfAnalysts": {
+   "0q": 37,
+   "+1q": 36,
+   "0y": 46,
+   "+1y": 45
+  },
+  "yearAgoRevenue": {
+   "0q": 11510307000,
+   "+1q": 12050762000,
+   "0y": 45183036000,
+   "+1y": 51213691700
+  },
+  "growth": {
+   "0q": 0.1189,
+   "+1q": 0.122700006,
+   "0y": 0.13350001,
+   "+1y": 0.111999996
+  },
+  "currency": {
+   "0q": "USD",
+   "+1q": "USD",
+   "0y": "USD",
+   "+1y": "USD"
+  }
+ },
+ "insider_tx": [
+  {
+   "Shares": "1440",
+   "Value": "36698.0",
+   "URL": "",
+   "Text": "Conversion of Exercise of derivative security at price 20.11 - 26.51 per share.",
+   "Insider": "BARTON RICHARD N",
+   "Position": "Director",
+   "Transaction": "",
+   "Start Date": "2026-09-10",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "1440",
+   "Value": "109102.0",
+   "URL": "",
+   "Text": "Sale at price 75.27 - 76.26 per share.",
+   "Insider": "BARTON RICHARD N",
+   "Position": "Director",
+   "Transaction": "",
+   "Start Date": "2026-09-10",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "720",
+   "Value": "14477.0",
+   "URL": "",
+   "Text": "Conversion of Exercise of derivative security at price 20.11 per share.",
+   "Insider": "BARTON RICHARD N",
+   "Position": "Director",
+   "Transaction": "",
+   "Start Date": "2026-09-08",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "720",
+   "Value": "55872.0",
+   "URL": "",
+   "Text": "Sale at price 77.60 per share.",
+   "Insider": "BARTON RICHARD N",
+   "Position": "Director",
+   "Transaction": "",
+   "Start Date": "2026-09-08",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "9248",
+   "Value": "700907.0",
+   "URL": "",
+   "Text": "Sale at price 75.79 per share.",
+   "Insider": "NEUMANN SPENCER ADAM",
+   "Position": "Chief Financial Officer",
+   "Transaction": "",
+   "Start Date": "2026-08-10",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "27312",
+   "Value": "2008606.0",
+   "URL": "",
+   "Text": "Sale at price 73.54 per share.",
+   "Insider": "PETERS GREGORY K.",
+   "Position": "Chief Executive Officer",
+   "Transaction": "",
+   "Start Date": "2026-08-06",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "2160",
+   "Value": "43431.0",
+   "URL": "",
+   "Text": "Conversion of Exercise of derivative security at price 20.11 per share.",
+   "Insider": "BARTON RICHARD N",
+   "Position": "Director",
+   "Transaction": "",
+   "Start Date": "2026-08-05",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "2160",
+   "Value": "162216.0",
+   "URL": "",
+   "Text": "Sale at price 75.10 per share.",
+   "Insider": "BARTON RICHARD N",
+   "Position": "Director",
+   "Transaction": "",
+   "Start Date": "2026-08-05",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "133162",
+   "Value": "9733584.0",
+   "URL": "",
+   "Text": "Sale at price 72.90 - 73.48 per share.",
+   "Insider": "SARANDOS THEODORE ANTHONY JR.",
+   "Position": "Chief Executive Officer",
+   "Transaction": "",
+   "Start Date": "2026-08-04",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "5723",
+   "Value": "416899.0",
+   "URL": "",
+   "Text": "Sale at price 72.85 per share.",
+   "Insider": "HYMAN DAVID A",
+   "Position": "Officer",
+   "Transaction": "",
+   "Start Date": "2026-08-04",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "18418",
+   "Value": NaN,
+   "URL": "",
+   "Text": "",
+   "Insider": "NEUMANN SPENCER ADAM",
+   "Position": "Chief Financial Officer",
+   "Transaction": "",
+   "Start Date": "2026-08-03",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "54388",
+   "Value": NaN,
+   "URL": "",
+   "Text": "",
+   "Insider": "PETERS GREGORY K.",
+   "Position": "Chief Executive Officer",
+   "Transaction": "",
+   "Start Date": "2026-08-03",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "6157",
+   "Value": NaN,
+   "URL": "",
+   "Text": "",
+   "Insider": "WILLEMS CLETUS R",
+   "Position": "Officer",
+   "Transaction": "",
+   "Start Date": "2026-08-03",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "54388",
+   "Value": NaN,
+   "URL": "",
+   "Text": "",
+   "Insider": "SARANDOS THEODORE ANTHONY JR.",
+   "Position": "Chief Executive Officer",
+   "Transaction": "",
+   "Start Date": "2026-08-03",
+   "Ownership": "D"
+  },
+  {
+   "Shares": "11400",
+   "Value": NaN,
+   "URL": "",
+   "Text": "",
+   "Insider": "HYMAN DAVID A",
+   "Position": "Officer",
+   "Transaction": "",
+   "Start Date": "2026-08-03",
+   "Ownership": "D"
+  }
+ ],
+ "insider_purchases": [
+  {
+   "Insider Purchases Last 6m": "Purchases",
+   "Shares": "1125291.0",
+   "Trans": "17"
+  },
+  {
+   "Insider Purchases Last 6m": "Sales",
+   "Shares": "1079604.0",
+   "Trans": "14"
+  },
+  {
+   "Insider Purchases Last 6m": "Net Shares Purchased (Sold)",
+   "Shares": "45687.0",
+   "Trans": "31"
+  },
+  {
+   "Insider Purchases Last 6m": "Total Insider Shares Held",
+   "Shares": "23817736.0",
+   "Trans": NaN
+  },
+  {
+   "Insider Purchases Last 6m": "% Net Shares Purchased (Sold)",
+   "Shares": "0.002",
+   "Trans": NaN
+  },
+  {
+   "Insider Purchases Last 6m": "% Buy Shares",
+   "Shares": "0.047",
+   "Trans": NaN
+  },
+  {
+   "Insider Purchases Last 6m": "% Sell Shares",
+   "Shares": "0.045",
+   "Trans": NaN
+  }
+ ],
+ "inst_holders": [
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "Blackrock Inc.",
+   "pctHeld": "0.0838",
+   "Shares": "348770600",
+   "Value": "24309309755",
+   "pctChange": "0.0073"
+  },
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "Vanguard Capital Management LLC",
+   "pctHeld": "0.066",
+   "Shares": "275026936",
+   "Value": "19169376599",
+   "pctChange": "0.0023"
+  },
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "State Street Corporation",
+   "pctHeld": "0.0433",
+   "Shares": "180129582",
+   "Value": "12555031315",
+   "pctChange": "0.0494"
+  },
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "FMR, LLC",
+   "pctHeld": "0.0326",
+   "Shares": "135937268",
+   "Value": "9474827164",
+   "pctChange": "-0.33580002"
+  },
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "Invesco Ltd.",
+   "pctHeld": "0.0325",
+   "Shares": "135419167",
+   "Value": "9438715526",
+   "pctChange": "0.0301"
+  },
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "Geode Capital Management, LLC",
+   "pctHeld": "0.026500002",
+   "Shares": "110312736",
+   "Value": "7688797362",
+   "pctChange": "0.0655"
+  },
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "Morgan Stanley",
+   "pctHeld": "0.0239",
+   "Shares": "99723374",
+   "Value": "6950718863",
+   "pctChange": "0.0070999996"
+  },
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "Price (T.Rowe) Associates Inc",
+   "pctHeld": "0.0225",
+   "Shares": "93578816",
+   "Value": "6522443189",
+   "pctChange": "-0.0551"
+  },
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "Capital World Investors",
+   "pctHeld": "0.021",
+   "Shares": "87336163",
+   "Value": "6087330294",
+   "pctChange": "-0.1187"
+  },
+  {
+   "Date Reported": "2026-06-30",
+   "Holder": "Vanguard Portfolio Management LLC",
+   "pctHeld": "0.018",
+   "Shares": "75056512",
+   "Value": "5231438657",
+   "pctChange": "-0.0045"
+  }
+ ],
+ "portfolio": {
+  "prices": {
+   "NVDA": 237.47000122070312,
+   "GOOG": 347.3699951171875,
+   "AMZN": 259.9200134277344,
+   "AVGO": 376.510009765625,
+   "AMD": 645.8599853515625,
+   "MSFT": 529.760009765625,
+   "META": 721.3099975585938,
+   "TSM": 472.20001220703125,
+   "MU": 1088.0,
+   "PLTR": 194.1199951171875,
+   "NFLX": 69.69999694824219,
+   "BE": 291.2900085449219,
+   "LLY": 1188.719970703125,
+   "GEV": 997.0900268554688,
+   "SKHY": 178.25,
+   "IREN": 38.689998626708984,
+   "CRWV": 88.44999694824219,
+   "QQQ": 757.72998046875,
+   "SPY": 777.219970703125,
+   "EWY": 183.69000244140625,
+   "KORU": 20.049999237060547,
+   "TQQQ": 83.62000274658203,
+   "SOXL": 158.91000366210938
+  },
+  "values": {
+   "NVDA": 356205.0018310547,
+   "GOOG": 208421.9970703125,
+   "AMZN": 166348.80859375,
+   "AVGO": 131778.50341796875,
+   "AMD": 116254.79736328125,
+   "MSFT": 95356.8017578125,
+   "META": 72130.99975585938,
+   "TSM": 56664.00146484375,
+   "MU": 43520.0,
+   "PLTR": 29117.999267578125,
+   "NFLX": 23697.998962402344,
+   "BE": 13108.050384521484,
+   "LLY": 13075.919677734375,
+   "GEV": 10967.990295410156,
+   "SKHY": 7843.0,
+   "IREN": 2553.539909362793,
+   "CRWV": 1945.8999328613281,
+   "QQQ": 68195.6982421875,
+   "SPY": 159330.09399414062,
+   "EWY": 29390.400390625,
+   "KORU": 23458.49910736084,
+   "TQQQ": 13797.300453186035,
+   "SOXL": 2701.4700622558594
+  },
+  "equity": 1645864.7719345093,
+  "cash_cfg": 100000.0,
+  "total_live": 1745864.7719345093,
+  "weights": {
+   "NVDA": 0.20402783053830736,
+   "GOOG": 0.11938037837797143,
+   "AMZN": 0.09528161130682924,
+   "AVGO": 0.07548036110033385,
+   "AMD": 0.0665886609502206,
+   "MSFT": 0.05461866422343363,
+   "META": 0.041315341780987114,
+   "TSM": 0.03245612281990035,
+   "MU": 0.02492747473893844,
+   "PLTR": 0.01667826726082219,
+   "NFLX": 0.01357378838462026,
+   "BE": 0.00750805594753887,
+   "LLY": 0.007489652055494294,
+   "GEV": 0.006282267946363939,
+   "SKHY": 0.0044923296042622745,
+   "IREN": 0.0014626218195200407,
+   "CRWV": 0.0011145765491935378,
+   "QQQ": 0.03906127171958634,
+   "SPY": 0.0912614175825282,
+   "EWY": 0.016834293734020934,
+   "KORU": 0.013436607167098972,
+   "TQQQ": 0.007902846013610725,
+   "SOXL": 0.0015473535554890025
+  }
+ }
+}
