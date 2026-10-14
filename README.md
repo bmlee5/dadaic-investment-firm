@@ -8,7 +8,7 @@
 
 ## 1. Overview
 **DADAIC Investment Firm** is an institutional-grade **Autonomous AI Investment Firm** built on the Google Antigravity framework.  
-It combines the rigorous multi-disciplinary underwriting principles of Wall Street investment banks (Goldman Sachs, Morgan Stanley), quantitative proprietary desks, and the legendary triumvirate of value investing—**Warren Buffett, Charlie Munger, and Peter Lynch**. The system autonomously executes an end-to-end Investment Committee pipeline, from forensic SEC statement audits to portfolio factor stress-testing and decision memo generation.
+It combines the rigorous multi-disciplinary underwriting principles of Wall Street investment banks (Goldman Sachs, Morgan Stanley), private equity forensic audits, quantitative proprietary desks, and the legendary quintet of investing masters—**Warren Buffett, Charlie Munger, Peter Lynch, Stanley Druckenmiller, and William J. O'Neil**. The system autonomously executes an end-to-end Investment Committee pipeline, from forensic SEC statement audits to portfolio factor stress-testing and decision memo generation.
 
 ---
 
@@ -207,7 +207,7 @@ DADAIC Investment Firm/
 
 1. **Bilingual Completeness**: Every decision memo is rendered in **both English and Korean** within the same document to serve both global institutional investors and domestic partners seamlessly.
 2. **Zero Hallucination / Verified Numbers**: All financial statements and pricing data originate strictly from audited SEC filings (Form 10-K/10-Q) and verified market data APIs.
-3. **Intellectual Honesty Over Consensus**: Legendary philosophies often conflict (e.g. Lynch growth vs. Munger capital treadmill); the CIO transparently arbitrates these tensions with quantitative rigor.
+3. **Intellectual Honesty Over Consensus**: Legendary philosophies often conflict (e.g., Lynch growth PEG vs. Munger capital treadmill vs. Druckenmiller asymmetric inflection vs. O'Neil breakout momentum); the CIO transparently arbitrates these tensions with quantitative rigor.
 4. **Non-Negotiable Thesis Invalidation**: Every allocation specifies the single definitive operational breakdown event that triggers a mandatory 100% exit.
 
 ---
@@ -417,5 +417,5 @@ DADAIC Investment Firm/
 
 1. **Bilingual Completeness (이중 언어 완결성)**: 모든 의사결정 메모는 한국어만 아는 사용자도, 영어만 아는 투자자도 완벽히 활용할 수 있도록 **영문과 한글 두 가지 버전으로 동일 메모 내에 제공**됩니다.
 2. **수치 날조 금지 (No Hallucination)**: 모든 재무 수치와 시장 가격은 실제 SEC 공시(10-K, 10-Q) 및 신뢰할 수 있는 공식 금융 데이터에 기반하며, 확인되지 않은 수치는 절대 임의로 지어내지 않습니다.
-3. **대가 간 이견 조율 (Conflict Reconciliation)**: 대가들의 철학이 충돌할 경우(예: 린치 성장성 vs 멍거 자본쳇바퀴), CIO가 이를 숨기지 않고 명시적으로 비교 조정합니다.
+3. **대가 간 이견 조율 (Conflict Reconciliation)**: 대가들의 철학이 충돌할 경우(예: 린치 성장성 PEG vs 멍거 자본쳇바퀴/SBC 희석 vs 드러켄밀러 18개월 변곡점 vs 오닐 돌파 모멘텀), CIO가 이를 숨기지 않고 명시적으로 비교 조정합니다.
 4. **명확한 매도 기준 (Thesis Invalidation Signal)**: 주가 등락과 무관하게 회사의 펀더멘털 스토리가 깨졌을 때 즉시 전량 매도할 단 1가지 기준을 사전에 확정합니다.
