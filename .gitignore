@@ -25,3 +25,10 @@ desktop.ini
 cache/*
 !cache/README.md
 !cache/**/.gitkeep
+
+# AI Prompts Archive
+ai-prompts/
+
+# Generated Decision Memos & Media (preserve folder structure)
+DecisionMemo/*
+!DecisionMemo/**/.gitkeep
