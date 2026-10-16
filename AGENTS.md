@@ -201,6 +201,11 @@ Execute immediate 1:1 specialist consultations and deep-dive audits without runn
       `| Business Segment (주력 사업부) | Revenue Share (%) | Flagship Products & Key Solutions (핵심 주력 상품/솔루션) | Recent Financials (최근 실적) | YoY Growth (%) | Operating Margin & Strategic Moat (마진 및 핵심 해자) |`
     - Must granularly dissect official corporate reporting segments, quantify volume vs pricing trends, detail flagship product lines, and evaluate segment-level moat contributions in both English and Korean editions with 100% parity.
 
+14. **Mandatory Markdown Preview Rendering Safety Protocol (`\$` & `\~` Escaping Rule / 마크다운 프리뷰 취소선·수식 깨짐 방지 의무제)**:
+    - **Zero Strikethrough & LaTeX Collision Mandate**: In all Markdown deliverables (`.md` files in `DecisionMemo/`), outside of fenced code blocks (` ```...``` `) and display math blocks (`$$...$$`):
+      1. **Tilde Escaping (`\~`)**: Every single tilde (`~`) used for ranges or approximations (e.g., `1\~2년`, `\~\$1.60B`, `\$740\~\$790`) MUST be escaped as `\~` (or written with an en-dash `-` / `–`) so that GFM Markdown previewers (`singleTilde: true`) never trigger unintended strikethrough formatting across paragraphs.
+      2. **Dollar Sign Escaping (`\$`)**: Every literal USD currency dollar sign (`$`) MUST be escaped as `\$` (e.g., `\$882.50 USD`, `\$1.006B`) so that KaTeX/MathJax previewers never misinterpret two currency figures in the same paragraph as inline math (`$...$`) or treat `%` symbols between them as LaTeX comments that delete text.
+
 ---
 
 ## 🏛️ Elite 17-Agent Investment Committee Roster

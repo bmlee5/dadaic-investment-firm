@@ -161,6 +161,31 @@ def audit_file(filepath: str) -> bool:
     else:
         print("✅ Principal Honorific Passed (Correctly addressed as 'BM사장님').")
         
+    # 5. Check Markdown Preview Safety (No unescaped currency $ or single ~ outside code fences / $$ math)
+    in_fence = False
+    unescaped_tilde_lines = []
+    unescaped_dollar_lines = []
+    for line_no, raw_line in enumerate(content.split("\n"), 1):
+        stripped_line = raw_line.strip()
+        if stripped_line.startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence or stripped_line.startswith("$$"):
+            continue
+        if re.search(r"(?<!\\)~(?!~)", raw_line):
+            unescaped_tilde_lines.append(line_no)
+        if re.search(r"(?<!\\)\$(?=[\d\(BMU])", raw_line):
+            unescaped_dollar_lines.append(line_no)
+            
+    if unescaped_tilde_lines or unescaped_dollar_lines:
+        if unescaped_tilde_lines:
+            issues.append(f"Markdown Preview Strikethrough Risk: Found unescaped '~' on lines {unescaped_tilde_lines[:5]}. Escape as '\\~'.")
+        if unescaped_dollar_lines:
+            issues.append(f"Markdown Preview LaTeX Collision Risk: Found unescaped currency '$' on lines {unescaped_dollar_lines[:5]}. Escape as '\\$'.")
+        passed = False
+    else:
+        print("✅ Markdown Preview Safety Passed (All currency '\\$' and range '\\~' properly escaped).")
+        
     # Final Result
     print("-" * 80)
     if passed:
